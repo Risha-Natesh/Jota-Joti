@@ -1,3 +1,88 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-banner",
+      "description": "A vibrant banner for the JOTA-JOTI 2025 event, showing scouts using technology.",
+      "imageUrl": "https://images.unsplash.com/photo-1721969661169-3d04955230a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2NvdXRzJTIwdGVjaG5vbG9neXxlbnwwfHx8fDE3NTk3NTUzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scouts technology"
+    },
+    {
+      "id": "partner-logo-1",
+      "description": "Logo for Sri Chamundi Scout Group.",
+      "imageUrl": "https://images.unsplash.com/photo-1641839717585-cfb862e7c86a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzY291dCUyMGxvZ298ZW58MHx8fHwxNzU5NzU1MzMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scout logo"
+    },
+    {
+      "id": "partner-logo-2",
+      "description": "Logo for NSS RVU.",
+      "imageUrl": "https://images.unsplash.com/photo-1647006876189-f84e6468b7b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxvcmdhbml6YXRpb24lMjBsb2dvfGVufDB8fHx8MTc1OTc1NTMzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "organization logo"
+    },
+    {
+      "id": "partner-logo-3",
+      "description": "Logo for Outdoor Dynamix.",
+      "imageUrl": "https://images.unsplash.com/photo-1758391792831-3244e601730d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWR2ZW50dXJlJTIwbG9nb3xlbnwwfHx8fDE3NTk3NTUzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adventure logo"
+    },
+    {
+      "id": "partner-logo-4",
+      "description": "Logo for Prakruthi Shaale.",
+      "imageUrl": "https://images.unsplash.com/photo-1754424600990-e9c94467174d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxuYXR1cmUlMjBzY2hvb2x8ZW58MHx8fHwxNzU5NzU1MzMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nature school"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Photo of scouts around a campfire from a past event.",
+      "imageUrl": "https://images.unsplash.com/photo-1651515392392-1161f699c77b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzY291dHMlMjBjYW1wZmlyZXxlbnwwfHx8fDE3NTk3NTUzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scouts campfire"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Photo of scouts hiking in the mountains.",
+      "imageUrl": "https://images.unsplash.com/photo-1636247641615-313c40edd17f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzY291dHMlMjBoaWtpbmd8ZW58MHx8fHwxNzU5NzU1MzMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scouts hiking"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Photo showing scout teamwork during an activity.",
+      "imageUrl": "https://images.unsplash.com/photo-1713643562822-5a992959ead3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzY291dHMlMjB0ZWFtd29ya3xlbnwwfHx8fDE3NTk3NTUzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scouts teamwork"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Photo of a scout activity.",
+      "imageUrl": "https://images.unsplash.com/photo-1536883968402-cb7250da4a8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzY291dCUyMGFjdGl2aXR5fGVufDB8fHx8MTc1OTc1NTMzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scout activity"
+    },
+    {
+      "id": "testimonial-avatar-1",
+      "description": "Avatar for Rahul S.",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk3NDM1MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "testimonial-avatar-2",
+      "description": "Avatar for Priya K.",
+      "imageUrl": "https://images.unsplash.com/photo-1590086782792-42dd2350140d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk3NDM1MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "testimonial-avatar-3",
+      "description": "Avatar for Anjali M.",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk3NDM1MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "live-update-1",
+      "description": "Image for live update section showing event activity.",
+      "imageUrl": "https://images.unsplash.com/photo-1745851578223-6042887f9e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxldmVudCUyMHBob3RvfGVufDB8fHx8MTc1OTc1NTMzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "event photo"
+    },
+    {
+      "id": "live-update-2",
+      "description": "Image for live update section showing people at the event.",
+      "imageUrl": "https://images.unsplash.com/photo-1748958342360-db81446bfe60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZXZlbnQlMjBjcm93ZHxlbnwwfHx8fDE3NTk3NTUzMzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "event crowd"
+    }
+  ]
 }
