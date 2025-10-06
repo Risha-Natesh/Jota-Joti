@@ -33,19 +33,12 @@ const SectionSubtitle = ({ children, className }: { children: React.ReactNode, c
 );
 
 function HeroSection() {
-  const heroImage = getImage("hero-banner");
   return (
     <Section id="home" noPadding className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-primary-foreground">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          data-ai-hint={heroImage.imageHint}
-          fill
-          className="object-cover"
-          priority
-        />
-      )}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/Hero.gif')" }}
+      />
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-primary/30" />
       <div className="container relative z-10 flex flex-col items-center text-center space-y-8">
         <Badge variant="secondary" className="text-lg py-2 px-4 bg-white/20 text-white border-white/30">17, 18 & 19 October 2025</Badge>
