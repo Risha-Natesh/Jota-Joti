@@ -1,37 +1,28 @@
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Clock, MapPin, Utensils, Zap, Tent, Sunrise, Sunset, Radio, Film, Users, Award, Code, Gamepad2, ShieldCheck, Video, Sailboat, Trophy } from "lucide-react";
+import { Clock, MapPin, Utensils, Zap, Tent, Sunrise, Sunset, Radio, Film, Users, Award, Code, Gamepad2, ShieldCheck, Video, Sailboat, Trophy, Mic, PartyPopper } from "lucide-react";
 
 const schedule = {
   panchavati: {
     day1: [
-      { time: "09:00 AM", event: "Registration & Kit Distribution", icon: <Zap className="w-5 h-5" /> },
-      { time: "10:00 AM", event: "Inauguration Ceremony", icon: <Sunrise className="w-5 h-5" /> },
-      { time: "11:00 AM", event: "Workshop: Basic Electronics", icon: <Zap className="w-5 h-5" /> },
+      { time: "09:00 AM - 10:00 AM", event: "Registrations for Arts & Science Competitions", icon: <Zap className="w-5 h-5" /> },
+      { time: "11:00 AM - 12:00 PM", event: "Science, Arts Competitions", icon: <Award className="w-5 h-5" /> },
       { time: "01:00 PM", event: "Lunch Break", icon: <Utensils className="w-5 h-5" /> },
-      { time: "02:00 PM", event: "Digital Treasure Hunt", icon: <Gamepad2 className="w-5 h-5" /> },
-      { time: "04:00 PM", event: "Guest Lecture: Tech for Good", icon: <Users className="w-5 h-5" /> },
-      { time: "05:00 PM", event: "High Tea", icon: <Utensils className="w-5 h-5" /> },
+      { time: "03:00 PM - 04:00 PM", event: "JOTA SET UP", icon: <Radio className="w-5 h-5" /> },
       { time: "06:00 PM", event: "Day 1 Wrap Up", icon: <Sunset className="w-5 h-5" /> },
     ],
     day2: [
-        { time: "09:30 AM", event: "Morning Briefing & Icebreakers", icon: <Sunrise className="w-5 h-5" /> },
-        { time: "10:30 AM", event: "Workshop: Introduction to Coding", icon: <Code className="w-5 h-5" /> },
-        { time: "12:00 PM", event: "JOTI Connect: Global Video Calls", icon: <Video className="w-5 h-5" /> },
+        { time: "09:00 AM", event: "Jota Walkin starts", icon: <Sunrise className="w-5 h-5" /> },
+        { time: "11:00 AM", event: "Stalls / Exhibitions / workshops etc will go Live", icon: <PartyPopper className="w-5 h-5" /> },
         { time: "01:00 PM", event: "Lunch Break", icon: <Utensils className="w-5 h-5" /> },
-        { time: "02:00 PM", event: "Online Gaming Tournament (Minecraft & more)", icon: <Gamepad2 className="w-5 h-5" /> },
-        { time: "04:00 PM", event: "Workshop: Cybersecurity for Scouts", icon: <ShieldCheck className="w-5 h-5" /> },
-        { time: "05:30 PM", event: "Virtual Global Campfire", icon: <Users className="w-5 h-5" /> },
+        { time: "04:00 PM - 05:00 PM", event: "Youth Got Talent", icon: <Mic className="w-5 h-5" /> },
         { time: "07:00 PM", event: "Day 2 Wrap Up", icon: <Sunset className="w-5 h-5" /> },
     ],
     day3: [
-        { time: "10:00 AM", event: "Project Showcase: Tech for a Better World", icon: <Award className="w-5 h-5" /> },
-        { time: "11:30 AM", event: "JOTA-JOTI Challenge Finale", icon: <Trophy className="w-5 h-5" /> },
+        { time: "All Day", event: "Open Day", icon: <Users className="w-5 h-5" /> },
         { time: "01:00 PM", event: "Lunch Break", icon: <Utensils className="w-5 h-5" /> },
-        { time: "02:30 PM", event: "Prize Distribution & Closing Ceremony", icon: <Trophy className="w-5 h-5" /> },
-        { time: "04:00 PM", event: "Feedback Session & Souvenirs", icon: <Users className="w-5 h-5" /> },
-        { time: "04:30 PM", event: "Departure", icon: <Sunset className="w-5 h-5" /> },
+        { time: "04:00 PM - 05:00 PM", event: "Valedictory & Closing Ceremony", icon: <Trophy className="w-5 h-5" /> },
     ]
   },
   chamundi: {
