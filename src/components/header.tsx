@@ -74,7 +74,7 @@ export function Header() {
               </div>
             </SheetContent>
           </Sheet>
-          <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white">
+          <Button asChild>
             <Link href="/register">Register Now</Link>
           </Button>
         </div>
