@@ -120,7 +120,11 @@ export default function SchedulePage() {
                 <TabsContent value="panchavati">
                     <Card className="bg-transparent border-none shadow-none">
                         <CardHeader>
-                            <CardTitle className="font-headline">Panchavati Schedule (Main Hub)</CardTitle>
+                            <CardTitle className="font-headline">
+                                <a href="https://maps.app.goo.gl/cC787aQb9vq7HybE7" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                                    Panchavati Schedule (Main Hub) <ArrowRight className="w-4 h-4 ml-2" />
+                                </a>
+                            </CardTitle>
                             <CardDescription>Main hub for workshops & digital activities.</CardDescription>
                         </CardHeader>
                         <CardContent>

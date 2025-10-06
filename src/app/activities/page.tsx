@@ -1,8 +1,9 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Award, Dna, Group, Rocket, Radio, Puzzle, Paintbrush, Mic, HandHelping, Code, Gamepad, Zap, Leaf, Heart, Users, Clock, MapPin, Box } from "lucide-react";
+import { Award, Dna, Group, Rocket, Radio, Puzzle, Paintbrush, Mic, HandHelping, Code, Gamepad, Zap, Leaf, Heart, Users, Clock, MapPin, Box, ArrowRight } from "lucide-react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import Link from "next/link";
 
 const competitions = [
     {
@@ -12,6 +13,7 @@ const competitions = [
         details: {
             date: "17-Oct-25",
             location: "Panchavati",
+            locationUrl: "https://maps.app.goo.gl/cC787aQb9vq7HybE7",
             duration: "2.5 Hrs",
             materials: "Drawing Paper",
             ageGroups: [
@@ -28,6 +30,7 @@ const competitions = [
         details: {
             date: "17-Oct-25",
             location: "Panchavati",
+            locationUrl: "https://maps.app.goo.gl/cC787aQb9vq7HybE7",
             duration: "4 - 6 Hrs",
             materials: "Table & Chair",
             ageGroups: [
@@ -129,7 +132,11 @@ export default function ActivitiesPage() {
                                         {comp.details.date && (
                                              <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
                                                 <Badge variant="outline">{comp.details.date}</Badge>
-                                                <div className="flex items-center gap-2"><MapPin size={14}/> {comp.details.location}</div>
+                                                {comp.details.locationUrl ? (
+                                                    <a href={comp.details.locationUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary"><MapPin size={14}/> {comp.details.location} <ArrowRight size={12} /></a>
+                                                ) : (
+                                                    <div className="flex items-center gap-2"><MapPin size={14}/> {comp.details.location}</div>
+                                                )}
                                                 <div className="flex items-center gap-2"><Clock size={14}/> {comp.details.duration}</div>
                                              </div>
                                         )}
@@ -156,6 +163,7 @@ export default function ActivitiesPage() {
                                         ) : null}
                                          <div className="text-xs text-muted-foreground flex items-center gap-4 justify-center pt-2">
                                             {comp.details.materials && <div className="flex items-center gap-2"><Box size={14}/> Materials Provided: {comp.details.materials}</div>}
+                                            {/* @ts-ignore */}
                                             {comp.details.fee && <Badge variant="secondary">Fee: {comp.details.fee}</Badge>}
                                         </div>
                                     </div>
