@@ -10,7 +10,6 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
   { href: "#about", label: "About" },
-  { href: "#schedule", label: "Schedule" },
   { href: "#highlights", label: "Highlights" },
   { href: "#venue", label: "Venue" },
   { href: "#faq", label: "FAQ" },
@@ -93,3 +92,5 @@ export function Header() {
     </header>
   );
 }
+
+    

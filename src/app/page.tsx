@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import Countdown from "@/components/countdown";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -131,92 +130,6 @@ function HighlightsSection() {
     </Section>
   );
 }
-
-function ScheduleSection() {
-  const schedules = [
-    {
-      location: "Sri Chamundi Scout Group",
-      days: {
-        "Oct 17 (Fri)": [
-          { time: "09:00 AM - 10:00 AM", activity: "Registrations for Team Games" },
-          { time: "10:00 AM - 12:00 PM", activity: "Team Games & Joti Set Up" },
-          { time: "12:00 PM - 05:00 PM", activity: "JOTI Station will be live" },
-        ],
-        "Oct 18 (Sat)": [
-          { time: "09:00 AM - 10:00 AM", activity: "Registrations for Judging Camp" },
-          { time: "10:00 AM - 12:00 PM", activity: "JOTI Station will be live Judging Camp / Community Volunteering / Gabion Wall Preparation" },
-          { time: "12:00 PM - 04:00 PM", activity: "JOTI Station will be live" },
-        ],
-        "Oct 19 (Sun)": [
-          { time: "09:00 AM - 10:00 AM", activity: "Open Day" },
-          { time: "10:00 AM - 12:00 PM", activity: "Community Art" },
-          { time: "04:00 PM - 05:00 PM", activity: "Validictory" },
-        ],
-      }
-    },
-    {
-      location: "Panchavati",
-      days: {
-        "Oct 17 (Fri)": [
-          { time: "09:00 AM - 10:00 AM", activity: "Registrations for Arts & Science Competitions" },
-          { time: "10:00 AM - 01:00 PM", activity: "Science, Arts Competitions" },
-          { time: "01:00 PM - 05:00 PM", activity: "JOTA SET UP" },
-        ],
-        "Oct 18 (Sat)": [
-          { time: "09:00 AM - 10:00 AM", activity: "Jota Walkin starts" },
-          { time: "10:00 AM - 01:00 PM", activity: "Stalls / Exhibitions / workshops etc will go Live" },
-          { time: "04:00 PM - 05:00 PM", activity: "Youth Got Talent" },
-        ],
-        "Oct 19 (Sun)": [
-          { time: "09:00 AM - 01:00 PM", activity: "Open Day" },
-          { time: "04:00 PM - 05:00 PM", activity: "Validictory" },
-        ],
-      }
-    }
-  ];
-
-  return (
-    <Section id="schedule">
-      <div className="space-y-8">
-        <SectionTitle>Event Schedule</SectionTitle>
-        <SectionSubtitle>Three days packed with adventure, learning, and friendship. Here’s what to expect.</SectionSubtitle>
-        <Tabs defaultValue={schedules[0].location} className="w-full">
-          <TabsList className="grid w-full grid-cols-2">
-            {schedules.map(schedule => <TabsTrigger key={schedule.location} value={schedule.location}>{schedule.location}</TabsTrigger>)}
-          </TabsList>
-          {schedules.map(schedule => (
-            <TabsContent key={schedule.location} value={schedule.location}>
-              <Tabs defaultValue={Object.keys(schedule.days)[0]} className="w-full">
-                <TabsList className="grid w-full grid-cols-3">
-                  {Object.keys(schedule.days).map(day => <TabsTrigger key={day} value={day}>{day}</TabsTrigger>)}
-                </TabsList>
-                {Object.entries(schedule.days).map(([day, activities]) => (
-                  <TabsContent key={day} value={day}>
-                    <Card>
-                      <CardContent className="p-6">
-                        <ul className="space-y-4">
-                          {activities.map((item, i) => (
-                            <li key={i} className="flex items-start gap-4">
-                              <div className="flex items-center gap-2 text-sm text-muted-foreground w-36">
-                                <Clock size={14} />{item.time}
-                              </div>
-                              <div className="font-semibold flex-1">{item.activity}</div>
-                            </li>
-                          ))}
-                        </ul>
-                      </CardContent>
-                    </Card>
-                  </TabsContent>
-                ))}
-              </Tabs>
-            </TabsContent>
-          ))}
-        </Tabs>
-      </div>
-    </Section>
-  );
-}
-
 
 function TestimonialsSection() {
   const testimonials = [
@@ -469,7 +382,6 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <HighlightsSection />
-      <ScheduleSection />
       <TestimonialsSection />
       <OrganizersSection />
       <LiveUpdatesSection />
@@ -480,3 +392,5 @@ export default function Home() {
     </>
   );
 }
+
+    
