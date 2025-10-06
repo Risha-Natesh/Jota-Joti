@@ -122,10 +122,10 @@ export default function SchedulePage() {
                         <CardHeader>
                             <CardTitle className="font-headline">
                                 <a href="https://maps.app.goo.gl/cC787aQb9vq7HybE7" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                                    Panchavati Schedule (Main Hub) <ArrowRight className="w-4 h-4 ml-2" />
+                                    Panchavati (Main Hub)
                                 </a>
                             </CardTitle>
-                            <CardDescription>Main hub for workshops & digital activities.</CardDescription>
+                            <CardDescription>Main hub for workshops & digital activities. <a href="https://maps.app.goo.gl/cC787aQb9vq7HybE7" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold flex items-center gap-1">Get Directions <ArrowRight className="w-3 h-3"/></a></CardDescription>
                         </CardHeader>
                         <CardContent>
                            <DayTabs locationSchedule={schedule.panchavati} />
@@ -135,8 +135,8 @@ export default function SchedulePage() {
                 <TabsContent value="chamundi">
                     <Card className="bg-transparent border-none shadow-none">
                         <CardHeader>
-                            <CardTitle className="font-headline">Sri Chamundi Base Schedule</CardTitle>
-                            <CardDescription>Base for radio communication and outdoor games.</CardDescription>
+                            <CardTitle className="font-headline">Sri Chamundi Base</CardTitle>
+                            <CardDescription>Base for radio communication and outdoor games. <a href="https://maps.app.goo.gl/Fk1d1Z2X9YHJvJgq8" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold flex items-center gap-1">Get Directions <ArrowRight className="w-3 h-3"/></a></CardDescription>
                         </CardHeader>
                         <CardContent>
                             <DayTabs locationSchedule={schedule.chamundi} />
@@ -146,8 +146,8 @@ export default function SchedulePage() {
             </Tabs>
              <div className="text-center mt-12">
                 <Button size="lg" asChild>
-                    <Link href="/activities" target="_blank">
-                        Activities Details
+                    <Link href="/activities">
+                        View All Activities
                         <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                 </Button>
@@ -155,4 +155,3 @@ export default function SchedulePage() {
         </main>
     );
 }
-    

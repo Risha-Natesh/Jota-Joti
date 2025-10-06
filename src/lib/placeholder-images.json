@@ -137,6 +137,18 @@
       "description": "Image for live update section showing people at the event.",
       "imageUrl": "https://images.unsplash.com/photo-1748958342360-db71446bfe60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZXZlbnQlMjBjcm93ZHxlbnwwfHx8fDE3NTk3NTUzMzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "event crowd"
+    },
+    {
+      "id": "venue-panchavati",
+      "description": "A scenic view of the Panchavati location.",
+      "imageUrl": "https://images.unsplash.com/photo-1698223126084-506a72e81134?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBjYW1wdXN8ZW58MHx8fHwxNzU5ODA1MjAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school campus"
+    },
+    {
+      "id": "venue-chamundi",
+      "description": "An image of the Sri Chamundi Scout Group building.",
+      "imageUrl": "https://images.unsplash.com/photo-1628746278219-e3a3698d5a1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY291dCUyMGJ1aWxkaW5nfGVufDB8fHx8MTc1OTgwNTIwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scout building"
     }
   ]
 }
