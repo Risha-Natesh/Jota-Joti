@@ -6,6 +6,7 @@ import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/#about", label: "About" },
@@ -17,10 +18,15 @@ const navLinks = [
   { href: "/faq", label: "FAQ" },
 ];
 
-const ScoutIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" fill="currentColor" {...props}>
-      <path d="M50,0L20,40h15v25l-10,10l25,45l25-45l-10-10V40h15L50,0z M50,75c-8.284,0-15-6.716-15-15s6.716-15,15-15 s15,6.716,15,15S58.284,75,50,75z"/>
-    </svg>
+const Logo = () => (
+    <Image 
+        src="https://storage.googleapis.com/stey-public/jota-joti-logo.png" 
+        alt="JOTA JOTI Logo"
+        width={120}
+        height={60}
+        className="object-contain"
+        priority
+    />
 );
 
 
@@ -30,8 +36,7 @@ export function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-auto flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <ScoutIcon className="h-8 w-8 text-primary" />
-            <span className="font-bold font-headline">JOTA-JOTI 2025</span>
+            <Logo />
           </Link>
           <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
             {navLinks.map((link) => (
@@ -55,8 +60,7 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="left">
               <Link href="/" className="mr-6 flex items-center space-x-2">
-                 <ScoutIcon className="h-8 w-8 text-primary" />
-                 <span className="font-bold">JOTA-JOTI 2025</span>
+                 <Logo />
               </Link>
               <div className="mt-6 flex flex-col space-y-2">
                 {navLinks.map((link) => (
