@@ -1,7 +1,9 @@
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Clock, MapPin, Utensils, Zap, Tent, Sunrise, Sunset, Radio, Film, Users, Award, Code, Gamepad2, ShieldCheck, Video, Sailboat, Trophy, Mic, PartyPopper } from "lucide-react";
+import { ArrowRight, Clock, MapPin, Utensils, Zap, Tent, Sunrise, Sunset, Radio, Film, Users, Award, Code, Gamepad2, ShieldCheck, Video, Sailboat, Trophy, Mic, PartyPopper } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const schedule = {
   panchavati: {
@@ -138,8 +140,15 @@ export default function SchedulePage() {
                     </Card>
                 </TabsContent>
             </Tabs>
+             <div className="text-center mt-12">
+                <Button size="lg" asChild>
+                    <Link href="/activities" target="_blank">
+                        Activities Details
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                </Button>
+            </div>
         </main>
     );
 }
-
     
