@@ -14,7 +14,7 @@ const navLinks = [
   { href: "/activities", label: "Activities" },
   { href: "/#highlights", label: "Highlights" },
   { href: "/organizers", label: "Organizers" },
-  { href: "/#register", label: "Registration" },
+  { href: "/register", label: "Registration" },
   { href: "/faq", label: "FAQ" },
 ];
 
@@ -73,8 +73,8 @@ export function Header() {
               </div>
             </SheetContent>
           </Sheet>
-          <Button asChild variant="secondary">
-            <Link href="/#register">Register Now</Link>
+          <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white">
+            <Link href="/register">Register Now</Link>
           </Button>
         </div>
       </div>

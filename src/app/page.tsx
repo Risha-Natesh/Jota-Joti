@@ -9,7 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { Download, Globe, Gamepad2, Users, Radio, Wrench, MapPin, ArrowRight } from "lucide-react";
+import { Globe, Gamepad2, Users, Radio, Wrench, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const getImage = (id: string): ImagePlaceholder | undefined => PlaceHolderImages.find(img => img.id === id);
@@ -55,7 +55,7 @@ function HeroSection() {
         </p>
         <Countdown />
         <Button size="lg" asChild>
-          <Link href="#register">Register Now <ArrowRight className="ml-2" /></Link>
+          <Link href="/register">Register Now <ArrowRight className="ml-2" /></Link>
         </Button>
       </div>
     </Section>
@@ -232,52 +232,6 @@ function GallerySection() {
   );
 }
 
-function DownloadsAndRegisterSection() {
-  const downloads = [
-    { name: "Event Brochure", file: "#" },
-    { name: "Schedule PDF", file: "#" },
-    { name: "Parental Consent Form", file: "#" },
-  ];
-  return (
-    <Section id="register">
-        <div className="grid lg:grid-cols-5 gap-12">
-            <div className="lg:col-span-3">
-                <Card className="h-full flex flex-col bg-primary text-primary-foreground">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-4xl">Join the Adventure!</CardTitle>
-                        <CardDescription className="text-primary-foreground/80">Registration is now open. Secure your spot for an unforgettable weekend of fun, learning, and global friendship. Deadline: 30th September 2025.</CardDescription>
-                    </CardHeader>
-                    <CardContent className="flex-grow flex items-center justify-center">
-                        <Button size="lg" variant="secondary" asChild className="transform hover:scale-105 transition-transform">
-                            <a href="https://forms.google.com" target="_blank" rel="noopener noreferrer">Register via Google Forms <ArrowRight className="ml-2"/></a>
-                        </Button>
-                    </CardContent>
-                    <div className="p-6 text-sm text-primary-foreground/80">
-                        <p>Registration is open for: <strong>Participants</strong>, <strong>Volunteers</strong>, and <strong>Parents</strong>.</p>
-                    </div>
-                </Card>
-            </div>
-            <div className="lg:col-span-2 space-y-4">
-                <h3 className="text-2xl font-bold font-headline">Downloadables</h3>
-                <p className="text-muted-foreground">Get all the information you need right here.</p>
-                <ul className="space-y-3">
-                    {downloads.map((d, i) => (
-                        <li key={i}>
-                            <Button variant="outline" className="w-full justify-between" asChild>
-                                <a href={d.file} download>
-                                    {d.name}
-                                    <Download size={16}/>
-                                </a>
-                            </Button>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </div>
-    </Section>
-  );
-}
-
 export default function Home() {
   return (
     <>
@@ -287,9 +241,6 @@ export default function Home() {
       <TestimonialsSection />
       <LiveUpdatesSection />
       <GallerySection />
-      <DownloadsAndRegisterSection />
     </>
   );
 }
-
-    
