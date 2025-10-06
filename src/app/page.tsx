@@ -266,43 +266,6 @@ function GallerySection() {
   );
 }
 
-function VenueSection() {
-  return (
-    <Section id="venue" className="bg-muted">
-      <div className="space-y-8">
-        <SectionTitle>Venue Details</SectionTitle>
-        <SectionSubtitle>Our event will be hosted across two beautiful locations, providing ample space for all our activities.</SectionSubtitle>
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Card>
-            <CardHeader>
-              <CardTitle className="font-headline flex items-center gap-2"><MapPin/> Panchavati</CardTitle>
-              <CardDescription>Main hub for workshops & digital activities.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground mb-4">Detailed address and transport information will be shared with registered participants.</p>
-              <Button asChild variant="outline">
-                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">View on Google Maps <ArrowRight className="ml-2" /></a>
-              </Button>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle className="font-headline flex items-center gap-2"><MapPin/> Sri Chamundi Scouts Group</CardTitle>
-              <CardDescription>Base for radio communication and outdoor games.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground mb-4">Parking is available on-site. We encourage carpooling.</p>
-              <Button asChild variant="outline">
-                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">View on Google Maps <ArrowRight className="ml-2" /></a>
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-      </div>
-    </Section>
-  );
-}
-
 function DownloadsAndRegisterSection() {
   const downloads = [
     { name: "Event Brochure", file: "#" },
@@ -359,7 +322,6 @@ export default function Home() {
       <OrganizersSection />
       <LiveUpdatesSection />
       <GallerySection />
-      <VenueSection />
       <DownloadsAndRegisterSection />
     </>
   );

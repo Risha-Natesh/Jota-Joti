@@ -15,7 +15,6 @@ const navLinks = [
   { href: "/#highlights", label: "Highlights" },
   { href: "/#partners", label: "Organizers" },
   { href: "/#register", label: "Registration" },
-  { href: "/#venue", label: "Venue" },
   { href: "/#contact", label: "Contact" },
   { href: "/faq", label: "FAQ" },
 ];
@@ -29,7 +28,7 @@ const ScoutIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b bg-muted/95 backdrop-blur supports-[backdrop-filter]:bg-muted/60">
       <div className="container flex h-16 items-center">
         <div className="mr-auto flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
@@ -80,4 +79,3 @@ export function Header() {
     </header>
   );
 }
-
