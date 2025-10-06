@@ -14,7 +14,7 @@ const venues = [
     {
         name: "Panchavati",
         description: "Main hub for workshops, competitions, & digital activities.",
-        address: "13th Cross Rd, behind Malleswaram New market, Malleshwaram, Bengaluru, Karnataka 560003",
+        address: "45, 15th Cross Rd, Maruthi Extension, Malleshwaram, Bengaluru, Karnataka 560003",
         locationUrl: "https://maps.app.goo.gl/cC787aQb9vq7HybE7",
         icon: <MapPin className="w-8 h-8" />,
         imageId: "venue-panchavati"
@@ -22,7 +22,7 @@ const venues = [
     {
         name: "Sri Chamundi Scout Group",
         description: "Base for radio communication, outdoor games, & team activities.",
-        address: "Panchavati, The Valley School Campus, Thatguni Post, Kanakapura Road, Bengaluru – 560082",
+        address: "2H3C+455 Chamundi Scout Group, 560 003, 13th Cross Rd, behind Malleswaram New market, Malleshwaram, Bengaluru, Karnataka 560003",
         locationUrl: "https://maps.app.goo.gl/LbwTZoreEqEuCNMcA",
         icon: <Radio className="w-8 h-8" />,
         imageId: "venue-chamundi"
