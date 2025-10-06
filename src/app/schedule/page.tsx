@@ -55,7 +55,7 @@ const schedule = {
         { time: "08:00 PM", event: "Stargazing and Night Sky Navigation", icon: <Sunset className="w-5 h-5" /> },
     ],
     day3: [
-        { time: "09:30 AM", event: "Scout's Own & Reflection", icon: <Sunrise classNamew-5 h-5 /> },
+        { time: "09:30 AM", event: "Scout's Own & Reflection", icon: <Sunrise className="w-5 h-5"/> },
         { time: "10:30 AM", event: "Final Radio Contacts & QSL Card Exchange", icon: <Radio className="w-5 h-5" /> },
         { time: "12:00 PM", event: "Combined Closing Ceremony (Live Stream)", icon: <Award className="w-5 h-5" /> },
         { time: "01:00 PM", event: "Farewell Lunch", icon: <Utensils className="w-5 h-5" /> },
@@ -69,13 +69,13 @@ const ScheduleTimeline = ({ items }: { items: { time: string, event: string, ico
     <div className="relative pl-8">
         <div className="absolute left-0 h-full w-px bg-border -translate-x-1/2 ml-4"></div>
         {items.map((item, index) => (
-            <div key={index} className="flex items-start gap-6 mb-8">
+            <div key={index} className="flex items-start gap-4 mb-8 relative">
                 <div className="flex-shrink-0 w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center absolute left-0 -translate-x-1/2">
                     <div className="w-6 h-6 bg-background rounded-full flex items-center justify-center">
                         <div className="text-primary">{item.icon}</div>
                     </div>
                 </div>
-                <div className="flex-1">
+                <div className="pl-6">
                     <p className="text-sm text-muted-foreground font-medium">{item.time}</p>
                     <p className="font-semibold text-foreground">{item.event}</p>
                 </div>
@@ -162,3 +162,4 @@ export default function SchedulePage() {
     );
 }
 
+    
