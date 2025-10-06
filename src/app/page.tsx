@@ -15,7 +15,7 @@ import { cn } from "@/lib/utils";
 const getImage = (id: string): ImagePlaceholder | undefined => PlaceHolderImages.find(img => img.id === id);
 
 const Section = ({ id, className, children, noPadding }: { id: string, className?: string, children: React.ReactNode, noPadding?: boolean }) => (
-  <section id={id} className={cn(!noPadding && 'container py-12 md:py-24', className)}>
+  <section id={id} className={cn('py-16 md:py-24', !noPadding && 'container', className)}>
     {children}
   </section>
 );
@@ -34,7 +34,7 @@ const SectionSubtitle = ({ children, className }: { children: React.ReactNode, c
 
 function HeroSection() {
   return (
-    <Section id="home" noPadding className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-primary-foreground overflow-hidden">
+    <Section id="home" noPadding className="relative w-full h-[90vh] md:h-screen min-h-[600px] flex items-center justify-center text-primary-foreground overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image 
           src="/Hero.gif" 
@@ -108,21 +108,23 @@ function HighlightsSection() {
   ];
   return (
     <Section id="highlights" className="bg-muted">
-      <div className="space-y-8">
-        <SectionTitle>Event Highlights</SectionTitle>
-        <SectionSubtitle>Experience the best of both worlds—radio and internet—with activities designed for fun, learning, and connection.</SectionSubtitle>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
-          {highlights.map((h, i) => (
-            <Card key={i} className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 flex flex-col items-center gap-4">
-                <div className="p-4 bg-primary/10 rounded-full">
-                  <h.icon className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="text-lg font-bold font-headline">{h.title}</h3>
-                <p className="text-sm text-muted-foreground">{h.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+      <div className="container">
+        <div className="space-y-8">
+            <SectionTitle>Event Highlights</SectionTitle>
+            <SectionSubtitle>Experience the best of both worlds—radio and internet—with activities designed for fun, learning, and connection.</SectionSubtitle>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            {highlights.map((h, i) => (
+                <Card key={i} className="text-center hover:shadow-lg transition-shadow">
+                <CardContent className="p-6 flex flex-col items-center gap-4">
+                    <div className="p-4 bg-primary/10 rounded-full">
+                    <h.icon className="h-8 w-8 text-primary" />
+                    </div>
+                    <h3 className="text-lg font-bold font-headline">{h.title}</h3>
+                    <p className="text-sm text-muted-foreground">{h.description}</p>
+                </CardContent>
+                </Card>
+            ))}
+            </div>
         </div>
       </div>
     </Section>
@@ -137,6 +139,7 @@ function TestimonialsSection() {
   ];
   return (
     <Section id="testimonials" className="bg-muted">
+        <div className="container">
       <div className="space-y-8">
         <SectionTitle>What Our Community Says</SectionTitle>
         <SectionSubtitle>Hear from past participants, volunteers, and parents about their scouting experiences.</SectionSubtitle>
@@ -168,6 +171,7 @@ function TestimonialsSection() {
           <CarouselNext />
         </Carousel>
       </div>
+      </div>
     </Section>
   );
 }
@@ -177,28 +181,30 @@ function LiveUpdatesSection() {
     const liveImage2 = getImage('live-update-2');
     return (
         <Section id="live-updates" className="bg-muted">
-            <div className="space-y-8">
-                <SectionTitle>Live From The Event</SectionTitle>
-                <SectionSubtitle>During the event, this section will feature live updates, photos, and stories. Stay tuned!</SectionSubtitle>
-                <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                    <Card className="overflow-hidden">
-                        <CardContent className="p-0">
-                           {liveImage1 && <Image src={liveImage1.imageUrl} alt={liveImage1.description} data-ai-hint={liveImage1.imageHint} width={600} height={400} className="w-full h-auto object-cover"/>}
-                            <div className="p-6 space-y-2">
-                                <p className="text-sm text-muted-foreground">Day 1 - 11:05 AM</p>
-                                <p>First contact made with a troop from Australia! The excitement is palpable! 🇦🇺 #JOTAJOTI2025</p>
-                            </div>
-                        </CardContent>
-                    </Card>
-                    <Card className="overflow-hidden">
-                        <CardContent className="p-0">
-                           {liveImage2 && <Image src={liveImage2.imageUrl} alt={liveImage2.description} data-ai-hint={liveImage2.imageHint} width={600} height={400} className="w-full h-auto object-cover"/>}
-                            <div className="p-6 space-y-2">
-                                <p className="text-sm text-muted-foreground">Day 1 - 02:30 PM</p>
-                                <p>Our electronics workshop is in full swing. Scouts are building their own simple circuits. 💡</p>
-                            </div>
-                        </CardContent>
-                    </Card>
+            <div className="container">
+                <div className="space-y-8">
+                    <SectionTitle>Live From The Event</SectionTitle>
+                    <SectionSubtitle>During the event, this section will feature live updates, photos, and stories. Stay tuned!</SectionSubtitle>
+                    <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                        <Card className="overflow-hidden">
+                            <CardContent className="p-0">
+                            {liveImage1 && <Image src={liveImage1.imageUrl} alt={liveImage1.description} data-ai-hint={liveImage1.imageHint} width={600} height={400} className="w-full h-auto object-cover"/>}
+                                <div className="p-6 space-y-2">
+                                    <p className="text-sm text-muted-foreground">Day 1 - 11:05 AM</p>
+                                    <p>First contact made with a troop from Australia! The excitement is palpable! 🇦🇺 #JOTAJOTI2025</p>
+                                </div>
+                            </CardContent>
+                        </Card>
+                        <Card className="overflow-hidden">
+                            <CardContent className="p-0">
+                            {liveImage2 && <Image src={liveImage2.imageUrl} alt={liveImage2.description} data-ai-hint={liveImage2.imageHint} width={600} height={400} className="w-full h-auto object-cover"/>}
+                                <div className="p-6 space-y-2">
+                                    <p className="text-sm text-muted-foreground">Day 1 - 02:30 PM</p>
+                                    <p>Our electronics workshop is in full swing. Scouts are building their own simple circuits. 💡</p>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
                 </div>
             </div>
         </Section>
@@ -243,5 +249,3 @@ export default function Home() {
     </>
   );
 }
-
-    
