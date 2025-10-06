@@ -48,9 +48,9 @@ function HeroSection() {
           priority
         />
       )}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-primary/50" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-primary/30" />
       <div className="container relative z-10 flex flex-col items-center text-center space-y-8">
-        <Badge variant="secondary" className="text-lg py-2 px-4">17, 18 & 19 October 2025</Badge>
+        <Badge variant="secondary" className="text-lg py-2 px-4 bg-white/20 text-white border-white/30">17, 18 & 19 October 2025</Badge>
         <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl md:text-7xl font-headline">JOTA-JOTI 2025</h1>
         <p className="max-w-[700px] md:text-xl">
           Connecting Scouts, Connecting the World. The largest digital and radio Scout event on the planet!
