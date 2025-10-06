@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
-import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -23,33 +22,20 @@ const ScoutIcon = (props: React.SVGProps<SVGSVGElement>) => (
   );
 
 export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <header className={cn(
-      "sticky top-0 z-50 w-full transition-all duration-300",
-      isScrolled ? "border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" : "bg-transparent"
-    )}>
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <div className="mr-4 flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <ScoutIcon className={cn("h-7 w-7 transition-colors", isScrolled ? "text-primary" : "text-primary-foreground")} />
-            <span className={cn("font-bold font-headline transition-colors", isScrolled ? "text-foreground" : "text-primary-foreground")}>JOTA-JOTI 2025</span>
+            <ScoutIcon className="h-7 w-7 text-primary" />
+            <span className="font-bold font-headline text-foreground">JOTA-JOTI 2025</span>
           </Link>
           <nav className="hidden space-x-6 text-sm font-medium md:flex">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={cn("transition-colors hover:text-primary", isScrolled ? "text-muted-foreground" : "text-primary-foreground/80 hover:text-primary-foreground")}
+                className="text-muted-foreground transition-colors hover:text-primary"
               >
                 {link.label}
               </Link>
@@ -62,7 +48,7 @@ export function Header() {
           </Button>
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className={cn("md:hidden", !isScrolled && "text-primary-foreground border-primary-foreground/50 hover:bg-white/10 hover:text-primary-foreground")}>
+              <Button variant="outline" size="icon" className="md:hidden">
                 <Menu className="h-4 w-4" />
                 <span className="sr-only">Open menu</span>
               </Button>
@@ -93,5 +79,3 @@ export function Header() {
     </header>
   );
 }
-
-    
