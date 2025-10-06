@@ -73,7 +73,7 @@ export function Header() {
               </div>
             </SheetContent>
           </Sheet>
-          <Button asChild>
+          <Button asChild variant="secondary">
             <Link href="/#register">Register Now</Link>
           </Button>
         </div>
