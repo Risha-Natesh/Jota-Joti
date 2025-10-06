@@ -22,7 +22,7 @@ const venues = [
     {
         name: "Sri Chamundi Scout Group",
         description: "Base for radio communication, outdoor games, & team activities.",
-        address: "15th Cross Road, Malleshwaram, Bengaluru, Karnataka 560055",
+        address: "45, 15th Cross Rd, Maruthi Extension, Malleshwaram, Bengaluru, Karnataka 560003",
         locationUrl: "https://maps.app.goo.gl/Fk1d1Z2X9YHJvJgq8",
         icon: <Radio className="w-8 h-8" />,
         imageId: "venue-chamundi"
