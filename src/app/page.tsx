@@ -133,58 +133,82 @@ function HighlightsSection() {
 }
 
 function ScheduleSection() {
-  const schedule = {
-    "Day 1 (Oct 17)": [
-      { time: "09:00 AM", activity: "Opening Ceremony & Flag Off" },
-      { time: "10:00 AM", activity: "Introduction to Ham Radio" },
-      { time: "11:00 AM", activity: "First Contact: JOTI/JOTA Begins" },
-      { time: "01:00 PM", activity: "Lunch Break" },
-      { time: "02:00 PM", activity: "Workshop: Basic Electronics" },
-      { time: "04:00 PM", activity: "Global Challenge 1: Code Breakers" },
-      { time: "07:00 PM", activity: "Campfire & Cultural Presentations" },
-    ],
-    "Day 2 (Oct 18)": [
-      { time: "09:00 AM", activity: "Morning Energizers" },
-      { time: "10:00 AM", activity: "Long-distance Radio Contacts" },
-      { time: "11:00 AM", activity: "Digital Citizenship Workshop" },
-      { time: "01:00 PM", activity: "Lunch Break" },
-      { time: "02:00 PM", activity: "Online Scavenger Hunt" },
-      { time: "04:00 PM", activity: "International Pen-Pal Matching" },
-      { time: "07:00 PM", activity: "Movie Night Under the Stars" },
-    ],
-    "Day 3 (Oct 19)": [
-      { time: "09:00 AM", activity: "Global Development Village" },
-      { time: "11:00 AM", activity: "Final Radio Contacts & QSL Card Exchange" },
-      { time: "12:00 PM", activity: "Closing Ceremony & Awards" },
-      { time: "01:00 PM", activity: "Farewell Lunch" },
-    ],
-  };
+  const schedules = [
+    {
+      location: "Sri Chamundi Scout Group",
+      days: {
+        "Oct 17 (Fri)": [
+          { time: "09:00 AM - 10:00 AM", activity: "Registrations for Team Games" },
+          { time: "10:00 AM - 12:00 PM", activity: "Team Games & Joti Set Up" },
+          { time: "12:00 PM - 05:00 PM", activity: "JOTI Station will be live" },
+        ],
+        "Oct 18 (Sat)": [
+          { time: "09:00 AM - 10:00 AM", activity: "Registrations for Judging Camp" },
+          { time: "10:00 AM - 12:00 PM", activity: "JOTI Station will be live Judging Camp / Community Volunteering / Gabion Wall Preparation" },
+          { time: "12:00 PM - 04:00 PM", activity: "JOTI Station will be live" },
+        ],
+        "Oct 19 (Sun)": [
+          { time: "09:00 AM - 10:00 AM", activity: "Open Day" },
+          { time: "10:00 AM - 12:00 PM", activity: "Community Art" },
+          { time: "04:00 PM - 05:00 PM", activity: "Validictory" },
+        ],
+      }
+    },
+    {
+      location: "Panchavati",
+      days: {
+        "Oct 17 (Fri)": [
+          { time: "09:00 AM - 10:00 AM", activity: "Registrations for Arts & Science Competitions" },
+          { time: "10:00 AM - 01:00 PM", activity: "Science, Arts Competitions" },
+          { time: "01:00 PM - 05:00 PM", activity: "JOTA SET UP" },
+        ],
+        "Oct 18 (Sat)": [
+          { time: "09:00 AM - 10:00 AM", activity: "Jota Walkin starts" },
+          { time: "10:00 AM - 01:00 PM", activity: "Stalls / Exhibitions / workshops etc will go Live" },
+          { time: "04:00 PM - 05:00 PM", activity: "Youth Got Talent" },
+        ],
+        "Oct 19 (Sun)": [
+          { time: "09:00 AM - 01:00 PM", activity: "Open Day" },
+          { time: "04:00 PM - 05:00 PM", activity: "Validictory" },
+        ],
+      }
+    }
+  ];
 
   return (
     <Section id="schedule">
       <div className="space-y-8">
         <SectionTitle>Event Schedule</SectionTitle>
         <SectionSubtitle>Three days packed with adventure, learning, and friendship. Here’s what to expect.</SectionSubtitle>
-        <Tabs defaultValue="Day 1 (Oct 17)" className="w-full">
-          <TabsList className="grid w-full grid-cols-3">
-            {Object.keys(schedule).map(day => <TabsTrigger key={day} value={day}>{day}</TabsTrigger>)}
+        <Tabs defaultValue={schedules[0].location} className="w-full">
+          <TabsList className="grid w-full grid-cols-2">
+            {schedules.map(schedule => <TabsTrigger key={schedule.location} value={schedule.location}>{schedule.location}</TabsTrigger>)}
           </TabsList>
-          {Object.entries(schedule).map(([day, activities]) => (
-            <TabsContent key={day} value={day}>
-              <Card>
-                <CardContent className="p-6">
-                  <ul className="space-y-4">
-                    {activities.map((item, i) => (
-                      <li key={i} className="flex items-start gap-4">
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground w-28">
-                          <Clock size={14} />{item.time}
-                        </div>
-                        <div className="font-semibold">{item.activity}</div>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
+          {schedules.map(schedule => (
+            <TabsContent key={schedule.location} value={schedule.location}>
+              <Tabs defaultValue={Object.keys(schedule.days)[0]} className="w-full">
+                <TabsList className="grid w-full grid-cols-3">
+                  {Object.keys(schedule.days).map(day => <TabsTrigger key={day} value={day}>{day}</TabsTrigger>)}
+                </TabsList>
+                {Object.entries(schedule.days).map(([day, activities]) => (
+                  <TabsContent key={day} value={day}>
+                    <Card>
+                      <CardContent className="p-6">
+                        <ul className="space-y-4">
+                          {activities.map((item, i) => (
+                            <li key={i} className="flex items-start gap-4">
+                              <div className="flex items-center gap-2 text-sm text-muted-foreground w-36">
+                                <Clock size={14} />{item.time}
+                              </div>
+                              <div className="font-semibold flex-1">{item.activity}</div>
+                            </li>
+                          ))}
+                        </ul>
+                      </CardContent>
+                    </Card>
+                  </TabsContent>
+                ))}
+              </Tabs>
             </TabsContent>
           ))}
         </Tabs>
@@ -192,6 +216,7 @@ function ScheduleSection() {
     </Section>
   );
 }
+
 
 function TestimonialsSection() {
   const testimonials = [
