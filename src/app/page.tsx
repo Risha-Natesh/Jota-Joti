@@ -173,40 +173,6 @@ function TestimonialsSection() {
   );
 }
 
-function OrganizersSection() {
-  const partners = [
-    { name: "Sri Chamundi Scout Group", logo: getImage("partner-logo-1") },
-    { name: "NSS RVU", logo: getImage("partner-logo-2") },
-    { name: "Outdoor Dynamix", logo: getImage("partner-logo-3") },
-    { name: "Prakruthi Shaale", logo: getImage("partner-logo-4") },
-  ];
-  return (
-    <Section id="partners">
-      <div className="space-y-12">
-        <div className="space-y-4 text-center">
-            <SectionTitle>Organizers & Partners</SectionTitle>
-            <SectionSubtitle>This event is made possible by the collaborative efforts of our dedicated organizers and supportive partners.</SectionSubtitle>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-          {partners.map((p) => p.logo && (
-            <div key={p.name} className="flex flex-col items-center gap-2">
-              <Image
-                src={p.logo.imageUrl}
-                alt={p.name}
-                data-ai-hint={p.logo.imageHint}
-                width={150}
-                height={75}
-                className="object-contain grayscale hover:grayscale-0 transition-all"
-              />
-              <span className="text-sm font-semibold text-muted-foreground">{p.name}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </Section>
-  );
-}
-
 function LiveUpdatesSection() {
     const liveImage1 = getImage('live-update-1');
     const liveImage2 = getImage('live-update-2');
@@ -319,7 +285,6 @@ export default function Home() {
       <AboutSection />
       <HighlightsSection />
       <TestimonialsSection />
-      <OrganizersSection />
       <LiveUpdatesSection />
       <GallerySection />
       <DownloadsAndRegisterSection />
