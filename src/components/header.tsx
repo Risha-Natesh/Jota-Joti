@@ -8,14 +8,12 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/s
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { href: "/", label: "Home" },
   { href: "/#about", label: "About" },
   { href: "/schedule", label: "Schedule" },
   { href: "/activities", label: "Activities" },
   { href: "/#highlights", label: "Highlights" },
   { href: "/#partners", label: "Organizers" },
   { href: "/#register", label: "Registration" },
-  { href: "/#contact", label: "Contact" },
   { href: "/faq", label: "FAQ" },
 ];
 
