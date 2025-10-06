@@ -6,11 +6,10 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import Countdown from "@/components/countdown";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { Download, Globe, Gamepad2, Users, Radio, Wrench, MapPin, ArrowRight, MessageCircle, Instagram, Mail, Phone, Clock, Calendar } from "lucide-react";
+import { Download, Globe, Gamepad2, Users, Radio, Wrench, MapPin, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const getImage = (id: string): ImagePlaceholder | undefined => PlaceHolderImages.find(img => img.id === id);
@@ -350,32 +349,6 @@ function DownloadsAndRegisterSection() {
   );
 }
 
-function FaqSection() {
-  const faqs = [
-    { q: "Who can participate?", a: "The event is open to all members of the Scout and Guide movements, as well as students and parents interested in the program. No prior experience is required!" },
-    { q: "Is there an age limit?", a: "While JOTA-JOTI is for all ages, certain workshops may have age recommendations. Generally, participants aged 10 and above will get the most out of the activities." },
-    { q: "What should I bring?", a: "A detailed list will be sent to registered participants. Essentials include comfortable clothing, a water bottle, a notebook, and most importantly, a curious and enthusiastic spirit!" },
-    { q: "Is there a registration fee?", a: "Yes, there is a nominal fee to cover the costs of materials, food, and logistics. The exact amount is mentioned in the registration form." },
-    { q: "What safety measures are in place?", a: "Safety is our top priority. We will have trained first-aid personnel on-site, and all activities will be supervised by experienced adult leaders. We will adhere to all local safety guidelines." },
-  ];
-  return (
-    <Section id="faq" className="bg-muted">
-      <div className="space-y-8 max-w-3xl mx-auto">
-        <SectionTitle>Frequently Asked Questions</SectionTitle>
-        <Accordion type="single" collapsible className="w-full">
-          {faqs.map((f, i) => (
-            <AccordionItem key={i} value={`item-${i}`}>
-              <AccordionTrigger className="text-left font-bold">{f.q}</AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">{f.a}</AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </div>
-    </Section>
-  );
-}
-
-
 export default function Home() {
   return (
     <>
@@ -388,7 +361,8 @@ export default function Home() {
       <GallerySection />
       <VenueSection />
       <DownloadsAndRegisterSection />
-      <FaqSection />
     </>
   );
 }
+
+    

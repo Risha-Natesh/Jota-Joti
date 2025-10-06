@@ -13,7 +13,7 @@ const navLinks = [
   { href: "/#highlights", label: "Highlights" },
   { href: "/schedule", label: "Schedule" },
   { href: "/#venue", label: "Venue" },
-  { href: "/#faq", label: "FAQ" },
+  { href: "/faq", label: "FAQ" },
 ];
 
 const ScoutIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -93,3 +93,5 @@ export function Header() {
     </header>
   );
 }
+
+    
