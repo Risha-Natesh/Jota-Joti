@@ -35,16 +35,16 @@ const SectionSubtitle = ({ children, className }: { children: React.ReactNode, c
 function HeroSection() {
   return (
     <Section id="home" noPadding className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-primary-foreground overflow-hidden">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute z-0 w-auto min-w-full min-h-full max-w-none"
-      >
-        <source src="/Hero.gif" type="image/gif" />
-        Your browser does not support the video tag.
-      </video>
+      <div className="absolute inset-0 z-0">
+        <Image 
+          src="/Hero.gif" 
+          alt="Hero Background" 
+          fill 
+          className="object-cover"
+          priority
+          unoptimized // Important for GIFs to animate properly
+        />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-primary/30" />
       <div className="container relative z-10 flex flex-col items-center text-center space-y-8">
         <Badge variant="secondary" className="text-lg py-2 px-4 bg-white/20 text-white border-white/30">17, 18 & 19 October 2025</Badge>
