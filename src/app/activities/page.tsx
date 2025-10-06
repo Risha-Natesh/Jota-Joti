@@ -1,28 +1,51 @@
+
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Award, Dna, Group, Rocket, Radio, Puzzle, Paintbrush, Mic, HandHelping, Code, Gamepad, Zap, Leaf, Heart } from "lucide-react";
+import { Award, Dna, Group, Rocket, Radio, Puzzle, Paintbrush, Mic, HandHelping, Code, Gamepad, Zap, Leaf, Heart, Users, Clock, MapPin, Box } from "lucide-react";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const competitions = [
     {
-        icon: <Award className="w-8 h-8" />,
+        icon: <Award className="w-10 h-10" />,
         title: "Art Competition",
-        description: "Age-wise organized art competition. Participation is free!",
-        badge: "Free"
+        description: "Age-wise organized art competition. Express your creativity!",
+        details: {
+            date: "17-Oct-25",
+            location: "Panchavati",
+            duration: "2.5 Hrs",
+            materials: "Drawing Paper",
+            ageGroups: [
+                { age: "6 - 9 YRS", rules: "Medium - Crayons, Colour Pencils" },
+                { age: "10 - 16 YRS", rules: "Pencils, Watercolors, Acrylics" },
+                { age: "17 - 24 YRS", rules: "Pencils, Watercolors, Acrylics" },
+            ]
+        }
     },
     {
-        icon: <Dna className="w-8 h-8" />,
+        icon: <Dna className="w-10 h-10" />,
         title: "Science Competition",
-        description: "Compete in teams of 4. A test of scientific knowledge and application.",
-        badge: "Fee: INR 200"
+        description: "A test of scientific knowledge, application, and creativity.",
+        details: {
+            date: "17-Oct-25",
+            location: "Panchavati",
+            duration: "4 - 6 Hrs",
+            materials: "Table & Chair",
+            ageGroups: [
+                { age: "8 - 11 YRS", title: "Cardboard Creations", rules: "Design and build a simple machine, like a catapult or a marble run, using cardboard tubes and boxes." },
+                { age: "12 - 16 YRS", title: "Art Meets Science", rules: "Create scientific models, educational kits, or art installations entirely from upcycled materials." },
+            ]
+        }
     },
     {
-        icon: <Group className="w-8 h-8" />,
+        icon: <Group className="w-10 h-10" />,
         title: "Team Building",
         description: "Challenges designed to test and build teamwork. Form a team of 10.",
-        badge: "Fee: INR 500"
+        details: {
+            fee: "INR 500"
+        }
     },
     {
-        icon: <Rocket className="w-8 h-8" />,
+        icon: <Rocket className="w-10 h-10" />,
         title: "Scouting Skills",
         description: "A competition to showcase your core scouting knowledge and skills."
     }
@@ -84,18 +107,53 @@ export default function ActivitiesPage() {
             </div>
 
             <section id="competitions" className="mb-16">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-center mb-8">Competitions</h2>
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-center mb-10">Competitions</h2>
+                <div className="grid lg:grid-cols-2 gap-8">
                     {competitions.map((comp, i) => (
                         <Card key={i} className="flex flex-col">
-                            <CardHeader className="items-center text-center">
-                                <div className="p-4 bg-primary/10 rounded-full mb-2 text-primary">{comp.icon}</div>
-                                <CardTitle className="font-headline">{comp.title}</CardTitle>
+                            <CardHeader className="text-center">
+                                <div className="mx-auto p-4 bg-primary/10 rounded-full w-fit mb-3 text-primary">{comp.icon}</div>
+                                <CardTitle className="font-headline text-2xl">{comp.title}</CardTitle>
+                                <CardDescription>{comp.description}</CardDescription>
                             </CardHeader>
-                            <CardContent className="text-center flex-grow">
-                                <p className="text-muted-foreground">{comp.description}</p>
+                            <CardContent className="flex-grow">
+                                {comp.details ? (
+                                    <div className="space-y-4">
+                                        {comp.details.date && (
+                                             <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
+                                                <Badge variant="outline">{comp.details.date}</Badge>
+                                                <div className="flex items-center gap-2"><MapPin size={14}/> {comp.details.location}</div>
+                                                <div className="flex items-center gap-2"><Clock size={14}/> {comp.details.duration}</div>
+                                             </div>
+                                        )}
+                                        <Table>
+                                            <TableHeader>
+                                                <TableRow>
+                                                    <TableHead className="w-[120px]">Age</TableHead>
+                                                    <TableHead>Description / Rules</TableHead>
+                                                </TableRow>
+                                            </TableHeader>
+                                            <TableBody>
+                                                {comp.details.ageGroups?.map((ag, j) => (
+                                                    <TableRow key={j}>
+                                                        <TableCell className="font-medium">{ag.age}</TableCell>
+                                                        <TableCell>
+                                                            {ag.title && <p className="font-bold">{ag.title}</p>}
+                                                            <p className="text-muted-foreground">{ag.rules}</p>
+                                                        </TableCell>
+                                                    </TableRow>
+                                                ))}
+                                            </TableBody>
+                                        </Table>
+                                         <div className="text-xs text-muted-foreground flex items-center gap-4 justify-center pt-2">
+                                            {comp.details.materials && <div className="flex items-center gap-2"><Box size={14}/> Materials Provided: {comp.details.materials}</div>}
+                                            {comp.details.fee && <Badge variant="secondary">Fee: {comp.details.fee}</Badge>}
+                                        </div>
+                                    </div>
+                                ) : (
+                                    comp.badge && <div className="text-center"><Badge variant="secondary">{comp.badge}</Badge></div>
+                                )}
                             </CardContent>
-                            {comp.badge && <div className="p-4 pt-0 text-center"><Badge variant="secondary">{comp.badge}</Badge></div>}
                         </Card>
                     ))}
                 </div>
@@ -127,3 +185,5 @@ export default function ActivitiesPage() {
         </main>
     );
 }
+
+    
