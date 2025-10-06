@@ -21,7 +21,7 @@ const navLinks = [
 
 const Logo = () => (
     <Image 
-        src="/Logo.jpg" 
+        src="/Logo.png" 
         alt="JOTA JOTI Logo"
         width={120}
         height={60}
