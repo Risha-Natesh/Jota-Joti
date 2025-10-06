@@ -31,6 +31,12 @@
       "imageHint": "nature school"
     },
     {
+      "id": "partner-logo-5",
+      "description": "Logo for Life Leader.",
+      "imageUrl": "https://storage.googleapis.com/stey-public/life-leader-logo.png",
+      "imageHint": "teamwork gears"
+    },
+    {
       "id": "gallery-1",
       "description": "Photo of scouts around a campfire from a past event.",
       "imageUrl": "https://images.unsplash.com/photo-1651515392392-1161f699c77b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzY291dHMlMjBjYW1wZmlyZXxlbnwwfHx8fDE3NTk3NTUzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -45,43 +51,43 @@
     {
       "id": "gallery-3",
       "description": "Photo showing scout teamwork during an activity.",
-      "imageUrl": "https://images.unsplash.com/photo-1713643562822-5a992959ead3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzY291dHMlMjB0ZWFtd29ya3xlbnwwfHx8fDE3NTk3NTUzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1713643562822-5a992959ead3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzY291dHMlMjB0ZWFtd29ya3xlbnwwfHx8fDE3NTk3NTUzMzJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "scouts teamwork"
     },
     {
       "id": "gallery-4",
       "description": "Photo of a scout activity.",
-      "imageUrl": "https://images.unsplash.com/photo-1536883968402-cb7250da4a8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzY291dCUyMGFjdGl2aXR5fGVufDB8fHx8MTc1OTc1NTMzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1536883968402-cb7250da4a8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzY291dCUyMGFjdGl2aXR5fGVufDB8fHx8MTc1OTc1NTMzMnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "scout activity"
     },
     {
       "id": "testimonial-avatar-1",
       "description": "Avatar for Rahul S.",
-      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk3NDM1MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk3NDM1MjZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
     },
     {
       "id": "testimonial-avatar-2",
       "description": "Avatar for Priya K.",
-      "imageUrl": "https://images.unsplash.com/photo-1590086782792-42dd2350140d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk3NDM1MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1590086782792-42dd2350140d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk3NDM1MjZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
     },
     {
       "id": "testimonial-avatar-3",
       "description": "Avatar for Anjali M.",
-      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk3NDM1MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk3NDM1MjZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
     },
     {
       "id": "live-update-1",
       "description": "Image for live update section showing event activity.",
-      "imageUrl": "https://images.unsplash.com/photo-1745851578223-6042887f9e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxldmVudCUyMHBob3RvfGVufDB8fHx8MTc1OTc1NTMzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1745851578223-6042887f9e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxldmVudCUyMHBob3RvfGVufDB8fHx8MTc1OTc1NTMzMnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "event photo"
     },
     {
       "id": "live-update-2",
       "description": "Image for live update section showing people at the event.",
-      "imageUrl": "https://images.unsplash.com/photo-1748958342360-db81446bfe60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZXZlbnQlMjBjcm93ZHxlbnwwfHx8fDE3NTk3NTUzMzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1748958342360-db81446bfe60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZXZlbnQlMjBjcm93ZHxlbnwwfHx8fDE3NTk3NTUzMzN8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "event crowd"
     }
   ]

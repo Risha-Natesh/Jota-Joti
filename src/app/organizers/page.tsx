@@ -24,6 +24,7 @@ export default function OrganizersPage() {
       { name: "NSS RVU", logo: getImage("partner-logo-2") },
       { name: "Outdoor Dynamix", logo: getImage("partner-logo-3") },
       { name: "Prakruthi Shaale", logo: getImage("partner-logo-4") },
+      { name: "Life Leader", logo: getImage("partner-logo-5") },
     ];
     return (
         <main className="container py-12 md:py-24">
