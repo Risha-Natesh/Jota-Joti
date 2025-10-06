@@ -21,7 +21,7 @@ const navLinks = [
 
 const Logo = () => (
     <Image 
-        src="https://storage.googleapis.com/stey-public/jota-joti-logo.png" 
+        src="/jota-joti-logo.png" 
         alt="JOTA JOTI Logo"
         width={120}
         height={60}
