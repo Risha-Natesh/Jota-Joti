@@ -9,10 +9,11 @@ import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#highlights", label: "Highlights" },
-  { href: "#venue", label: "Venue" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#about", label: "About" },
+  { href: "/#highlights", label: "Highlights" },
+  { href: "/schedule", label: "Schedule" },
+  { href: "/#venue", label: "Venue" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 const ScoutIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -57,7 +58,7 @@ export function Header() {
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
           <Button asChild className="hidden md:flex">
-            <Link href="#register">Register Now</Link>
+            <Link href="/#register">Register Now</Link>
           </Button>
           <Sheet>
             <SheetTrigger asChild>
@@ -81,7 +82,7 @@ export function Header() {
                   ))}
                   <SheetClose asChild>
                     <Button asChild className="mt-4">
-                        <Link href="#register">Register Now</Link>
+                        <Link href="/#register">Register Now</Link>
                     </Button>
                   </SheetClose>
                 </nav>
@@ -92,5 +93,3 @@ export function Header() {
     </header>
   );
 }
-
-    
