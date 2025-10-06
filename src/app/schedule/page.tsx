@@ -27,30 +27,19 @@ const schedule = {
   },
   chamundi: {
     day1: [
-      { time: "09:00 AM", event: "On-site Registration", icon: <Tent className="w-5 h-5" /> },
-      { time: "10:30 AM", event: "Introduction to Amateur Radio", icon: <Radio className="w-5 h-5" /> },
-      { time: "11:30 AM", event: "First Radio Contact Session (JOTA)", icon: <Radio className="w-5 h-5" /> },
-      { time: "01:00 PM", event: "Lunch Break", icon: <Utensils className="w-5 h-5" /> },
-      { time: "02:30 PM", event: "Outdoor Game: Semaphore Challenge", icon: <Tent className="w-5 h-5" /> },
-      { time: "04:30 PM", event: "Global Development Village Activities", icon: <Tent className="w-5 h-5" /> },
-      { time: "06:00 PM", event: "Campfire & Cultural Exchange", icon: <Sunset className="w-5 h-5" /> },
-      { time: "08:00 PM", event: "Dinner & Movie Screening", icon: <Film className="w-5 h-5" /> },
+      { time: "09:00 AM - 10:00 AM", event: "Registrations for Team Games", icon: <Users className="w-5 h-5" /> },
+      { time: "11:00 AM - 12:00 PM", event: "Team Games & Joti Set Up", icon: <Gamepad2 className="w-5 h-5" /> },
+      { time: "02:00 PM - 04:00 PM", event: "JOTI Station will be live", icon: <Radio className="w-5 h-5" /> },
     ],
     day2: [
-        { time: "09:00 AM", event: "Foxhunting: Radio Direction Finding", icon: <Radio className="w-5 h-5" /> },
-        { time: "11:00 AM", event: "Pioneering Project: Build a Radio Tower", icon: <Tent className="w-5 h-5" /> },
-        { time: "01:00 PM", event: "Lunch Break", icon: <Utensils className="w-5 h-5" /> },
-        { time: "02:00 PM", event: "JOTA Cross-Country Communication", icon: <Radio className="w-5 h-5" /> },
-        { time: "04:00 PM", event: "Knot Tying & Lashing Workshop", icon: <Sailboat className="w-5 h-5" /> },
-        { time: "06:30 PM", event: "International Food Fair", icon: <Utensils className="w-5 h-5" /> },
-        { time: "08:00 PM", event: "Stargazing and Night Sky Navigation", icon: <Sunset className="w-5 h-5" /> },
+        { time: "09:00 AM - 10:00 AM", event: "Registrations for Judging Camp", icon: <Award className="w-5 h-5" /> },
+        { time: "10:00 AM - 12:00 PM", event: "JOTI Station will be live Judging Camp / Community Volunteering / Gabion Wall Preparation", icon: <Radio className="w-5 h-5" /> },
+        { time: "02:00 PM - 04:00 PM", event: "JOTI Station will be live", icon: <Radio className="w-5 h-5" /> },
     ],
     day3: [
-        { time: "09:30 AM", event: "Scout's Own & Reflection", icon: <Sunrise className="w-5 h-5"/> },
-        { time: "10:30 AM", event: "Final Radio Contacts & QSL Card Exchange", icon: <Radio className="w-5 h-5" /> },
-        { time: "12:00 PM", event: "Combined Closing Ceremony (Live Stream)", icon: <Award className="w-5 h-5" /> },
-        { time: "01:00 PM", event: "Farewell Lunch", icon: <Utensils className="w-5 h-5" /> },
-        { time: "02:00 PM", event: "Campsite Cleanup & Departure", icon: <Sunset className="w-5 h-5" /> },
+        { time: "09:00 AM - 10:00 AM", event: "Open Day", icon: <Users className="w-5 h-5"/> },
+        { time: "11:00 AM - 12:00 PM", event: "Community Art", icon: <Award className="w-5 h-5" /> },
+        { time: "04:00 PM - 05:00 PM", event: "Validictory", icon: <Trophy className="w-5 h-5" /> },
     ]
   }
 };
