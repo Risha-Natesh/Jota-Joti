@@ -37,11 +37,18 @@ const competitions = [
         }
     },
     {
-        icon: <Group className="w-10 h-10" />,
-        title: "Team Building",
-        description: "Challenges designed to test and build teamwork. Form a team of 10.",
+        icon: <Users className="w-10 h-10" />,
+        title: "Team Games",
+        description: "Challenges designed to test and build teamwork.",
         details: {
-            fee: "INR 500"
+            date: "17-Oct-25",
+            location: "SCSG",
+            duration: "4 - 6 Hrs",
+            materials: "Game Props",
+            ageGroups: [
+                { age: "12 - 16 YRS", rules: "Requires a team of 10." },
+                { age: "17 - 24 YRS", rules: "Requires a team of 10." },
+            ]
         }
     },
     {
@@ -126,6 +133,7 @@ export default function ActivitiesPage() {
                                                 <div className="flex items-center gap-2"><Clock size={14}/> {comp.details.duration}</div>
                                              </div>
                                         )}
+                                        {comp.details.ageGroups ? (
                                         <Table>
                                             <TableHeader>
                                                 <TableRow>
@@ -145,13 +153,14 @@ export default function ActivitiesPage() {
                                                 ))}
                                             </TableBody>
                                         </Table>
+                                        ) : null}
                                          <div className="text-xs text-muted-foreground flex items-center gap-4 justify-center pt-2">
                                             {comp.details.materials && <div className="flex items-center gap-2"><Box size={14}/> Materials Provided: {comp.details.materials}</div>}
                                             {comp.details.fee && <Badge variant="secondary">Fee: {comp.details.fee}</Badge>}
                                         </div>
                                     </div>
                                 ) : (
-                                    comp.badge && <div className="text-center"><Badge variant="secondary">{comp.badge}</Badge></div>
+                                    null
                                 )}
                             </CardContent>
                         </Card>
@@ -185,5 +194,3 @@ export default function ActivitiesPage() {
         </main>
     );
 }
-
-    
