@@ -136,7 +136,7 @@ export default function SchedulePage() {
                     <Card className="bg-transparent border-none shadow-none">
                         <CardHeader>
                             <CardTitle className="font-headline">Sri Chamundi Base</CardTitle>
-                            <CardDescription>Base for radio communication and outdoor games. <a href="https://maps.app.goo.gl/Fk1d1Z2X9YHJvJgq8" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold flex items-center gap-1">Get Directions <ArrowRight className="w-3 h-3"/></a></CardDescription>
+                            <CardDescription>Base for radio communication and outdoor games. <a href="https://maps.app.goo.gl/LbwTZoreEqEuCNMcA" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold flex items-center gap-1">Get Directions <ArrowRight className="w-3 h-3"/></a></CardDescription>
                         </CardHeader>
                         <CardContent>
                             <DayTabs locationSchedule={schedule.chamundi} />

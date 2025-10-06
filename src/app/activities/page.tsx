@@ -46,7 +46,7 @@ const competitions = [
         details: {
             date: "17-Oct-25",
             location: "SCSG",
-            locationUrl: "https://maps.app.goo.gl/Fk1d1Z2X9YHJvJgq8",
+            locationUrl: "https://maps.app.goo.gl/LbwTZoreEqEuCNMcA",
             duration: "4 - 6 Hrs",
             materials: "Game Props",
             ageGroups: [
