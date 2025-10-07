@@ -14,7 +14,7 @@ const competitions = [
             date: "17-Oct-25",
             location: "Panchavati",
             locationUrl: "https://maps.app.goo.gl/cC787aQb9vq7HybE7",
-            duration: "2.5 Hrs",
+            duration: "2.5",
             materials: "Drawing Paper",
             ageGroups: [
                 { age: "6 - 9 YRS", rules: "Medium - Crayons, Colour Pencils" },
@@ -31,7 +31,7 @@ const competitions = [
             date: "17-Oct-25",
             location: "Panchavati",
             locationUrl: "https://maps.app.goo.gl/cC787aQb9vq7HybE7",
-            duration: "4 - 6 Hrs",
+            duration: "4 - 6",
             materials: "Table & Chair",
             ageGroups: [
                 { age: "8 - 11 YRS", title: "Cardboard Creations", rules: "Design and build a simple machine, like a catapult or a marble run, using cardboard tubes and boxes." },
@@ -47,7 +47,7 @@ const competitions = [
             date: "17-Oct-25",
             location: "SCSG",
             locationUrl: "https://maps.app.goo.gl/LbwTZoreEqEuCNMcA",
-            duration: "4 - 6 Hrs",
+            duration: "4 - 6",
             materials: "Game Props",
             ageGroups: [
                 { age: "12 - 16 YRS", rules: "Requires a team of 10." },
