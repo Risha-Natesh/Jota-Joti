@@ -17,9 +17,9 @@ const competitions = [
             locationUrl: "https://maps.app.goo.gl/cC787aQb9vq7HybE7",
             materials: "Drawing Paper",
             ageGroups: [
-                { age: "6 - 9 YRS", rules: "Medium - Crayons, Colour Pencils" },
-                { age: "10 - 16 YRS", rules: "Pencils, Watercolors, Acrylics" },
-                { age: "17 - 24 YRS", rules: "Pencils, Watercolors, Acrylics" },
+                { age: "6 - 9 YRS", title: "Crayons & Colour Pencils", rules: "Unleash your imagination using crayons and colour pencils to create vibrant masterpieces." },
+                { age: "10 - 16 YRS", title: "Pencils, Watercolors, Acrylics", rules: "Explore advanced techniques with a wider range of mediums to bring your artistic vision to life." },
+                { age: "17 - 24 YRS", title: "Pencils, Watercolors, Acrylics", rules: "Showcase your expertise and creativity using professional-grade materials in this competitive category." },
             ]
         }
     },
@@ -46,13 +46,13 @@ const competitions = [
         description: "Challenges designed to test and build teamwork.",
         details: {
             date: "17-Oct-25",
-            time: "4 - 6 Hrs",
+            time: "11:00 AM - 12:00 PM",
             location: "SCSG",
             locationUrl: "https://maps.app.goo.gl/LbwTZoreEqEuCNMcA",
             materials: "Game Props",
             ageGroups: [
-                { age: "12 - 16 YRS", rules: "Requires a team of 10." },
-                { age: "17 - 24 YRS", rules: "Requires a team of 10." },
+                { age: "12 - 16 YRS", title: "Patrol Team Challenge", rules: "Assemble your patrol of 10 for an exciting series of team-building challenges." },
+                { age: "17 - 24 YRS", title: "Senior Team Challenge", rules: "Form a team of 10 and compete in advanced challenges designed to test your leadership and collaboration skills." },
             ]
         }
     },
