@@ -2,11 +2,26 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const faqs = [
-    { q: "Who can participate?", a: "The event is open to all members of the Scout and Guide movements, as well as students and parents interested in the program. No prior experience is required!" },
-    { q: "Is there an age limit?", a: "While JOTA-JOTI is for all ages, certain workshops may have age recommendations. Generally, participants aged 10 and above will get the most out of the activities." },
-    { q: "What should I bring?", a: "A detailed list will be sent to registered participants. Essentials include comfortable clothing, a water bottle, a notebook, and most importantly, a curious and enthusiastic spirit!" },
-    { q: "Is there a registration fee?", a: "Yes, there is a nominal fee to cover the costs of materials, food, and logistics. The exact amount is mentioned in the registration form." },
-    { q: "What safety measures are in place?", a: "Safety is our top priority. We will have trained first-aid personnel on-site, and all activities will be supervised by experienced adult leaders. We will adhere to all local safety guidelines." },
+    { 
+        q: "What is JOTA-JOTI?", 
+        a: "Jamboree-on-the-Air and Jamboree-on-the-Internet (JOTA-JOTI) is an annual digital and amateur radio event that connects Scouts from all over the world. It’s a unique opportunity to foster friendship, promote global citizenship, and develop essential 21st-century skills." 
+    },
+    { 
+        q: "When does JOTA-JOTI take place?", 
+        a: "The event is scheduled for the 17th, 18th, and 19th of October 2025." 
+    },
+    { 
+        q: "How to register for JOTA-JOTI?", 
+        a: "You can register for the event by visiting our registration page and filling out the appropriate Google Form. The deadline for registration is 30th September 2025."
+    },
+    { 
+        q: "What are some of the activities in JOTA-JOTI?", 
+        a: "We have a wide range of activities, including radio and digital communication, cultural exchanges, exciting games, and hands-on workshops. There are also competitions in Art, Science, and Scouting Skills. Check out the Activities page for more details!" 
+    },
+    { 
+        q: "How can I safely participate in JOTA-JOTI?", 
+        a: "Safety is our top priority. We will have trained first-aid personnel on-site, and all activities will be supervised by experienced adult leaders. We will adhere to all local safety guidelines to ensure a safe and enjoyable experience for everyone." 
+    },
 ];
 
 export default function FaqPage() {
@@ -31,5 +46,3 @@ export default function FaqPage() {
         </main>
     );
 }
-
-    
