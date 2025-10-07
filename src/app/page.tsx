@@ -149,12 +149,31 @@ function HighlightsSection() {
   );
 }
 
+function FunActivitiesSection() {
+    return (
+      <Section id="dont-miss-out">
+        <div className="text-center space-y-8 max-w-3xl mx-auto">
+          <SectionTitle>Unleash Your Inner Champion!</SectionTitle>
+          <SectionSubtitle>
+            Get ready for a whirlwind of excitement! We've packed JOTA-JOTI with thrilling competitions and hands-on activities. Whether you're an artist, a scientist, or a team player, there's a stage for you to shine. Compete for <span className="font-bold text-primary">cash prizes</span> and gain recognition for your amazing talents. Don't just hear about it—be a part of the action. Explore all the activities and find where you'll make your mark!
+          </SectionSubtitle>
+          <Button size="lg" asChild>
+            <Link href="/activities">
+              Explore All Activities <ArrowRight className="ml-2" />
+            </Link>
+          </Button>
+        </div>
+      </Section>
+    );
+}
+
 export default function Home() {
   return (
     <>
       <HeroSection />
       <AboutSection />
       <HighlightsSection />
+      <FunActivitiesSection />
     </>
   );
 }
