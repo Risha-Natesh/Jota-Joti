@@ -31,6 +31,8 @@ export function Footer() {
             <h4 className="font-headline text-lg font-semibold text-foreground">Contact Us</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="tel:9886633810" className="flex items-center gap-2 hover:text-primary transition-colors"><Phone size={16} /> +91 98866 33810</a></li>
+              <li><a href="tel:9945845127" className="flex items-center gap-2 hover:text-primary transition-colors"><Phone size={16} /> +91 99458 45127</a></li>
+              <li><a href="tel:9980952919" className="flex items-center gap-2 hover:text-primary transition-colors"><Phone size={16} /> +91 99809 52919</a></li>
               <li><a href="mailto:21stbangalore@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors"><Mail size={16} /> 21stbangalore@gmail.com</a></li>
             </ul>
           </div>
