@@ -23,28 +23,13 @@ export default function OrganizersPage() {
       { name: "Sri Chamundi Scout Group", logoId: "partner-logo-1" },
       { name: "NSS RVU", logoId: "partner-logo-2" },
     ];
-    const partners = [
-      { name: "BIOME - WATER", logoId: "partner-logo-biome" },
-      { name: "WWF - ECOLOGY", logoId: "partner-logo-wwf" },
-      { name: "SWMRT - SWM", logoId: "partner-logo-swmrt" },
-      { name: "ISPF - SCIENCE", logoId: "partner-logo-ispf" },
-      { name: "GREEN BOX", logoId: "partner-logo-greenbox" },
-      { name: "MALLESWARAM SOCIAL", logoId: "partner-logo-malleswaram" },
-      { name: "SAMPIGE FOUNDATION", logoId: "partner-logo-sampige" },
-      { name: "BHARAWASE", logoId: "partner-logo-bharawase" },
-      { name: "PLOG RAJA", logoId: "partner-logo-plograja" },
-      { name: "KADLEKAI PARISHE", logoId: "partner-logo-kadlekai" },
-      { name: "CIVIL DEFENCE", logoId: "partner-logo-civildefence" },
-      { name: "TRAFFIC WARDEN", logoId: "partner-logo-trafficwarden" },
-      { name: "NCC", logoId: "partner-logo-ncc" },
-    ].map(p => ({...p, logo: getImage(p.logoId)}));
-
+    
     return (
         <main className="container py-12 md:py-24">
             <div className="space-y-12">
                 <div className="space-y-4 text-center">
-                    <SectionTitle>Organizers & Partners</SectionTitle>
-                    <SectionSubtitle>This event is made possible by the collaborative efforts of our dedicated organizers and supportive partners.</SectionSubtitle>
+                    <SectionTitle>Organizers</SectionTitle>
+                    <SectionSubtitle>This event is made possible by the collaborative efforts of our dedicated organizers.</SectionSubtitle>
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold tracking-tighter sm:text-3xl font-headline text-center mb-8">Main Organizers</h3>
@@ -62,24 +47,6 @@ export default function OrganizersPage() {
                           <span className="text-sm font-semibold text-muted-foreground">{p.name}</span>
                           </div>
                       ))}
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold tracking-tighter sm:text-3xl font-headline text-center mb-8">Our Partners</h3>
-                  <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                  {partners.map((p) => p.logo && (
-                      <div key={p.name} className="flex flex-col items-center gap-2 text-center">
-                      <Image
-                          src={p.logo.imageUrl}
-                          alt={p.name}
-                          data-ai-hint={p.logo.imageHint}
-                          width={150}
-                          height={75}
-                          className="object-contain grayscale hover:grayscale-0 transition-all"
-                      />
-                      <span className="text-sm font-semibold text-muted-foreground w-36">{p.name}</span>
-                      </div>
-                  ))}
                   </div>
                 </div>
             </div>
