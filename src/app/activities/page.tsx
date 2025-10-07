@@ -46,11 +46,13 @@ const competitions = [
         description: "Challenges designed to test and build teamwork.",
         details: {
             date: "17-Oct-25",
-            time: "11:00 AM - 12:00 PM",
+            time: "4 - 6 Hrs",
             location: "SCSG",
             locationUrl: "https://maps.app.goo.gl/LbwTZoreEqEuCNMcA",
-            rules: [
-                "Scouts and Guides should be in a patrol of 6 to 8 members."
+            materials: "Game Props",
+            ageGroups: [
+                { age: "12 - 16 YRS", rules: "Requires a team of 10." },
+                { age: "17 - 24 YRS", rules: "Requires a team of 10." },
             ]
         }
     },
