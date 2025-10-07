@@ -149,39 +149,12 @@ function HighlightsSection() {
   );
 }
 
-function GallerySection() {
-  const galleryImages = ["gallery-1", "gallery-2", "gallery-3", "gallery-4"].map(id => getImage(id)).filter(Boolean) as ImagePlaceholder[];
-  return (
-    <Section id="gallery">
-      <div className="space-y-8">
-        <SectionTitle>Event Gallery</SectionTitle>
-        <SectionSubtitle>A glimpse into our past scouting adventures. We can't wait to add memories from JOTA-JOTI 2025 here!</SectionSubtitle>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {galleryImages.map((img, i) => (
-            <div key={i} className="overflow-hidden rounded-lg">
-              <Image
-                src={img.imageUrl}
-                alt={img.description}
-                data-ai-hint={img.imageHint}
-                width={400}
-                height={300}
-                className="w-full h-full object-cover aspect-video hover:scale-105 transition-transform"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-    </Section>
-  );
-}
-
 export default function Home() {
   return (
     <>
       <HeroSection />
       <AboutSection />
       <HighlightsSection />
-      <GallerySection />
     </>
   );
 }

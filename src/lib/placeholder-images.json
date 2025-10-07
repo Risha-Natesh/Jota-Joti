@@ -7,28 +7,34 @@
       "imageHint": "scouts technology"
     },
     {
-      "id": "gallery-1",
-      "description": "Photo of scouts around a campfire from a past event.",
-      "imageUrl": "https://images.unsplash.com/photo-1651515392392-1161f699c77b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzY291dHMlMjBjYW1wZmlyZXxlbnwwfHx8fDE3NTk3NTUzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "scouts campfire"
+      "id": "album-cover-1",
+      "description": "Album cover for a photo gallery.",
+      "imageUrl": "https://picsum.photos/seed/album1/400/300",
+      "imageHint": "scout event"
     },
     {
-      "id": "gallery-2",
-      "description": "Photo of scouts hiking in the mountains.",
-      "imageUrl": "https://images.unsplash.com/photo-1636247641615-313c40edd17f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzY291dHMlMjBoaWtpbmd8ZW58MHx8fHwxNzU5NzU1MzMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "scouts hiking"
-    },
-    {
-      "id": "gallery-3",
-      "description": "Photo showing scout teamwork during an activity.",
-      "imageUrl": "https://images.unsplash.com/photo-1713643562822-5a992959ead3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzY291dHMlMjB0ZWFtd29ya3xlbnwwfHx8fDE3NTk3NTUzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "scouts teamwork"
-    },
-    {
-      "id": "gallery-4",
-      "description": "Photo of a scout activity.",
-      "imageUrl": "https://images.unsplash.com/photo-1536883968402-cb7250da4a8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzY291dCUyMGFjdGl2aXR5fGVufDB8fHx8MTc1OTc1NTMzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "id": "album-cover-2",
+      "description": "Album cover for a photo gallery.",
+      "imageUrl": "https://images.unsplash.com/photo-1707147926037-818bc0581233?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzY291dCUyMGFjdGl2aXR5fGVufDB8fHx8MTc1OTc1NTMzMnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "scout activity"
+    },
+    {
+      "id": "album-cover-3",
+      "description": "Album cover for a photo gallery.",
+      "imageUrl": "https://picsum.photos/seed/album3/400/300",
+      "imageHint": "scout team"
+    },
+    {
+      "id": "album-cover-4",
+      "description": "Album cover for a photo gallery.",
+      "imageUrl": "https://picsum.photos/seed/album4/400/300",
+      "imageHint": "scout group"
+    },
+    {
+      "id": "album-cover-5",
+      "description": "Album cover for a photo gallery.",
+      "imageUrl": "https://picsum.photos/seed/album5/400/300",
+      "imageHint": "scouts nature"
     },
     {
       "id": "testimonial-avatar-1",
