@@ -1,4 +1,3 @@
-
 'use client';
 import Image from "next/image";
 import Link from "next/link";
@@ -44,18 +43,18 @@ function HeroSection() {
   return (
     <section id="home" className="relative w-full h-screen min-h-[700px] flex items-center justify-center text-primary-foreground overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <Carousel 
+        <Carousel
           opts={{ loop: true }}
           plugins={[plugin.current]}
           className="w-full h-full"
         >
           <CarouselContent>
             {heroImages.map((src, index) => (
-              <CarouselItem key={index}>
-                <Image 
+              <CarouselItem key={index} className="relative h-screen">
+                <Image
                   src={src}
                   alt={`Hero Background Image ${index + 1}`}
-                  fill 
+                  fill
                   className="object-cover"
                   priority={index === 0}
                   unoptimized
