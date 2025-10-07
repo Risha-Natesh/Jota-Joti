@@ -120,7 +120,7 @@ function HighlightsSection() {
   const highlights = [
     { icon: Radio, title: "Radio Communication", description: "Talk to scouts worldwide using amateur radio." },
     { icon: Globe, title: "Digital Interaction", description: "Engage in online chats, video calls, and global challenges." },
-    { icon: Users, title: "Cultural Exchange", description: "Share your traditions and learn from others in our virtual campfire." },
+    { icon: Users, title: "Cultural Exchange", description: "Share your traditions and learn from others." },
     { icon: Gamepad2, title: "Exciting Games", description: "Participate in fun and competitive online games." },
     { icon: Wrench, title: "Hands-on Workshops", description: "Learn new skills from electronics to coding." }
   ];
