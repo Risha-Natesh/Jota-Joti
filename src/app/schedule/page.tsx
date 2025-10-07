@@ -66,35 +66,15 @@ const ScheduleTimeline = ({ items }: { items: { time: string, event: string, ico
     </div>
 );
 
-const DayTabs = ({ locationSchedule }: { locationSchedule: { day1: any[], day2: any[], day3: any[] } }) => (
-    <Tabs defaultValue="day1" className="mt-6">
-        <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="day1">Day 1 (Oct 17)</TabsTrigger>
-            <TabsTrigger value="day2">Day 2 (Oct 18)</TabsTrigger>
-            <TabsTrigger value="day3">Day 3 (Oct 19)</TabsTrigger>
-        </TabsList>
-        <TabsContent value="day1">
-            <Card>
-                <CardContent className="pt-6">
-                    <ScheduleTimeline items={locationSchedule.day1} />
-                </CardContent>
-            </Card>
-        </TabsContent>
-        <TabsContent value="day2">
-            <Card>
-                <CardContent className="pt-6">
-                    <ScheduleTimeline items={locationSchedule.day2} />
-                </CardContent>
-            </Card>
-        </TabsContent>
-        <TabsContent value="day3">
-            <Card>
-                <CardContent className="pt-6">
-                    <ScheduleTimeline items={locationSchedule.day3} />
-                </CardContent>
-            </Card>
-        </TabsContent>
-    </Tabs>
+const DaySchedule = ({ title, items }: { title: string, items: { time: string, event: string, icon: React.ReactNode }[] }) => (
+    <div>
+        <h3 className="text-xl font-bold font-headline mb-4 pl-2">{title}</h3>
+        <Card>
+            <CardContent className="pt-6">
+                <ScheduleTimeline items={items} />
+            </CardContent>
+        </Card>
+    </div>
 );
 
 
@@ -117,7 +97,7 @@ export default function SchedulePage() {
                         <Radio className="mr-2 h-4 w-4" /> Sri Chamundi Scout Group
                     </TabsTrigger>
                 </TabsList>
-                <TabsContent value="panchavati">
+                <TabsContent value="panchavati" className="mt-6">
                     <Card className="bg-transparent border-none shadow-none">
                         <CardHeader>
                             <CardTitle className="font-headline">
@@ -127,19 +107,23 @@ export default function SchedulePage() {
                             </CardTitle>
                             <CardDescription>Main hub for workshops & digital activities. <a href="https://maps.app.goo.gl/cC787aQb9vq7HybE7" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold flex items-center gap-1">Get Directions <ArrowRight className="w-3 h-3"/></a></CardDescription>
                         </CardHeader>
-                        <CardContent>
-                           <DayTabs locationSchedule={schedule.panchavati} />
+                        <CardContent className="space-y-8">
+                           <DaySchedule title="Day 1 (Oct 17)" items={schedule.panchavati.day1} />
+                           <DaySchedule title="Day 2 (Oct 18)" items={schedule.panchavati.day2} />
+                           <DaySchedule title="Day 3 (Oct 19)" items={schedule.panchavati.day3} />
                         </CardContent>
                     </Card>
                 </TabsContent>
-                <TabsContent value="chamundi">
+                <TabsContent value="chamundi" className="mt-6">
                     <Card className="bg-transparent border-none shadow-none">
                         <CardHeader>
                             <CardTitle className="font-headline">Sri Chamundi Base</CardTitle>
                             <CardDescription>Base for radio communication and outdoor games. <a href="https://maps.app.goo.gl/LbwTZoreEqEuCNMcA" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold flex items-center gap-1">Get Directions <ArrowRight className="w-3 h-3"/></a></CardDescription>
                         </CardHeader>
-                        <CardContent>
-                            <DayTabs locationSchedule={schedule.chamundi} />
+                        <CardContent className="space-y-8">
+                             <DaySchedule title="Day 1 (Oct 17)" items={schedule.chamundi.day1} />
+                             <DaySchedule title="Day 2 (Oct 18)" items={schedule.chamundi.day2} />
+                             <DaySchedule title="Day 3 (Oct 19)" items={schedule.chamundi.day3} />
                         </CardContent>
                     </Card>
                 </TabsContent>
