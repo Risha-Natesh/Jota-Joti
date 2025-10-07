@@ -57,7 +57,19 @@ const competitions = [
     {
         icon: <Rocket className="w-10 h-10" />,
         title: "Scouting Skills",
-        description: "A competition to showcase your core scouting knowledge and skills."
+        description: "A competition to showcase your core scouting knowledge and skills.",
+        details: {
+            date: "18-Oct-25",
+            time: "10:00 AM - 12:00 PM",
+            location: "SCSG",
+            locationUrl: "https://maps.app.goo.gl/LbwTZoreEqEuCNMcA",
+            rules: [
+                "Shelter Preparation",
+                "Knots Relay",
+                "Estimation",
+                "First Aid"
+            ]
+        }
     }
 ];
 
@@ -139,7 +151,7 @@ export default function ActivitiesPage() {
                                             {comp.details.locationUrl ? (
                                                 <a href={comp.details.locationUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary"><MapPin size={14}/> {comp.details.location} <ArrowRight size={12} /></a>
                                             ) : (
-                                                <div className="flex items-center gap-2"><MapPin size={14}/> {comp.details.location}</div>
+                                                comp.details.location && <div className="flex items-center gap-2"><MapPin size={14}/> {comp.details.location}</div>
                                             )}
                                         </div>
                                         {comp.details.ageGroups ? (
@@ -163,6 +175,13 @@ export default function ActivitiesPage() {
                                             </TableBody>
                                         </Table>
                                         ) : null}
+                                         {comp.details.rules && Array.isArray(comp.details.rules) && (
+                                            <ul className="list-disc list-inside text-left text-muted-foreground space-y-1 p-4 bg-muted/50 rounded-md">
+                                                {comp.details.rules.map((rule, k) => (
+                                                    <li key={k}>{rule}</li>
+                                                ))}
+                                            </ul>
+                                        )}
                                          <div className="text-xs text-muted-foreground flex items-center gap-4 justify-center pt-2">
                                             {comp.details.materials && <div className="flex items-center gap-2"><Box size={14}/> Materials Provided: {comp.details.materials}</div>}
                                             {/* @ts-ignore */}
