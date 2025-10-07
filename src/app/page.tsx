@@ -53,7 +53,7 @@ function HeroSection() {
           Connecting Scouts, Connecting the World. The largest digital and radio Scout event on the planet!
         </p>
         <Countdown />
-        <p className="text-xl font-semibold tracking-wider text-amber-300 drop-shadow-md">
+        <p className="font-theme text-3xl font-bold tracking-wider text-amber-300 drop-shadow-md italic">
           World Shaped by youth
         </p>
         <Button size="lg" asChild>
@@ -117,7 +117,7 @@ function HighlightsSection() {
             <SectionSubtitle>Experience the best of both worlds—radio and internet—with activities designed for fun, learning, and connection.</SectionSubtitle>
             <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {highlights.map((h, i) => (
-                <Card key={i} className="text-center hover:shadow-lg transition-shadow">
+                <Card key={i} className="text-center hover:shadow-lg transition-all hover:-translate-y-1">
                 <CardContent className="p-6 flex flex-col items-center gap-4">
                     <div className="p-4 bg-primary/10 rounded-full">
                     <h.icon className="h-8 w-8 text-primary" />

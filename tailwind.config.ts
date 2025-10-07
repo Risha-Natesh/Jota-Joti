@@ -20,6 +20,7 @@ export default {
       fontFamily: {
         body: ['PT Sans', 'sans-serif'],
         headline: ['Space Grotesk', 'sans-serif'],
+        theme: ['Playfair Display', 'serif'],
         code: ['monospace'],
       },
       colors: {
