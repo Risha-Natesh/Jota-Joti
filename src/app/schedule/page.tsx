@@ -15,7 +15,7 @@ const schedule = {
     ],
     day2: [
         { time: "10:00 AM", event: "Jota Walkin starts", icon: <Sunrise className="w-5 h-5" /> },
-        { time: "11:00 AM", event: "Stalls / Exhibitions / workshops etc will go Live", icon: <PartyPopper className="w-5 h-5" /> },
+        { time: "11:00 AM", event: "Demos / Exhibitions / workshops etc will go Live", icon: <PartyPopper className="w-5 h-5" /> },
         { time: "03:00 PM - 05:00 PM", event: "Youth Got Talent", icon: <Mic className="w-5 h-5" /> },
         { time: "05:00 PM", event: "Day 2 Wrap Up", icon: <Sunset className="w-5 h-5" /> },
     ],
