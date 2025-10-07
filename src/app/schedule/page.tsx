@@ -25,6 +25,7 @@ const schedule = {
   },
   panchavati: {
     day1: [
+      { time: "All Day", event: "Community Volunteering", icon: <HandHelping className="w-5 h-5" /> },
       { time: "09:00 AM - 10:00 AM", event: "Registrations for Arts & Science Competitions", icon: <Zap className="w-5 h-5" /> },
       { time: "11:00 AM - 12:00 PM", event: "Science, Arts Competitions", icon: <Award className="w-5 h-5" /> },
       { time: "03:00 PM - 04:00 PM", event: "JOTA SET UP", icon: <Radio className="w-5 h-5" /> },
