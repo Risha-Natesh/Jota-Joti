@@ -71,6 +71,17 @@ const competitions = [
                 "First Aid"
             ]
         }
+    },
+    {
+        icon: <Mic className="w-10 h-10" />,
+        title: "Youth Got Talent",
+        description: "Showcase your unique talents on the big stage.",
+        details: {
+            date: "18-Oct-25",
+            time: "03:00 PM - 05:00 PM",
+            location: "Panchavati",
+            locationUrl: "https://maps.app.goo.gl/cC787aQb9vq7HybE7",
+        }
     }
 ];
 
@@ -106,7 +117,6 @@ const activityCategories = [
         category: "Stage",
         items: [
             { icon: <Mic className="w-6 h-6" />, title: "Music Jam", description: "Open stage for musical performances.", date: "18-Oct-25", time: "All Day" },
-            { icon: <Award className="w-6 h-6" />, title: "Youth Got Talent", description: "Showcase your unique talents.", date: "18-Oct-25", time: "03:00 PM - 05:00 PM" },
         ]
     },
     {
