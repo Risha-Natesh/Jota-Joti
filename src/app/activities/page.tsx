@@ -46,7 +46,7 @@ const competitions = [
         description: "Challenges designed to test and build teamwork.",
         details: {
             date: "17-Oct-25",
-            time: "11:00 AM - 12:00 PM",
+            time: "02:00 PM - 03:00 PM",
             location: "SCSG",
             locationUrl: "https://maps.app.goo.gl/LbwTZoreEqEuCNMcA",
             materials: "Game Props",
@@ -65,7 +65,12 @@ const competitions = [
             time: "10:00 AM - 12:00 PM",
             location: "SCSG",
             locationUrl: "https://maps.app.goo.gl/LbwTZoreEqEuCNMcA",
-            rules: "Showcase your expertise in Shelter Preparation, Knots Relay, Estimation, and First Aid in this comprehensive scouting challenge."
+            ageGroups: [
+                { age: "Skills", title: "Shelter Preparation", rules: "Demonstrate your ability to construct a safe and effective emergency shelter." },
+                { age: "Skills", title: "Knots Relay", rules: "Compete in a fast-paced relay to tie essential scout knots correctly and quickly." },
+                { age: "Skills", title: "Estimation", rules: "Test your ability to accurately estimate heights, distances, and weights using scouting techniques." },
+                { age: "Skills", title: "First Aid", rules: "Showcase your knowledge of first aid in simulated emergency scenarios." },
+            ]
         }
     },
     {
