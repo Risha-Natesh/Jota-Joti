@@ -18,6 +18,16 @@ const albums = [
         title: "Joti Jota in panchvati",
         url: "https://photos.app.goo.gl/m5qLBqp6iWxtkWpr9",
         imageId: "album-cover-3"
+    },
+    {
+        title: "Community Projects-jota joti 2024",
+        url: "https://photos.app.goo.gl/vd1TKYpveh5LMGRx9",
+        imageId: "album-cover-4"
+    },
+    {
+        title: "Campfire Memories-Jota joti 2017",
+        url: "https://photos.app.goo.gl/9rBHvTFDTu4sqAsH7",
+        imageId: "album-cover-5"
     }
 ];
 
