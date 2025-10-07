@@ -101,10 +101,10 @@ const activityCategories = [
     {
         category: "Workshops",
         items: [
+            { icon: <Leaf className="w-6 h-6" />, title: "Eco Connect", description: "Workshop on environmental awareness.", date: "18-Oct-25", time: "All Day" },
             { icon: <Heart className="w-6 h-6" />, title: "Crochet", description: "Learn the basics of crochet.", date: "18-Oct-25", time: "All Day" },
             { icon: <Paintbrush className="w-6 h-6" />, title: "Eco Painting", description: "Create art with natural materials.", date: "18-Oct-25", time: "All Day" },
             { icon: <Mic className="w-6 h-6" />, title: "Poetry", description: "Express yourself through words.", date: "18-Oct-25", time: "All Day" },
-            { icon: <Leaf className="w-6 h-6" />, title: "Eco Connect", description: "Workshop on environmental awareness.", date: "18-Oct-25", time: "All Day" },
         ]
     },
     {
