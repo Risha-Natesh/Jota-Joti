@@ -107,7 +107,7 @@ const activityCategories = [
         ]
     },
     {
-        category: "On The Spot Gadgets",
+        category: "DIY Booths",
         items: [
             { icon: <Zap className="w-6 h-6" />, title: "Morse Code Oscillator", description: "Build your own Morse code device.", date: "18-Oct-25", time: "All Day" },
             { icon: <Puzzle className="w-6 h-6" />, title: "ISPF Kits", description: "Hands-on science kits to assemble.", date: "18-Oct-25", time: "All Day" },
