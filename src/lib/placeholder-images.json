@@ -57,7 +57,7 @@
     {
       "id": "live-update-2",
       "description": "Image for live update section showing people at the event.",
-      "imageUrl": "https://images.unsplash.com/photo-1748958342360-db71446bfe60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZXZlbnQlMjBjcm93ZHxlbnwwfHx8fDE3NTk3NTUzMzN8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1748958342360-db71446bfe60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZXZlbnQlMjBjcm93ZHxlbnwwfHx8fDE3NTk3NTUzMzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "event crowd"
     },
     {
@@ -69,8 +69,26 @@
     {
       "id": "venue-chamundi",
       "description": "An image of the Sri Chamundi Scout Group building.",
-      "imageUrl": "https://images.unsplash.com/photo-1628746278219-e3a3698d5a1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY291dCUyMGJ1aWxkaW5nfGVufDB8fHx8MTc1OTgwNTIwMXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628746278219-e3a3698d5a1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY291dCUyMGJ1aWxkaW5nfGVufDB8fHx8MTc1OTgwNTIwMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "scout building"
+    },
+    {
+      "id": "organizer-scsg",
+      "description": "Logo for Sri Chamundi Scout Group",
+      "imageUrl": "https://picsum.photos/seed/scsg/200/200",
+      "imageHint": "organization logo"
+    },
+    {
+      "id": "organizer-odx",
+      "description": "Logo for Outdoor Dynamix",
+      "imageUrl": "https://picsum.photos/seed/odx/200/200",
+      "imageHint": "organization logo"
+    },
+    {
+      "id": "organizer-nss",
+      "description": "Logo for NSS RVU",
+      "imageUrl": "https://picsum.photos/seed/nss/200/200",
+      "imageHint": "organization logo"
     }
   ]
 }
