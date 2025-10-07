@@ -34,7 +34,6 @@ function RegistrationSection() {
             <p className="text-muted-foreground md:text-xl mt-4 max-w-3xl mx-auto">
             Secure your spot for an unforgettable weekend of fun, learning, and global friendship. Please select the appropriate registration form below.
             </p>
-            <p className="font-bold mt-2">Deadline: 30th September 2025.</p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {registrationForms.map((form) => (

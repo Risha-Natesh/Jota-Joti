@@ -12,7 +12,7 @@ const faqs = [
     },
     { 
         q: "How to register for JOTA-JOTI?", 
-        a: "You can register for the event by visiting our registration page and filling out the appropriate Google Form. The deadline for registration is 30th September 2025."
+        a: "You can register for the event by visiting our registration page and filling out the appropriate Google Form."
     },
     { 
         q: "What are some of the activities in JOTA-JOTI?", 
