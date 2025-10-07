@@ -32,6 +32,7 @@ const schedule = {
       { time: "06:00 PM", event: "Day 1 Wrap Up", icon: <Sunset className="w-5 h-5" /> },
     ],
     day2: [
+        { time: "All Day", event: "Community Volunteering", icon: <HandHelping className="w-5 h-5" /> },
         { time: "10:00 AM", event: "Jota Walkin starts", icon: <Sunrise className="w-5 h-5" /> },
         { time: "11:00 AM", event: "Demos / Exhibitions / workshops etc will go Live", icon: <PartyPopper className="w-5 h-5" /> },
         { time: "03:00 PM - 05:00 PM", event: "Youth Got Talent", icon: <Mic className="w-5 h-5" /> },
