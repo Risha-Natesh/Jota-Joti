@@ -19,7 +19,7 @@ const schedule = {
     ],
     day3: [
         { time: "09:00 AM - 10:00 AM", event: "Open Day", icon: <Users className="w-5 h-5"/> },
-        { time: "11:00 AM - 12:00 PM", event: "Community Art", icon: <Award className="w-5 h-5" /> },
+        { time: "10:00 AM - 01:00 PM", event: "Community Art", icon: <Award className="w-5 h-5" /> },
         { time: "04:00 PM - 05:00 PM", event: "Validictory", icon: <Trophy className="w-5 h-5" /> },
     ]
   },
