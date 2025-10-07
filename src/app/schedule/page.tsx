@@ -10,20 +10,17 @@ const schedule = {
     day1: [
       { time: "09:00 AM - 10:00 AM", event: "Registrations for Arts & Science Competitions", icon: <Zap className="w-5 h-5" /> },
       { time: "11:00 AM - 12:00 PM", event: "Science, Arts Competitions", icon: <Award className="w-5 h-5" /> },
-      { time: "01:00 PM", event: "Lunch Break", icon: <Utensils className="w-5 h-5" /> },
       { time: "03:00 PM - 04:00 PM", event: "JOTA SET UP", icon: <Radio className="w-5 h-5" /> },
       { time: "06:00 PM", event: "Day 1 Wrap Up", icon: <Sunset className="w-5 h-5" /> },
     ],
     day2: [
         { time: "09:00 AM", event: "Jota Walkin starts", icon: <Sunrise className="w-5 h-5" /> },
         { time: "11:00 AM", event: "Stalls / Exhibitions / workshops etc will go Live", icon: <PartyPopper className="w-5 h-5" /> },
-        { time: "01:00 PM", event: "Lunch Break", icon: <Utensils className="w-5 h-5" /> },
         { time: "04:00 PM - 05:00 PM", event: "Youth Got Talent", icon: <Mic className="w-5 h-5" /> },
         { time: "07:00 PM", event: "Day 2 Wrap Up", icon: <Sunset className="w-5 h-5" /> },
     ],
     day3: [
         { time: "All Day", event: "Open Day", icon: <Users className="w-5 h-5" /> },
-        { time: "01:00 PM", event: "Lunch Break", icon: <Utensils className="w-5 h-5" /> },
         { time: "04:00 PM - 05:00 PM", event: "Valedictory & Closing Ceremony", icon: <Trophy className="w-5 h-5" /> },
     ]
   },
