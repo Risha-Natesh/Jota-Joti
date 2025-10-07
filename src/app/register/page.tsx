@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Download, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const registrationForms = [
   {
@@ -55,45 +55,10 @@ function RegistrationSection() {
   );
 }
 
-function DownloadsSection() {
-    const downloads = [
-      { name: "Event Brochure", file: "#" },
-      { name: "Schedule PDF", file: "#" },
-      { name: "Parental Consent Form", file: "#" },
-    ];
-    return (
-        <section id="downloads" className="bg-muted py-12 md:py-24">
-            <div className="container">
-                <div className="max-w-3xl mx-auto text-center">
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Downloadables</h2>
-                    <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
-                        Get all the information you need right here. Download our brochure, schedule, and other important documents.
-                    </p>
-                </div>
-                <div className="max-w-xl mx-auto mt-8">
-                    <ul className="space-y-3">
-                        {downloads.map((d, i) => (
-                            <li key={i}>
-                                <Button variant="outline" className="w-full justify-between" asChild>
-                                    <a href={d.file} download>
-                                        {d.name}
-                                        <Download size={16}/>
-                                    </a>
-                                </Button>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </div>
-      </section>
-    );
-}
-
 export default function RegisterPage() {
   return (
     <main>
       <RegistrationSection />
-      <DownloadsSection />
     </main>
   );
 }
