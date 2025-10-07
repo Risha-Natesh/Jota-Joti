@@ -76,6 +76,11 @@ function AboutSection() {
           <p className="text-muted-foreground">
             This year marks a special milestone as we host the first-ever JOTA-JOTI organized by NSS RVU & Sri Chamundi Scouts. Join us for an unforgettable experience where tradition meets technology!
           </p>
+          <Button asChild>
+            <Link href="https://www.jotajoti.info/" target="_blank" rel="noopener noreferrer">
+              Learn more about World JOTA-JOTI <ArrowRight className="ml-2" />
+            </Link>
+          </Button>
            <div className="text-sm border-l-2 border-primary pl-4 pr-4 py-2 bg-muted/50 rounded-r-md">
             <h4 className="font-bold mb-2 text-primary">Did you know? About Sri Chamundi Scout Group</h4>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
