@@ -10,14 +10,9 @@ const getImage = (id: string): ImagePlaceholder | undefined => PlaceHolderImages
 
 const albums = [
     {
-        title: "Panchvati Haven",
+        title: "JOTA-JOTI 2023 Highlights / Scouting Adventures",
         url: "https://photos.app.goo.gl/7sZX1JHKsjfwAAWp7",
         imageId: "album-cover-1"
-    },
-    {
-        title: "Panchvati Haven",
-        url: "https://photos.app.goo.gl/vd1TKYpveh5LMGRx9",
-        imageId: "album-cover-2"
     },
     {
         title: "Joti Jota in panchvati",
@@ -25,12 +20,12 @@ const albums = [
         imageId: "album-cover-3"
     },
     {
-        title: "jota joti 2024",
+        title: "Community Projects - jota joti 2024",
         url: "https://photos.app.goo.gl/NJrhv8H49WvNCTEh6",
         imageId: "album-cover-4"
     },
     {
-        title: "Jota joti 2017",
+        title: "Campfire Memories - Jota joti 2017",
         url: "https://photos.app.goo.gl/9rBHvTFDTu4sqAsH7",
         imageId: "album-cover-5"
     }
