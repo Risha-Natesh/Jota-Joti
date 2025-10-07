@@ -45,7 +45,6 @@ const competitions = [
             date: "17-Oct-25",
             location: "SCSG",
             locationUrl: "https://maps.app.goo.gl/LbwTZoreEqEuCNMcA",
-            materials: "Game Props",
             ageGroups: [
                 { age: "12 - 16 YRS", rules: "Requires a team of 10." },
                 { age: "17 - 24 YRS", rules: "Requires a team of 10." },
