@@ -76,6 +76,9 @@ function AboutSection() {
           <p className="text-muted-foreground">
             This year marks a special milestone as we host the first-ever JOTA-JOTI organized by NSS RVU & Sri Chamundi Scouts. Join us for an unforgettable experience where tradition meets technology!
           </p>
+           <p className="text-muted-foreground text-sm border-l-2 border-primary pl-4">
+            Did you know? Sri Chamundi Scout Group, also known as 21st Bangalore, was the first open scout unit started in Bangalore in 1918. It is the oldest existing open unit in the country and has earned the patronage of the Royal Family, being called the "Maharaja’s own troop."
+          </p>
         </div>
         <div className="space-y-6">
           <Card>
