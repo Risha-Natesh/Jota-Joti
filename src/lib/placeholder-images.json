@@ -7,84 +7,6 @@
       "imageHint": "scouts technology"
     },
     {
-      "id": "partner-logo-biome",
-      "description": "Logo for BIOME - WATER",
-      "imageUrl": "https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3YXRlciUyMGNvbnNlcnZhdGlvbnxlbnwwfHx8fDE3NTk3NzMyMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "water conservation"
-    },
-    {
-      "id": "partner-logo-wwf",
-      "description": "Logo for WWF - ECOLOGY",
-      "imageUrl": "https://images.unsplash.com/photo-1719825523711-eda3221c111c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlY29sb2d5JTIwbG9nb3xlbnwwfHx8fDE3NTk3NzMyMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ecology logo"
-    },
-    {
-      "id": "partner-logo-swmrt",
-      "description": "Logo for SWMRT - SWM",
-      "imageUrl": "https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3YXN0ZSUyMG1hbmFnZW1lbnR8ZW58MHx8fHwxNzU5NzM5Njk1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "waste management"
-    },
-    {
-      "id": "partner-logo-ispf",
-      "description": "Logo for ISPF - SCIENCE",
-      "imageUrl": "https://images.unsplash.com/photo-1608755768421-ba3662c9e7ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzY2llbmNlJTIwbG9nb3xlbnwwfHx8fDE3NTk2NjA1MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "science logo"
-    },
-    {
-      "id": "partner-logo-greenbox",
-      "description": "Logo for GREEN BOX",
-      "imageUrl": "https://images.unsplash.com/photo-1683104691469-7b40f22caec1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxncmVlbiUyMGxvZ298ZW58MHx8fHwxNzU5NzY4NzE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "green logo"
-    },
-    {
-      "id": "partner-logo-malleswaram",
-      "description": "Logo for MALLESWARAM SOCIAL",
-      "imageUrl": "https://images.unsplash.com/photo-1642867501868-a493788835cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb21tdW5pdHklMjBsb2dvfGVufDB8fHx8MTc1OTc3MzIxMXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "community logo"
-    },
-    {
-      "id": "partner-logo-sampige",
-      "description": "Logo for SAMPIGE FOUNDATION",
-      "imageUrl": "https://images.unsplash.com/photo-1739055547874-4fe440a2bfea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmb3VuZGF0aW9uJTIwbG9nb3xlbnwwfHx8fDE3NTk3NzMyMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "foundation logo"
-    },
-    {
-      "id": "partner-logo-bharawase",
-      "description": "Logo for BHARAWASE",
-      "imageUrl": "https://images.unsplash.com/photo-1641945510772-8950f35ac72c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0cnVzdCUyMGxvZ298ZW58MHx8fHwxNzU5NzczMjExfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "trust logo"
-    },
-    {
-      "id": "partner-logo-plograja",
-      "description": "Logo for PLOG RAJA",
-      "imageUrl": "https://images.unsplash.com/photo-1641661546856-37cad4aceff5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwbG9nZ2luZyUyMGxvZ298ZW58MHx8fHwxNzU5NzczMjExfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "plogging logo"
-    },
-    {
-      "id": "partner-logo-kadlekai",
-      "description": "Logo for KADLEKAI PARISHE",
-      "imageUrl": "https://images.unsplash.com/photo-1720873160840-d5934323bb23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmZXN0aXZhbCUyMGxvZ298ZW58MHx8fHwxNzU5NzczMjExfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "festival logo"
-    },
-    {
-      "id": "partner-logo-civildefence",
-      "description": "Logo for CIVIL DEFENCE",
-      "imageUrl": "https://images.unsplash.com/photo-1516876902004-79f4bd1cb0dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkZWZlbmNlJTIwbG9nb3xlbnwwfHx8fDE3NTk3NzMyMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "defence logo"
-    },
-    {
-      "id": "partner-logo-trafficwarden",
-      "description": "Logo for TRAFFIC WARDEN",
-      "imageUrl": "https://images.unsplash.com/photo-1675716649611-7ca8b12a76ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dHJhZmZpYyUyMGxvZ298ZW58MHx8fHwxNzU5NzczMjExfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "traffic logo"
-    },
-    {
-      "id": "partner-logo-ncc",
-      "description": "Logo for NCC",
-      "imageUrl": "https://images.unsplash.com/photo-1674450371215-550d33a2d81e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYWRldCUyMGxvZ298ZW58MHx8fHwxNzU5NzczMjExfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cadet logo"
-    },
-    {
       "id": "gallery-1",
       "description": "Photo of scouts around a campfire from a past event.",
       "imageUrl": "https://images.unsplash.com/photo-1651515392392-1161f699c77b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzY291dHMlMjBjYW1wZmlyZXxlbnwwfHx8fDE3NTk3NTUzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -135,7 +57,7 @@
     {
       "id": "live-update-2",
       "description": "Image for live update section showing people at the event.",
-      "imageUrl": "https://images.unsplash.com/photo-1748958342360-db71446bfe60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZXZlbnQlMjBjcm93ZHxlbnwwfHx8fDE3NTk3NTUzMzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1748958342360-db71446bfe60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZXZlbnQlMjBjcm93ZHxlbnwwfHx8fDE3NTk3NTUzMzN8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "event crowd"
     },
     {
@@ -147,7 +69,7 @@
     {
       "id": "venue-chamundi",
       "description": "An image of the Sri Chamundi Scout Group building.",
-      "imageUrl": "https://images.unsplash.com/photo-1628746278219-e3a3698d5a1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY291dCUyMGJ1aWxkaW5nfGVufDB8fHx8MTc1OTgwNTIwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628746278219-e3a3698d5a1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY291dCUyMGJ1aWxkaW5nfGVufDB8fHx8MTc1OTgwNTIwMXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "scout building"
     }
   ]
