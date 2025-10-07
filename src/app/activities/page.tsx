@@ -46,13 +46,12 @@ const competitions = [
         description: "Challenges designed to test and build teamwork.",
         details: {
             date: "17-Oct-25",
-            time: "02:00 PM - 03:00 PM",
+            time: "4 - 6 Hrs",
             location: "SCSG",
             locationUrl: "https://maps.app.goo.gl/LbwTZoreEqEuCNMcA",
-            materials: "Game Props",
             ageGroups: [
-                { age: "12 - 16 YRS", title: "Patrol Team Challenge", rules: "Assemble your patrol of 10 for an exciting series of team-building challenges." },
-                { age: "17 - 24 YRS", title: "Senior Team Challenge", rules: "Form a team of 10 and compete in advanced challenges designed to test your leadership and collaboration skills." },
+                { age: "12 - 16 YRS", title: "", rules: "Requires a team of 10." },
+                { age: "17 - 24 YRS", title: "", rules: "Requires a team of 10." },
             ]
         }
     },
