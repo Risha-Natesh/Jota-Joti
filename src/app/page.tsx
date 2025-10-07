@@ -74,7 +74,7 @@ function AboutSection() {
             Jamboree-on-the-Air and Jamboree-on-the-Internet (JOTA-JOTI) is an annual digital and amateur radio event that connects Scouts from all over the world. It’s a unique opportunity to foster friendship, promote global citizenship, and develop essential 21st-century skills through a weekend of fun and engaging activities.
           </p>
           <p className="text-muted-foreground">
-            This year marks a special milestone as we host the first-ever JOTA-JOTI organized by NSS RVU & Sri Chamundi Scouts. Join us for an unforgettable experience where tradition meets technology!
+            This year marks a special milestone as we host the first-ever JOTA-JOTI organized by Sri Chamundi Scouts, Outdoor Dynamix, and NSS RVU. Join us for an unforgettable experience where tradition meets technology!
           </p>
           <Button asChild>
             <Link href="https://www.jotajoti.info/" target="_blank" rel="noopener noreferrer">
