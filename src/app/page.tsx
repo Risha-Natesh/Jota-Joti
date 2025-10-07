@@ -53,6 +53,9 @@ function HeroSection() {
           Connecting Scouts, Connecting the World. The largest digital and radio Scout event on the planet!
         </p>
         <Countdown />
+        <p className="text-xl font-semibold tracking-wider text-amber-300 drop-shadow-md">
+          World Shaped by youth
+        </p>
         <Button size="lg" asChild>
           <Link href="/register">Register Now <ArrowRight className="ml-2" /></Link>
         </Button>
@@ -131,51 +134,6 @@ function HighlightsSection() {
   );
 }
 
-function TestimonialsSection() {
-  const testimonials = [
-    { name: "Rahul S.", role: "Scout, Troop 101", text: "JOTA-JOTI was amazing! I talked to a Scout in Japan. It felt like traveling the world from my tent.", avatar: getImage("testimonial-avatar-1") },
-    { name: "Priya K.", role: "Volunteer", text: "Seeing the kids' faces light up when they made their first radio contact was priceless. A truly rewarding experience.", avatar: getImage("testimonial-avatar-2") },
-    { name: "Anjali M.", role: "Parent", text: "My daughter learned so much about technology and different cultures. The event was safe, well-organized, and incredibly fun.", avatar: getImage("testimonial-avatar-3") },
-  ];
-  return (
-    <Section id="testimonials" className="bg-muted">
-        <div className="container">
-      <div className="space-y-8">
-        <SectionTitle>What Our Community Says</SectionTitle>
-        <SectionSubtitle>Hear from past participants, volunteers, and parents about their scouting experiences.</SectionSubtitle>
-        <Carousel opts={{ loop: true }} className="w-full max-w-4xl mx-auto">
-          <CarouselContent>
-            {testimonials.map((t, i) => (
-              <CarouselItem key={i}>
-                <div className="p-1">
-                  <Card>
-                    <CardContent className="p-8 text-center space-y-4">
-                      <p className="text-lg italic">"{t.text}"</p>
-                      <div className="flex items-center justify-center gap-4">
-                        <Avatar>
-                          {t.avatar && <AvatarImage src={t.avatar.imageUrl} alt={t.name} data-ai-hint={t.avatar.imageHint} />}
-                          <AvatarFallback>{t.name.charAt(0)}</AvatarFallback>
-                        </Avatar>
-                        <div>
-                          <p className="font-bold">{t.name}</p>
-                          <p className="text-sm text-muted-foreground">{t.role}</p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-      </div>
-      </div>
-    </Section>
-  );
-}
-
 function LiveUpdatesSection() {
     const liveImage1 = getImage('live-update-1');
     const liveImage2 = getImage('live-update-2');
@@ -243,7 +201,6 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <HighlightsSection />
-      <TestimonialsSection />
       <LiveUpdatesSection />
       <GallerySection />
     </>
