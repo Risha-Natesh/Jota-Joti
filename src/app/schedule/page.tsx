@@ -13,7 +13,7 @@ const schedule = {
       { time: "02:00 PM - 05:00 PM", event: "JOTI Station will be live", icon: <Radio className="w-5 h-5" /> },
     ],
     day2: [
-        { time: "09:00 AM - 10:00 AM", event: "Registrations", icon: <Zap className="w-5 h-5" /> },
+        { time: "09:00 AM - 10:00 AM", event: "Registrations for Scouts and Guides Judging Camp", icon: <Zap className="w-5 h-5" /> },
         { time: "10:00 AM - 12:00 PM", event: "JOTI Station will be live Judging Camp / Community Volunteering / Gabion Wall Preparation", icon: <Radio className="w-5 h-5" /> },
         { time: "02:00 PM - 04:00 PM", event: "JOTI Station will be live", icon: <Radio className="w-5 h-5" /> },
     ],
