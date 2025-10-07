@@ -134,41 +134,6 @@ function HighlightsSection() {
   );
 }
 
-function LiveUpdatesSection() {
-    const liveImage1 = getImage('live-update-1');
-    const liveImage2 = getImage('live-update-2');
-    return (
-        <Section id="live-updates" className="bg-muted">
-            <div className="container">
-                <div className="space-y-8">
-                    <SectionTitle>Live From The Event</SectionTitle>
-                    <SectionSubtitle>During the event, this section will feature live updates, photos, and stories. Stay tuned!</SectionSubtitle>
-                    <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                        <Card className="overflow-hidden">
-                            <CardContent className="p-0">
-                            {liveImage1 && <Image src={liveImage1.imageUrl} alt={liveImage1.description} data-ai-hint={liveImage1.imageHint} width={600} height={400} className="w-full h-auto object-cover"/>}
-                                <div className="p-6 space-y-2">
-                                    <p className="text-sm text-muted-foreground">Day 1 - 11:05 AM</p>
-                                    <p>First contact made with a troop from Australia! The excitement is palpable! 🇦🇺 #JOTAJOTI2025</p>
-                                </div>
-                            </CardContent>
-                        </Card>
-                        <Card className="overflow-hidden">
-                            <CardContent className="p-0">
-                            {liveImage2 && <Image src={liveImage2.imageUrl} alt={liveImage2.description} data-ai-hint={liveImage2.imageHint} width={600} height={400} className="w-full h-auto object-cover"/>}
-                                <div className="p-6 space-y-2">
-                                    <p className="text-sm text-muted-foreground">Day 1 - 02:30 PM</p>
-                                    <p>Our electronics workshop is in full swing. Scouts are building their own simple circuits. 💡</p>
-                                </div>
-                            </CardContent>
-                        </Card>
-                    </div>
-                </div>
-            </div>
-        </Section>
-    );
-}
-
 function GallerySection() {
   const galleryImages = ["gallery-1", "gallery-2", "gallery-3", "gallery-4"].map(id => getImage(id)).filter(Boolean) as ImagePlaceholder[];
   return (
@@ -201,7 +166,6 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <HighlightsSection />
-      <LiveUpdatesSection />
       <GallerySection />
     </>
   );
