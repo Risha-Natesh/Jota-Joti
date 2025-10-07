@@ -65,12 +65,7 @@ const competitions = [
             time: "10:00 AM - 12:00 PM",
             location: "SCSG",
             locationUrl: "https://maps.app.goo.gl/LbwTZoreEqEuCNMcA",
-            rules: [
-                "Shelter Preparation",
-                "Knots Relay",
-                "Estimation",
-                "First Aid"
-            ]
+            rules: "Showcase your expertise in Shelter Preparation, Knots Relay, Estimation, and First Aid in this comprehensive scouting challenge."
         }
     },
     {
@@ -187,12 +182,10 @@ export default function ActivitiesPage() {
                                             </TableBody>
                                         </Table>
                                         ) : null}
-                                         {comp.details.rules && Array.isArray(comp.details.rules) && (
-                                            <ul className="list-disc list-inside text-left text-muted-foreground space-y-1 p-4 bg-muted/50 rounded-md">
-                                                {comp.details.rules.map((rule, k) => (
-                                                    <li key={k}>{rule}</li>
-                                                ))}
-                                            </ul>
+                                         {comp.details.rules && typeof comp.details.rules === 'string' && (
+                                            <div className="text-left text-muted-foreground p-4 bg-muted/50 rounded-md">
+                                                <p>{comp.details.rules}</p>
+                                            </div>
                                         )}
                                          <div className="text-xs text-muted-foreground flex items-center gap-4 justify-center pt-2">
                                             {comp.details.materials && <div className="flex items-center gap-2"><Box size={14}/> Materials Provided: {comp.details.materials}</div>}
