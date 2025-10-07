@@ -1,7 +1,7 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Award, Dna, Group, Rocket, Radio, Puzzle, Paintbrush, Mic, HandHelping, Code, Gamepad, Zap, Leaf, Heart, Users, Clock, MapPin, Box, ArrowRight } from "lucide-react";
+import { Award, Dna, Group, Rocket, Radio, Puzzle, Paintbrush, Mic, HandHelping, Code, Gamepad, Zap, Leaf, Heart, Users, Clock, MapPin, Box, ArrowRight, Recycle } from "lucide-react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import Link from "next/link";
 
@@ -46,7 +46,7 @@ const competitions = [
         description: "Challenges designed to test and build teamwork.",
         details: {
             date: "17-Oct-25",
-            time: "4:00 PM - 6:00 PM",
+            time: "04:00 PM - 05:00 PM",
             location: "SCSG",
             locationUrl: "https://maps.app.goo.gl/LbwTZoreEqEuCNMcA",
             ageGroups: [
@@ -103,6 +103,7 @@ const activityCategories = [
         items: [
             { icon: <Leaf className="w-6 h-6" />, title: "Eco Connect", description: "Workshop on environmental awareness.", date: "18-Oct-25", time: "All Day" },
             { icon: <Heart className="w-6 h-6" />, title: "Crochet", description: "Learn the basics of crochet.", date: "18-Oct-25", time: "All Day" },
+            { icon: <Recycle className="w-6 h-6" />, title: "Upcycling Fabric", description: "Transform old fabric into new creations.", date: "18-Oct-25", time: "All Day" },
             { icon: <Paintbrush className="w-6 h-6" />, title: "Eco Painting", description: "Create art with natural materials.", date: "18-Oct-25", time: "All Day" },
             { icon: <Mic className="w-6 h-6" />, title: "Poetry", description: "Express yourself through words.", date: "18-Oct-25", time: "All Day" },
         ]
