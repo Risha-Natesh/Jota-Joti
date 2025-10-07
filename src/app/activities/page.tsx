@@ -12,6 +12,7 @@ const competitions = [
         description: "Age-wise organized art competition. Express your creativity!",
         details: {
             date: "17-Oct-25",
+            time: "11:00 AM - 12:00 PM",
             location: "Panchavati",
             locationUrl: "https://maps.app.goo.gl/cC787aQb9vq7HybE7",
             materials: "Drawing Paper",
@@ -28,6 +29,7 @@ const competitions = [
         description: "A test of scientific knowledge, application, and creativity.",
         details: {
             date: "17-Oct-25",
+            time: "11:00 AM - 12:00 PM",
             location: "Panchavati",
             locationUrl: "https://maps.app.goo.gl/cC787aQb9vq7HybE7",
             materials: "Table & Chair",
@@ -43,6 +45,7 @@ const competitions = [
         description: "Challenges designed to test and build teamwork.",
         details: {
             date: "17-Oct-25",
+            time: "11:00 AM - 12:00 PM",
             location: "SCSG",
             locationUrl: "https://maps.app.goo.gl/LbwTZoreEqEuCNMcA",
             ageGroups: [
@@ -62,43 +65,43 @@ const activityCategories = [
     {
         category: "Exhibitions & Demos",
         items: [
-            { icon: <Radio className="w-6 h-6" />, title: "HAM Radio", description: "See amateur radio in action." },
-            { icon: <Puzzle className="w-6 h-6" />, title: "ISPF", description: "Interactive science and tech demos." },
-            { icon: <Gamepad className="w-6 h-6" />, title: "Fox Hunt", description: "A radio direction-finding game." },
-            { icon: <Code className="w-6 h-6" />, title: "Arduino Coding", description: "Explore the world of microcontrollers." },
-            { icon: <Radio className="w-6 h-6" />, title: "Satellite Communication", description: "Learn how we talk to satellites." },
-            { icon: <Zap className="w-6 h-6" />, title: "Sprint Timing Dash", description: "High-speed timing technology." },
+            { icon: <Radio className="w-6 h-6" />, title: "HAM Radio", description: "See amateur radio in action.", date: "18-Oct-25", time: "All Day" },
+            { icon: <Puzzle className="w-6 h-6" />, title: "ISPF", description: "Interactive science and tech demos.", date: "18-Oct-25", time: "All Day" },
+            { icon: <Gamepad className="w-6 h-6" />, title: "Fox Hunt", description: "A radio direction-finding game.", date: "18-Oct-25", time: "All Day" },
+            { icon: <Code className="w-6 h-6" />, title: "Arduino Coding", description: "Explore the world of microcontrollers.", date: "18-Oct-25", time: "All Day" },
+            { icon: <Radio className="w-6 h-6" />, title: "Satellite Communication", description: "Learn how we talk to satellites.", date: "18-Oct-25", time: "All Day" },
+            { icon: <Zap className="w-6 h-6" />, title: "Sprint Timing Dash", description: "High-speed timing technology.", date: "18-Oct-25", time: "All Day" },
         ]
     },
     {
         category: "Workshops",
         items: [
-            { icon: <Heart className="w-6 h-6" />, title: "Crochet", description: "Learn the basics of crochet." },
-            { icon: <Paintbrush className="w-6 h-6" />, title: "Eco Painting", description: "Create art with natural materials." },
-            { icon: <Mic className="w-6 h-6" />, title: "Poetry", description: "Express yourself through words." },
-            { icon: <Leaf className="w-6 h-6" />, title: "Eco Connect", description: "Workshop on environmental awareness." },
+            { icon: <Heart className="w-6 h-6" />, title: "Crochet", description: "Learn the basics of crochet.", date: "18-Oct-25", time: "All Day" },
+            { icon: <Paintbrush className="w-6 h-6" />, title: "Eco Painting", description: "Create art with natural materials.", date: "18-Oct-25", time: "All Day" },
+            { icon: <Mic className="w-6 h-6" />, title: "Poetry", description: "Express yourself through words.", date: "18-Oct-25", time: "All Day" },
+            { icon: <Leaf className="w-6 h-6" />, title: "Eco Connect", description: "Workshop on environmental awareness.", date: "18-Oct-25", time: "All Day" },
         ]
     },
     {
         category: "On The Spot Gadgets",
         items: [
-            { icon: <Zap className="w-6 h-6" />, title: "Morse Code Oscillator", description: "Build your own Morse code device." },
-            { icon: <Puzzle className="w-6 h-6" />, title: "ISPF Kits", description: "Hands-on science kits to assemble." },
+            { icon: <Zap className="w-6 h-6" />, title: "Morse Code Oscillator", description: "Build your own Morse code device.", date: "18-Oct-25", time: "All Day" },
+            { icon: <Puzzle className="w-6 h-6" />, title: "ISPF Kits", description: "Hands-on science kits to assemble.", date: "18-Oct-25", time: "All Day" },
         ]
     },
     {
         category: "Stage",
         items: [
-            { icon: <Mic className="w-6 h-6" />, title: "Music Jam", description: "Open stage for musical performances." },
-            { icon: <Award className="w-6 h-6" />, title: "Youth Got Talent", description: "Showcase your unique talents." },
+            { icon: <Mic className="w-6 h-6" />, title: "Music Jam", description: "Open stage for musical performances.", date: "18-Oct-25", time: "All Day" },
+            { icon: <Award className="w-6 h-6" />, title: "Youth Got Talent", description: "Showcase your unique talents.", date: "18-Oct-25", time: "03:00 PM - 05:00 PM" },
         ]
     },
     {
         category: "Community Volunteering",
         items: [
-            { icon: <HandHelping className="w-6 h-6" />, title: "Paper Bag Making - Ecofold", description: "Contribute to a greener planet." },
-            { icon: <HandHelping className="w-6 h-6" />, title: "Community Development", description: "Activities with SCSG, Panchavati, & Prakruthi Shaale." },
-            { icon: <Paintbrush className="w-6 h-6" />, title: "Community Art Creation", description: "Collaborate on a large art piece." },
+            { icon: <HandHelping className="w-6 h-6" />, title: "Paper Bag Making - Ecofold", description: "Contribute to a greener planet.", date: "17-Oct to 19-Oct", time: "All Day" },
+            { icon: <HandHelping className="w-6 h-6" />, title: "Community Development", description: "Activities with SCSG, Panchavati, & Prakruthi Shaale.", date: "17-Oct to 19-Oct", time: "All Day" },
+            { icon: <Paintbrush className="w-6 h-6" />, title: "Community Art Creation", description: "Collaborate on a large art piece.", date: "19-Oct-25", time: "10:00 AM - 01:00 PM" },
         ]
     },
 ];
@@ -126,16 +129,19 @@ export default function ActivitiesPage() {
                             <CardContent className="flex-grow">
                                 {comp.details ? (
                                     <div className="space-y-4">
-                                        {comp.details.date && (
+                                        {(comp.details.date || comp.details.time) && (
                                              <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
-                                                <Badge variant="outline">{comp.details.date}</Badge>
-                                                {comp.details.locationUrl ? (
-                                                    <a href={comp.details.locationUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary"><MapPin size={14}/> {comp.details.location} <ArrowRight size={12} /></a>
-                                                ) : (
-                                                    <div className="flex items-center gap-2"><MapPin size={14}/> {comp.details.location}</div>
-                                                )}
+                                                {comp.details.date && <Badge variant="outline">{comp.details.date}</Badge>}
+                                                {comp.details.time && <div className="flex items-center gap-2"><Clock size={14}/> {comp.details.time}</div>}
                                              </div>
                                         )}
+                                        <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
+                                            {comp.details.locationUrl ? (
+                                                <a href={comp.details.locationUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary"><MapPin size={14}/> {comp.details.location} <ArrowRight size={12} /></a>
+                                            ) : (
+                                                <div className="flex items-center gap-2"><MapPin size={14}/> {comp.details.location}</div>
+                                            )}
+                                        </div>
                                         {comp.details.ageGroups ? (
                                         <Table>
                                             <TableHeader>
@@ -181,12 +187,20 @@ export default function ActivitiesPage() {
                             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {cat.items.map((item, j) => (
                                     <Card key={j}>
-                                        <CardContent className="p-6 flex items-start gap-4">
-                                            <div className="text-primary mt-1">{item.icon}</div>
-                                            <div>
-                                                <h4 className="font-bold">{item.title}</h4>
-                                                <p className="text-sm text-muted-foreground">{item.description}</p>
+                                        <CardContent className="p-6 flex flex-col gap-4">
+                                            <div className="flex items-start gap-4">
+                                                <div className="text-primary mt-1">{item.icon}</div>
+                                                <div>
+                                                    <h4 className="font-bold">{item.title}</h4>
+                                                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                                                </div>
                                             </div>
+                                            {(item.date || item.time) && (
+                                                <div className="flex items-center gap-4 text-xs text-muted-foreground pt-2 border-t">
+                                                    {item.date && <Badge variant="outline">{item.date}</Badge>}
+                                                    {item.time && <div className="flex items-center gap-2"><Clock size={14}/> {item.time}</div>}
+                                                </div>
+                                            )}
                                         </CardContent>
                                     </Card>
                                 ))}
