@@ -172,8 +172,8 @@ export default function Home() {
     <>
       <HeroSection />
       <AboutSection />
-      <HighlightsSection />
       <FunActivitiesSection />
+      <HighlightsSection />
     </>
   );
 }
