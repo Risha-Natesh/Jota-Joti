@@ -78,9 +78,13 @@ function AboutSection() {
           </p>
            <div className="text-sm border-l-2 border-primary pl-4 pr-4 py-2 bg-muted/50 rounded-r-md">
             <h4 className="font-bold mb-2 text-primary">Did you know? About Sri Chamundi Scout Group</h4>
-            <p className="text-muted-foreground">
-                Familiarly known as 21st Bangalore, the Sri Chamundi Scout Group was the first open scout unit started in Bangalore in 1918. It is the oldest existing open unit in the country, has earned the patronage of the Royal Family, being called the "Maharaja’s own troop," and is recognized as a top unit in the Asia Pacific Region.
-            </p>
+            <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                <li>Familiarly known as 21st Bangalore, the Sri Chamundi Scout Group was the first open scout unit started in Bangalore in 1918.</li>
+                <li>It is the oldest existing open unit in the country and recognized as a top unit in the Asia Pacific Region.</li>
+                <li>The group earned the patronage of the Royal Family, being called the "Maharaja’s own troop."</li>
+                <li>SCSG established the first-ever Adult Fellowship, the Karnataka Scouts and Guides Fellowship Chamundi Guild.</li>
+                <li>The group's founder, Sri M.H. Ramachandra Rao (MHR), is hailed as the "Baden Powell of Karnataka."</li>
+            </ul>
           </div>
         </div>
         <div className="space-y-6">
