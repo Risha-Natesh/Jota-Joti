@@ -46,13 +46,14 @@ const competitions = [
         description: "Challenges designed to test and build teamwork.",
         details: {
             date: "17-Oct-25",
-            time: "4 - 6 Hrs",
+            time: "4:00 PM - 6:00 PM",
             location: "SCSG",
             locationUrl: "https://maps.app.goo.gl/LbwTZoreEqEuCNMcA",
             ageGroups: [
-                { age: "12 - 16 YRS", title: "", rules: "Requires a team of 10." },
-                { age: "17 - 24 YRS", title: "", rules: "Requires a team of 10." },
-            ]
+                { age: "12 - 16 YRS", title: "Requires a team of 10.", rules: "Test your teamwork with exciting challenges." },
+                { age: "17 - 24 YRS", title: "Requires a team of 10.", rules: "Compete in advanced team-building activities." },
+            ],
+            disclaimer: "Scouts and Guides to come in patrol size of 6 to 8."
         }
     },
     {
@@ -191,6 +192,13 @@ export default function ActivitiesPage() {
                                             <div className="text-left text-muted-foreground p-4 bg-muted/50 rounded-md">
                                                 {/* @ts-ignore */}
                                                 <p>{comp.details.rules}</p>
+                                            </div>
+                                        )}
+                                         {/* @ts-ignore */}
+                                        {comp.details.disclaimer && (
+                                            <div className="text-center text-sm font-semibold text-primary p-3 bg-primary/10 rounded-md">
+                                                {/* @ts-ignore */}
+                                                <p>{comp.details.disclaimer}</p>
                                             </div>
                                         )}
                                          <div className="text-xs text-muted-foreground flex items-center gap-4 justify-center pt-2">
