@@ -1,4 +1,5 @@
 
+'use client';
 import Image from "next/image";
 import Link from "next/link";
 import type { ImagePlaceholder } from "@/lib/placeholder-images";
@@ -6,11 +7,13 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import Countdown from "@/components/countdown";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Globe, Gamepad2, Users, Radio, Wrench, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Autoplay from "embla-carousel-autoplay";
+import React from "react";
 
 const getImage = (id: string): ImagePlaceholder | undefined => PlaceHolderImages.find(img => img.id === id);
 
@@ -33,18 +36,35 @@ const SectionSubtitle = ({ children, className }: { children: React.ReactNode, c
 );
 
 function HeroSection() {
+  const heroImages = ["/Images/1.jpg", "/Images/2.jpg", "/Images/3.jpg", "/Images/4.jpg"];
+  const plugin = React.useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true })
+  );
+
   return (
     <section id="home" className="relative w-full h-screen min-h-[700px] flex items-center justify-center text-primary-foreground overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <Image 
-          src="/Images/jotajoti-hero.gif" 
-          alt="Hero Background" 
-          fill 
-          className="object-cover"
-          priority
-          unoptimized
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-primary/40" />
+        <Carousel 
+          opts={{ loop: true }}
+          plugins={[plugin.current]}
+          className="w-full h-full"
+        >
+          <CarouselContent>
+            {heroImages.map((src, index) => (
+              <CarouselItem key={index}>
+                <Image 
+                  src={src}
+                  alt={`Hero Background Image ${index + 1}`}
+                  fill 
+                  className="object-cover"
+                  priority={index === 0}
+                  unoptimized
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/50" />
       </div>
       <div className="container relative z-10 flex flex-col items-center text-center space-y-8">
         <Badge variant="secondary" className="text-lg py-2 px-4 bg-white/20 text-white border-white/30">17, 18 & 19 October 2025</Badge>
