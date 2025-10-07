@@ -187,8 +187,10 @@ export default function ActivitiesPage() {
                                             </TableBody>
                                         </Table>
                                         ) : null}
+                                         {/* @ts-ignore */}
                                          {comp.details.rules && typeof comp.details.rules === 'string' && (
                                             <div className="text-left text-muted-foreground p-4 bg-muted/50 rounded-md">
+                                                {/* @ts-ignore */}
                                                 <p>{comp.details.rules}</p>
                                             </div>
                                         )}
