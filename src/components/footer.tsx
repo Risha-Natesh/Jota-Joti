@@ -30,8 +30,8 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="font-headline text-lg font-semibold text-foreground">Contact Us</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="tel:+911234567890" className="flex items-center gap-2 hover:text-primary transition-colors"><Phone size={16} /> POC One: +91 12345 67890</a></li>
-              <li><a href="mailto:contact@jota-joti-2025.com" className="flex items-center gap-2 hover:text-primary transition-colors"><Mail size={16} /> POC Two: contact@jota-joti-2025.com</a></li>
+              <li><a href="tel:9886633810" className="flex items-center gap-2 hover:text-primary transition-colors"><Phone size={16} /> +91 98866 33810</a></li>
+              <li><a href="mailto:contact@jota-joti-2025.com" className="flex items-center gap-2 hover:text-primary transition-colors"><Mail size={16} /> contact@jota-joti-2025.com</a></li>
             </ul>
           </div>
           
