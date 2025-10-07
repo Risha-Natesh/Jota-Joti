@@ -98,34 +98,18 @@ export default function SchedulePage() {
                     </TabsTrigger>
                 </TabsList>
                 <TabsContent value="panchavati" className="mt-6">
-                    <Card className="bg-transparent border-none shadow-none">
-                        <CardHeader>
-                            <CardTitle className="font-headline">
-                                <a href="https://maps.app.goo.gl/cC787aQb9vq7HybE7" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                                    Panchavati (Main Hub)
-                                </a>
-                            </CardTitle>
-                            <CardDescription>Main hub for workshops & digital activities. <a href="https://maps.app.goo.gl/cC787aQb9vq7HybE7" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold flex items-center gap-1">Get Directions <ArrowRight className="w-3 h-3"/></a></CardDescription>
-                        </CardHeader>
-                        <CardContent className="space-y-8">
-                           <DaySchedule title="Day 1 (Oct 17)" items={schedule.panchavati.day1} />
-                           <DaySchedule title="Day 2 (Oct 18)" items={schedule.panchavati.day2} />
-                           <DaySchedule title="Day 3 (Oct 19)" items={schedule.panchavati.day3} />
-                        </CardContent>
-                    </Card>
+                    <div className="space-y-8">
+                       <DaySchedule title="Day 1 (Oct 17)" items={schedule.panchavati.day1} />
+                       <DaySchedule title="Day 2 (Oct 18)" items={schedule.panchavati.day2} />
+                       <DaySchedule title="Day 3 (Oct 19)" items={schedule.panchavati.day3} />
+                    </div>
                 </TabsContent>
                 <TabsContent value="chamundi" className="mt-6">
-                    <Card className="bg-transparent border-none shadow-none">
-                        <CardHeader>
-                            <CardTitle className="font-headline">Sri Chamundi Base</CardTitle>
-                            <CardDescription>Base for radio communication and outdoor games. <a href="https://maps.app.goo.gl/LbwTZoreEqEuCNMcA" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold flex items-center gap-1">Get Directions <ArrowRight className="w-3 h-3"/></a></CardDescription>
-                        </CardHeader>
-                        <CardContent className="space-y-8">
-                             <DaySchedule title="Day 1 (Oct 17)" items={schedule.chamundi.day1} />
-                             <DaySchedule title="Day 2 (Oct 18)" items={schedule.chamundi.day2} />
-                             <DaySchedule title="Day 3 (Oct 19)" items={schedule.chamundi.day3} />
-                        </CardContent>
-                    </Card>
+                    <div className="space-y-8">
+                         <DaySchedule title="Day 1 (Oct 17)" items={schedule.chamundi.day1} />
+                         <DaySchedule title="Day 2 (Oct 18)" items={schedule.chamundi.day2} />
+                         <DaySchedule title="Day 3 (Oct 19)" items={schedule.chamundi.day3} />
+                    </div>
                 </TabsContent>
             </Tabs>
              <div className="text-center mt-12">
