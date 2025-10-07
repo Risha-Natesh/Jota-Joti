@@ -39,7 +39,7 @@ export function Footer() {
             <h4 className="font-headline text-lg font-semibold text-foreground">Follow Us</h4>
             <div className="flex space-x-2">
                 <Button variant="ghost" size="icon" asChild>
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram /></a>
+                    <a href="https://www.instagram.com/chamundis1918?utm_source=qr&igsh=YmtjZnZnNXNmbnRu" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram /></a>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
                     <a href="#" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Group"><MessageCircle /></a>
