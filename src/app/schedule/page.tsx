@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowRight, Clock, MapPin, Utensils, Zap, Tent, Sunrise, Sunset, Radio, Film, Users, Award, Code, Gamepad2, ShieldCheck, Video, Sailboat, Trophy, Mic, PartyPopper } from "lucide-react";
+import { ArrowRight, Clock, MapPin, Utensils, Zap, Tent, Sunrise, Sunset, Radio, Film, Users, Award, Code, Gamepad2, ShieldCheck, Video, Sailboat, Trophy, Mic, PartyPopper, HandHelping } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -38,6 +38,7 @@ const schedule = {
     ],
     day3: [
         { time: "All Day", event: "Open Day", icon: <Users className="w-5 h-5" /> },
+        { time: "All Day", event: "Community Volunteering", icon: <HandHelping className="w-5 h-5" /> },
         { time: "04:00 PM - 05:00 PM", event: "Valedictory & Closing Ceremony", icon: <Trophy className="w-5 h-5" /> },
     ]
   }
