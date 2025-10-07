@@ -85,27 +85,27 @@ export default function SchedulePage() {
                 </p>
             </div>
 
-            <Tabs defaultValue="panchavati" className="max-w-4xl mx-auto">
+            <Tabs defaultValue="chamundi" className="max-w-4xl mx-auto">
                 <TabsList className="grid w-full grid-cols-2">
-                    <TabsTrigger value="panchavati">
-                        <MapPin className="mr-2 h-4 w-4"/> Panchavati
-                    </TabsTrigger>
                     <TabsTrigger value="chamundi">
                         <Radio className="mr-2 h-4 w-4" /> Sri Chamundi Scout Group
                     </TabsTrigger>
+                    <TabsTrigger value="panchavati">
+                        <MapPin className="mr-2 h-4 w-4"/> Panchavati
+                    </TabsTrigger>
                 </TabsList>
-                <TabsContent value="panchavati" className="mt-6">
-                    <div className="space-y-8">
-                       <DaySchedule title="Day 1 (Oct 17)" items={schedule.panchavati.day1} />
-                       <DaySchedule title="Day 2 (Oct 18)" items={schedule.panchavati.day2} />
-                       <DaySchedule title="Day 3 (Oct 19)" items={schedule.panchavati.day3} />
-                    </div>
-                </TabsContent>
                 <TabsContent value="chamundi" className="mt-6">
                     <div className="space-y-8">
                          <DaySchedule title="Day 1 (Oct 17)" items={schedule.chamundi.day1} />
                          <DaySchedule title="Day 2 (Oct 18)" items={schedule.chamundi.day2} />
                          <DaySchedule title="Day 3 (Oct 19)" items={schedule.chamundi.day3} />
+                    </div>
+                </TabsContent>
+                <TabsContent value="panchavati" className="mt-6">
+                    <div className="space-y-8">
+                       <DaySchedule title="Day 1 (Oct 17)" items={schedule.panchavati.day1} />
+                       <DaySchedule title="Day 2 (Oct 18)" items={schedule.panchavati.day2} />
+                       <DaySchedule title="Day 3 (Oct 19)" items={schedule.panchavati.day3} />
                     </div>
                 </TabsContent>
             </Tabs>
