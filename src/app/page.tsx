@@ -37,7 +37,7 @@ function HeroSection() {
     <section id="home" className="relative w-full h-screen min-h-[700px] flex items-center justify-center text-primary-foreground overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image 
-          src="/Hero.gif" 
+          src="/Images/jotajoti-hero.gif" 
           alt="Hero Background" 
           fill 
           className="object-cover"
