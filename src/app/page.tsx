@@ -34,7 +34,7 @@ const SectionSubtitle = ({ children, className }: { children: React.ReactNode, c
 
 function HeroSection() {
   return (
-    <Section id="home" noPadding className="relative w-full h-[90vh] md:h-screen min-h-[600px] flex items-center justify-center text-primary-foreground overflow-hidden">
+    <section id="home" className="relative w-full h-screen min-h-[700px] flex items-center justify-center text-primary-foreground overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image 
           src="/Hero.gif" 
@@ -42,10 +42,10 @@ function HeroSection() {
           fill 
           className="object-cover"
           priority
-          unoptimized // Important for GIFs to animate properly
+          unoptimized
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-primary/30" />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-primary/30" />
       <div className="container relative z-10 flex flex-col items-center text-center space-y-8">
         <Badge variant="secondary" className="text-lg py-2 px-4 bg-white/20 text-white border-white/30">17, 18 & 19 October 2025</Badge>
         <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl md:text-7xl font-headline">JOTA-JOTI 2025</h1>
@@ -60,7 +60,7 @@ function HeroSection() {
           <Link href="/register">Register Now <ArrowRight className="ml-2" /></Link>
         </Button>
       </div>
-    </Section>
+    </section>
   );
 }
 
