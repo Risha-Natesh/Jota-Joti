@@ -15,7 +15,7 @@ const albums = [
         imageId: "album-cover-1"
     },
     {
-        title: "Joti Jota in panchvati",
+        title: "Joti Jota in Panchvati",
         url: "https://photos.app.goo.gl/m5qLBqp6iWxtkWpr9",
         imageId: "album-cover-3"
     },
