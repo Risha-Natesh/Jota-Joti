@@ -44,7 +44,7 @@ function HeroSection() {
           priority
           unoptimized
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-primary/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-primary/40" />
       </div>
       <div className="container relative z-10 flex flex-col items-center text-center space-y-8">
         <Badge variant="secondary" className="text-lg py-2 px-4 bg-white/20 text-white border-white/30">17, 18 & 19 October 2025</Badge>
