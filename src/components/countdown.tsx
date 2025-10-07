@@ -45,11 +45,11 @@ const Countdown = () => {
   }, []);
 
   const renderPlaceholder = () => (
-    <div className="flex justify-center gap-4 sm:gap-8 animate-pulse">
-        <div className="text-center"><div className="text-4xl sm:text-6xl font-bold font-headline bg-white/20 rounded-md">--</div><div className="text-sm uppercase tracking-widest mt-2">Days</div></div>
-        <div className="text-center"><div className="text-4xl sm:text-6xl font-bold font-headline bg-white/20 rounded-md">--</div><div className="text-sm uppercase tracking-widest mt-2">Hours</div></div>
-        <div className="text-center"><div className="text-4xl sm:text-6xl font-bold font-headline bg-white/20 rounded-md">--</div><div className="text-sm uppercase tracking-widest mt-2">Minutes</div></div>
-        <div className="text-center"><div className="text-4xl sm:text-6xl font-bold font-headline bg-white/20 rounded-md">--</div><div className="text-sm uppercase tracking-widest mt-2">Seconds</div></div>
+    <div className="flex justify-center gap-4 sm:gap-8">
+        <div className="text-center w-24"><div className="text-4xl sm:text-6xl font-bold font-headline">--</div><div className="text-sm uppercase tracking-widest mt-2">Days</div></div>
+        <div className="text-center w-24"><div className="text-4xl sm:text-6xl font-bold font-headline">--</div><div className="text-sm uppercase tracking-widest mt-2">Hours</div></div>
+        <div className="text-center w-24"><div className="text-4xl sm:text-6xl font-bold font-headline">--</div><div className="text-sm uppercase tracking-widest mt-2">Minutes</div></div>
+        <div className="text-center w-24"><div className="text-4xl sm:text-6xl font-bold font-headline">--</div><div className="text-sm uppercase tracking-widest mt-2">Seconds</div></div>
     </div>
   )
   
@@ -60,7 +60,7 @@ const Countdown = () => {
   return (
     <div className="flex justify-center gap-4 sm:gap-8">
       {Object.entries(timeLeft).map(([unit, value]) => (
-        <div key={unit} className="text-center w-20 bg-white/10 backdrop-blur-sm p-2 rounded-lg border border-white/20">
+        <div key={unit} className="text-center w-24">
           <div className="text-4xl sm:text-6xl font-bold font-headline">
             {String(value).padStart(2, '0')}
           </div>
