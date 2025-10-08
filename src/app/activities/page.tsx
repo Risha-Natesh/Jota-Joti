@@ -37,7 +37,8 @@ const competitions = [
                 { age: "8 - 11 YRS", title: "Cardboard Creations", rules: "Design and build a simple machine, like a catapult or a marble run, using cardboard tubes and boxes." },
                 { age: "12 - 16 YRS", title: "Art Meets Science", rules: "Create scientific models, or educational kits entirely from upcycled materials." },
                 { age: "17 - 24 YRS", title: "E-Waste to E-Wonder", rules: "Give electronic waste a second life through science and creativity." },
-            ]
+            ],
+            disclaimer: "Working models to be presented."
         }
     },
     {
@@ -133,7 +134,7 @@ const activityCategories = [
 
 export default function ActivitiesPage() {
     return (
-        <main className="bg-muted">
+        <main className="bg-background">
             <div className="container py-12 md:py-24">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl font-headline">Activities & Competitions</h1>
