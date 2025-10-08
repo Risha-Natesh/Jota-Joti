@@ -36,7 +36,7 @@ const competitions = [
             ageGroups: [
                 { age: "8 - 11 YRS", title: "Cardboard Creations", rules: "Design and build a simple machine, like a catapult or a marble run, using cardboard tubes and boxes." },
                 { age: "12 - 16 YRS", title: "Art Meets Science", rules: "Create a scientific model or an art piece inspired by scientific principles. You can even use upcycled materials to bring your ideas to life." },
-                { age: "17 - 24 YRS", title: "Upcycled Art", rules: "Give discarded materials a second life by creating upcycled art that blends science and creativity." },
+                { age: "17 - 24 YRS", title: "E-Waste to E-Wonder", rules: "Give electronic waste a second life through science and creativity." },
             ],
             disclaimer: "Working models to be presented."
         }
