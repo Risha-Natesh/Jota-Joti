@@ -31,7 +31,35 @@ export default function Home() {
   const approachImage = PlaceHolderImages.find((img) => img.id === 'approach');
 
   return (
-    <div className="flex flex-col min-h-screen bg-background text-gray-800">
+    <div className="relative flex flex-col min-h-screen bg-background text-gray-800 overflow-hidden">
+      <div className="absolute top-0 left-0 -z-10 opacity-10">
+        <svg
+          width="400"
+          height="400"
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="hsl(var(--primary))"
+            d="M55.7,-48.6C69.9,-33.3,77.7,-16.7,78.2,0.6C78.7,17.9,71.9,35.8,59.3,46.5C46.7,57.2,28.3,60.7,11.5,60.3C-5.3,59.9,-20.5,55.7,-34.9,47.5C-49.3,39.3,-62.9,27.2,-68.8,11.2C-74.7,-4.8,-72.9,-24.7,-63.3,-40.5C-53.7,-56.3,-36.3,-68,-19.5,-70.5C-2.7,-73,13.5,-66.4,27.9,-59.1C42.4,-51.8,55.7,-48.6,55.7,-48.6Z"
+            transform="translate(40 60) scale(1.5)"
+          />
+        </svg>
+      </div>
+      <div className="absolute bottom-0 right-0 -z-10 opacity-10">
+        <svg
+          width="500"
+          height="500"
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="hsl(var(--accent))"
+            d="M48.8,-58.2C62.8,-49.1,73.4,-33.7,76.5,-16.4C79.6,0.8,75.2,19.8,65.3,35.2C55.4,50.6,40.1,62.4,23.5,68.2C6.9,74,-11,73.8,-27.2,68.2C-43.4,62.6,-57.9,51.6,-66.2,37.3C-74.4,23,-76.4,5.4,-72.5,-10.6C-68.6,-26.6,-58.8,-41,-46.3,-50.2C-33.8,-59.4,-18.6,-63.5,-3.5,-62C11.6,-60.5,23.1,-53.4,34.8,-47.5C46.5,-41.6,48.8,-58.2,48.8,-58.2Z"
+            transform="translate(150 140) scale(1.8)"
+          />
+        </svg>
+      </div>
       <Header />
       <main className="flex-1">
         <section id="home" className="container mx-auto py-20 lg:py-32">
