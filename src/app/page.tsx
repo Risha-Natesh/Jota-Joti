@@ -34,22 +34,27 @@ export default function Home() {
     <div className="relative flex flex-col min-h-screen bg-background text-gray-800 overflow-hidden">
       <div className="absolute top-0 left-0 -z-10 opacity-10">
         <svg
-          width="400"
-          height="400"
-          viewBox="0 0 200 200"
+          width="300"
+          height="300"
+          viewBox="0 0 500 500"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             fill="hsl(var(--primary))"
-            d="M55.7,-48.6C69.9,-33.3,77.7,-16.7,78.2,0.6C78.7,17.9,71.9,35.8,59.3,46.5C46.7,57.2,28.3,60.7,11.5,60.3C-5.3,59.9,-20.5,55.7,-34.9,47.5C-49.3,39.3,-62.9,27.2,-68.8,11.2C-74.7,-4.8,-72.9,-24.7,-63.3,-40.5C-53.7,-56.3,-36.3,-68,-19.5,-70.5C-2.7,-73,13.5,-66.4,27.9,-59.1C42.4,-51.8,55.7,-48.6,55.7,-48.6Z"
-            transform="translate(40 60) scale(1.5)"
+            d="M399.5,420.5Q373,341,438,300Q503,259,451,192.5Q399,126,358.5,102.5Q318,79,250,71.5Q182,64,136.5,105Q91,146,67.5,202Q44,258,94,307.5Q144,357,197,378.5Q250,400,324.5,410Q399,420,399.5,420.5Z"
+            transform="translate(-50 -50)"
+          />
+          <path
+            fill="hsl(var(--accent))"
+            d="M110.3,5.1c32.4,0.3,65,13.8,88.4,36.9c23.4,23.1,37.6,56.3,37.6,90.3c0,29.9-10.4,59.1-31,81.1c-20.6,22-51.5,36.8-82.7,42.3c-31.2,5.5-62.8-0.3-90.1-16.1C35.2,223.8,12,197,3.9,165.7C-4.1,134.4-7,98.8,3.9,68.8c10.9-30,34.7-55.7,63.1-66.9C95.4-8.3,110.3,5.1,110.3,5.1z"
+            transform="translate(150 50) scale(0.8)"
           />
         </svg>
       </div>
-      <div className="absolute bottom-0 right-0 -z-10 opacity-10">
+      <div className="absolute bottom-0 right-0 -z-10 opacity-10 overflow-hidden">
         <svg
-          width="500"
-          height="500"
+          width="400"
+          height="400"
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
         >
