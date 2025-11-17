@@ -46,7 +46,7 @@ export default function Home() {
           />
           <path
             fill="hsl(var(--accent))"
-            d="M110.3,5.1c32.4,0.3,65,13.8,88.4,36.9c23.4,23.1,37.6,56.3,37.6,90.3c0,29.9-10.4,59.1-31,81.1c-20.6,22-51.5,36.8-82.7,42.3c-31.2,5.5-62.8-0.3-90.1-16.1C35.2,223.8,12,197,3.9,165.7C-4.1,134.4-7,98.8,3.9,68.8c10.9-30,34.7-55.7,63.1-66.9C95.4-8.3,110.3,5.1,110.3,5.1z"
+            d="M110.3,5.1c32.4,0.3,65,13.8,88.4,36.9c23.4,23.1,37.6,56.3,37.6,90.3c0,29.9-10.4,59.1-31,81.1c-20.6,22-51.5,36.8-82.7,42.3c-31.2,5.5-62.8-0.3-90.1-16.1C35.2,223.8,12,197,3.9,165.7C-4.1,134.4-7,98.8,3.9,68.8c10.9-30,34.7-55.7,63.1-66.9C95.4,-8.3,110.3,5.1,110.3,5.1z"
             transform="translate(150 50) scale(0.8)"
           />
         </svg>
@@ -649,27 +649,9 @@ export default function Home() {
                           Bengaluru, Karnataka 560003
                         </span>
                       </div>
-                      <div className="flex items-center gap-4">
-                        <Globe className="w-5 h-5 text-accent" />
-                        <a
-                          href="http://www.prakruthishaale.com"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:text-accent"
-                        >
-                          www.prakruthishaale.com
-                        </a>
-                      </div>
                     </div>
                   </div>
                   <div className="text-left">
-                    <h4 className="text-xl font-bold text-primary">
-                      Krishna Raj S
-                    </h4>
-                    <p className="text-gray-600 mb-4">Founder</p>
-                    <p className="text-sm text-gray-500">
-                      Powered By: Outdoor Dynamix
-                    </p>
                   </div>
                 </div>
               </div>

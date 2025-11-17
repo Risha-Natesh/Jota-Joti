@@ -42,9 +42,6 @@ const Header = () => {
       <nav className="hidden md:flex items-center gap-2">
         <Button variant="ghost" onClick={() => scrollTo('home')}>Home</Button>
         <Button variant="ghost" onClick={() => scrollTo('about')}>About</Button>
-        <Button variant="ghost" onClick={() => scrollTo('vision')}>Vision</Button>
-        <Button variant="ghost" onClick={() => scrollTo('solution')}>Solution</Button>
-        <Button variant="ghost" onClick={() => scrollTo('programs')}>Programs</Button>
         <Button onClick={() => scrollTo('contact')}>
           Contact
         </Button>
