@@ -17,12 +17,6 @@ export default {
       },
     },
     extend: {
-      fontFamily: {
-        body: ['PT Sans', 'sans-serif'],
-        headline: ['Space Grotesk', 'sans-serif'],
-        theme: ['Playfair Display', 'serif'],
-        code: ['monospace'],
-      },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
