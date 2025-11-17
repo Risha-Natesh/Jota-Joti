@@ -189,60 +189,29 @@ export default function Home() {
               <p className="text-gray-600">
                 Addressing urgent environmental threats by uniting stakeholders
                 and empowering youth to foster sustainable development and
-                social innovation through SDG 17 partnerships.
+                social innovation.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                 <div>
                   <h3 className="font-bold text-xl text-primary mb-3">
-                    The Challenge We Address
+                    The Challenge
                   </h3>
                   <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start">
-                      <span className="font-bold text-accent mr-2">1.</span>
-                      Environmental Threats: Urgent need to prepare young minds
-                      for sustainability.
-                    </li>
-                    <li className="flex items-start">
-                      <span className="font-bold text-accent mr-2">2.</span>
-                      Disconnected Initiatives: Fragmented stakeholder efforts
-                      limiting impact.
-                    </li>
-                    <li className="flex items-start">
-                      <span className="font-bold text-accent mr-2">3.</span>
-                      Resource Allocation: Inefficient use of resources for
-                      sustainable projects.
-                    </li>
-                    <li className="flex items-start">
-                      <span className="font-bold text-accent mr-2">4.</span>
-                      Limited Community Engagement: Low involvement slows
-                      sustainable progress.
-                    </li>
+                    <li>- Urgent environmental threats</li>
+                    <li>- Disconnected sustainability efforts</li>
+                    <li>- Inefficient resource allocation</li>
+                    <li>- Limited community engagement</li>
                   </ul>
                 </div>
                 <div>
                   <h3 className="font-bold text-xl text-primary mb-3">
-                    The Opportunity We Seize
+                    The Opportunity
                   </h3>
                   <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start">
-                      <span className="font-bold text-accent mr-2">1.</span>
-                      Create a collaborative ecosystem to unite diverse
-                      stakeholders.
-                    </li>
-                    <li className="flex items-start">
-                      <span className="font-bold text-accent mr-2">2.</span>
-                      Leverage SDG 17 Partnerships to amplify collective impact.
-                    </li>
-                    <li className="flex items-start">
-                      <span className="font-bold text-accent mr-2">3.</span>
-                      Mobilize resources efficiently to maximize sustainability
-                      efforts.
-                    </li>
-                    <li className="flex items-start">
-                      <span className="font-bold text-accent mr-2">4.</span>
-                      Empower communities to innovate and drive sustainable
-                      change.
-                    </li>
+                    <li>- Create a collaborative ecosystem</li>
+                    <li>- Leverage partnerships for impact</li>
+                    <li>- Mobilize resources efficiently</li>
+                    <li>- Empower community-led innovation</li>
                   </ul>
                 </div>
               </div>
