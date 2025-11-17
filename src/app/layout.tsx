@@ -6,11 +6,13 @@ import { Toaster } from '@/components/ui/toaster';
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-poppins',
 });
 
 export const metadata: Metadata = {
-  title: 'Eco Adventurers',
-  description: 'Join us for fun outdoor activities!',
+  title: 'Prakruthi Shaale',
+  description:
+    'A flagship initiative by Outdoor Dynamix, revolutionizes education by connecting students with nature through innovative outdoor learning experiences.',
 };
 
 export default function RootLayout({

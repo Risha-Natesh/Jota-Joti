@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { MountainIcon } from 'lucide-react';
+import { Sun } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Header = () => {
@@ -27,21 +27,23 @@ const Header = () => {
   return (
     <header
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 transition-colors duration-300',
-        isScrolled ? 'bg-background/80 backdrop-blur-sm shadow-md' : 'bg-transparent'
+        'sticky top-0 z-50 flex items-center justify-between p-4 transition-colors duration-300',
+        isScrolled ? 'bg-background/80 backdrop-blur-sm shadow-sm' : 'bg-transparent'
       )}
     >
-      <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-        <MountainIcon className="h-6 w-6 text-primary" />
-        <span className={cn(isScrolled ? 'text-foreground' : 'text-white')}>
-          Eco Adventurers
+      <Link href="/" className="flex items-center gap-3 font-bold text-xl text-gray-800">
+        <div className="w-8 h-8 bg-black/80 text-white flex items-center justify-center rounded-sm">
+            <Sun className="w-5 h-5" />
+        </div>
+        <span>
+          PRAKRUTHI <span className="font-light">SHAALE</span>
         </span>
       </Link>
-      <nav className="hidden md:flex items-center gap-4">
-        <Button variant="ghost" onClick={() => scrollTo('home')} className={cn(isScrolled ? 'text-foreground' : 'text-white hover:bg-white/10 hover:text-white')}>Home</Button>
-        <Button variant="ghost" onClick={() => scrollTo('about')} className={cn(isScrolled ? 'text-foreground' : 'text-white hover:bg-white/10 hover:text-white')}>About</Button>
-        <Button variant="ghost" onClick={() => scrollTo('activities')} className={cn(isScrolled ? 'text-foreground' : 'text-white hover:bg-white/10 hover:text-white')}>Activities</Button>
-        <Button onClick={() => scrollTo('contact')} className="bg-primary text-primary-foreground hover:bg-primary/90">
+      <nav className="hidden md:flex items-center gap-2">
+        <Button variant="ghost" onClick={() => scrollTo('home')}>Home</Button>
+        <Button variant="ghost" onClick={() => scrollTo('about')}>About</Button>
+        <Button variant="ghost" onClick={() => scrollTo('activities')}>Activities</Button>
+        <Button onClick={() => scrollTo('contact')}>
           Contact
         </Button>
       </nav>
