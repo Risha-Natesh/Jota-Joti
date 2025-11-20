@@ -26,9 +26,9 @@
     },
     {
       "id": "approach",
-      "description": "Students participating in a hands-on workshop about sustainability.",
-      "imageUrl": "https://images.unsplash.com/photo-1596496638641-e240fd67b4c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdHVkZW50cyUyMHdvcmtzaG9wfGVufDB8fHx8MTc2MzMyOTg1MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "students workshop"
+      "description": "A diagram illustrating the educational approach.",
+      "imageUrl": "/Images/approach.png",
+      "imageHint": "approach diagram"
     }
   ]
 }
