@@ -173,7 +173,7 @@ export default function Home() {
               Connecting changemakers to make sustainability actionable and
               inclusive.
             </p>
-            <div className="grid md:grid-cols-2 gap-12 text-left">
+            <div className="grid md:grid-cols-2 gap-12 text-center">
               <div>
                 <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
                   Our Vision
