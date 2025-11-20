@@ -84,14 +84,6 @@ export default function Home() {
                 holistic development.
               </p>
             </div>
-            <div className="absolute bottom-8 right-8">
-                <p className="text-sm text-white/80">
-                Powered By:{' '}
-                <a href="#" className="font-semibold text-white hover:underline">
-                    Outdoor Dynamix
-                </a>
-                </p>
-            </div>
           </div>
         </section>
 
