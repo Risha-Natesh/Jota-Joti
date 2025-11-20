@@ -128,77 +128,77 @@ export default function ProgramPage() {
             </div>
 
             <div className="grid grid-cols-1 gap-16 items-center justify-items-center">
-              <Card className="bg-slate-800 text-white max-w-2xl">
+              <Card className="max-w-2xl">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-white">
+                  <CardTitle className="text-2xl">
                     Engaging Activities
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-6">
                     <li className="flex gap-4">
-                      <span className="text-2xl font-bold text-slate-400">
+                      <span className="text-2xl font-bold text-muted-foreground">
                         01
                       </span>
                       <div>
                         <h4 className="font-bold">HAM Radio Exploration</h4>
-                        <p className="text-slate-300 text-sm">
+                        <p className="text-muted-foreground text-sm">
                           Introduces communication, electronics, emergency
                           usage, and connects a global community.
                         </p>
                       </div>
                     </li>
                     <li className="flex gap-4">
-                      <span className="text-2xl font-bold text-slate-400">
+                      <span className="text-2xl font-bold text-muted-foreground">
                         02
                       </span>
                       <div>
                         <h4 className="font-bold">
                           Rope Work & Knots Fundamentals
                         </h4>
-                        <p className="text-slate-300 text-sm">
+                        <p className="text-muted-foreground text-sm">
                           Teaches problem-solving, engineering thinking,
                           improvisation with practical rope skills.
                         </p>
                       </div>
                     </li>
                     <li className="flex gap-4">
-                      <span className="text-2xl font-bold text-slate-400">
+                      <span className="text-2xl font-bold text-muted-foreground">
                         03
                       </span>
                       <div>
                         <h4 className="font-bold">
                           Essential First Aid Training
                         </h4>
-                        <p className="text-slate-300 text-sm">
+                        <p className="text-muted-foreground text-sm">
                           Provides vital life-saving knowledge while promoting
                           empathy and social responsibility.
                         </p>
                       </div>
                     </li>
                     <li className="flex gap-4">
-                      <span className="text-2xl font-bold text-slate-400">
+                      <span className="text-2xl font-bold text-muted-foreground">
                         04
                       </span>
                       <div>
                         <h4 className="font-bold">
                           Panchavati Nature Walk Experience
                         </h4>
-                        <p className="text-slate-300 text-sm">
+                        <p className="text-muted-foreground text-sm">
                           Guided immersion in nature with flora/fauna
                           observation and eco-friendly habit discussions.
                         </p>
                       </div>
                     </li>
                     <li className="flex gap-4">
-                      <span className="text-2xl font-bold text-slate-400">
+                      <span className="text-2xl font-bold text-muted-foreground">
                         05
                       </span>
                       <div>
                         <h4 className="font-bold">
                           Ice Breaker Game for Teamwork
                         </h4>
-                        <p className="text-slate-300 text-sm">
+                        <p className="text-muted-foreground text-sm">
                           Fosters teamwork, collaboration, and communication
                           through engaging group challenges.
                         </p>
