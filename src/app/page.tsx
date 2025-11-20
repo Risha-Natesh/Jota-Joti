@@ -78,7 +78,7 @@ export default function Home() {
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white drop-shadow-lg">
                 Empowering
                 <br />
-                Through <span className="bg-gradient-to-r from-green-400 to-green-200 bg-clip-text text-transparent">Nature</span>
+                <span className="bg-gradient-to-r from-green-400 to-yellow-300 bg-clip-text text-transparent">Through Nature</span>
               </h1>
               <p className="text-lg text-white/90 max-w-2xl mx-auto">
                 Prakruthi Shaale, a flagship initiative by Outdoor Dynamix,
@@ -162,9 +162,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="vision" className="py-20 bg-white text-primary">
+        <section id="vision" className="py-20 bg-white">
           <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold text-primary mb-4 bg-forest-gradient bg-clip-text text-transparent">
+            <h2 className="text-4xl font-bold mb-4 bg-forest-gradient bg-clip-text text-transparent">
               Our Vision &amp; Mission
             </h2>
             <p className="text-lg text-foreground/80 max-w-2xl mx-auto mb-12">
