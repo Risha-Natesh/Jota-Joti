@@ -26,6 +26,9 @@ export default function ProgramPage() {
   const ecoConnectImage = PlaceHolderImages.find(
     (img) => img.id === 'eco-connect'
   );
+  const engagingActivitiesImage = PlaceHolderImages.find(
+    (img) => img.id === 'engaging-activities'
+  );
 
   return (
     <div className="relative flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
@@ -128,85 +131,97 @@ export default function ProgramPage() {
             </div>
 
             <div className="grid grid-cols-1 gap-16 items-center justify-items-center">
-              <Card className="max-w-2xl">
-                <CardHeader>
-                  <CardTitle className="text-2xl">
-                    Engaging Activities
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-6">
-                    <li className="flex gap-4">
-                      <span className="text-2xl font-bold text-muted-foreground">
-                        01
-                      </span>
-                      <div>
-                        <h4 className="font-bold">HAM Radio Exploration</h4>
-                        <p className="text-muted-foreground text-sm">
-                          Introduces communication, electronics, emergency
-                          usage, and connects a global community.
-                        </p>
-                      </div>
-                    </li>
-                    <li className="flex gap-4">
-                      <span className="text-2xl font-bold text-muted-foreground">
-                        02
-                      </span>
-                      <div>
-                        <h4 className="font-bold">
-                          Rope Work & Knots Fundamentals
-                        </h4>
-                        <p className="text-muted-foreground text-sm">
-                          Teaches problem-solving, engineering thinking,
-                          improvisation with practical rope skills.
-                        </p>
-                      </div>
-                    </li>
-                    <li className="flex gap-4">
-                      <span className="text-2xl font-bold text-muted-foreground">
-                        03
-                      </span>
-                      <div>
-                        <h4 className="font-bold">
-                          Essential First Aid Training
-                        </h4>
-                        <p className="text-muted-foreground text-sm">
-                          Provides vital life-saving knowledge while promoting
-                          empathy and social responsibility.
-                        </p>
-                      </div>
-                    </li>
-                    <li className="flex gap-4">
-                      <span className="text-2xl font-bold text-muted-foreground">
-                        04
-                      </span>
-                      <div>
-                        <h4 className="font-bold">
-                          Panchavati Nature Walk Experience
-                        </h4>
-                        <p className="text-muted-foreground text-sm">
-                          Guided immersion in nature with flora/fauna
-                          observation and eco-friendly habit discussions.
-                        </p>
-                      </div>
-                    </li>
-                    <li className="flex gap-4">
-                      <span className="text-2xl font-bold text-muted-foreground">
-                        05
-                      </span>
-                      <div>
-                        <h4 className="font-bold">
-                          Ice Breaker Game for Teamwork
-                        </h4>
-                        <p className="text-muted-foreground text-sm">
-                          Fosters teamwork, collaboration, and communication
-                          through engaging group challenges.
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+              <div className="relative max-w-2xl w-full rounded-lg overflow-hidden shadow-lg">
+                {engagingActivitiesImage && (
+                  <Image
+                    src={engagingActivitiesImage.imageUrl}
+                    alt={engagingActivitiesImage.description}
+                    fill
+                    className="object-cover -z-10"
+                    data-ai-hint={engagingActivitiesImage.imageHint}
+                  />
+                )}
+                <div className="absolute inset-0 bg-black/60 -z-10"></div>
+                <Card className="bg-transparent text-white border-0">
+                  <CardHeader>
+                    <CardTitle className="text-2xl">
+                      Engaging Activities
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-6">
+                      <li className="flex gap-4">
+                        <span className="text-2xl font-bold text-white/80">
+                          01
+                        </span>
+                        <div>
+                          <h4 className="font-bold">HAM Radio Exploration</h4>
+                          <p className="text-white/70 text-sm">
+                            Introduces communication, electronics, emergency
+                            usage, and connects a global community.
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex gap-4">
+                        <span className="text-2xl font-bold text-white/80">
+                          02
+                        </span>
+                        <div>
+                          <h4 className="font-bold">
+                            Rope Work & Knots Fundamentals
+                          </h4>
+                          <p className="text-white/70 text-sm">
+                            Teaches problem-solving, engineering thinking,
+                            improvisation with practical rope skills.
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex gap-4">
+                        <span className="text-2xl font-bold text-white/80">
+                          03
+                        </span>
+                        <div>
+                          <h4 className="font-bold">
+                            Essential First Aid Training
+                          </h4>
+                          <p className="text-white/70 text-sm">
+                            Provides vital life-saving knowledge while promoting
+                            empathy and social responsibility.
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex gap-4">
+                        <span className="text-2xl font-bold text-white/80">
+                          04
+                        </span>
+                        <div>
+                          <h4 className="font-bold">
+                            Panchavati Nature Walk Experience
+                          </h4>
+                          <p className="text-white/70 text-sm">
+                            Guided immersion in nature with flora/fauna
+                            observation and eco-friendly habit discussions.
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex gap-4">
+                        <span className="text-2xl font-bold text-white/80">
+                          05
+                        </span>
+                        <div>
+                          <h4 className="font-bold">
+                            Ice Breaker Game for Teamwork
+                          </h4>
+                          <p className="text-white/70 text-sm">
+                            Fosters teamwork, collaboration, and communication
+                            through engaging group challenges.
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
 
             <div className="text-center mt-20">
