@@ -127,29 +127,8 @@ export default function ProgramPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div>
-                <h3 className="text-3xl font-bold mb-4 bg-forest-gradient bg-clip-text text-transparent">
-                  Empowering Youth for a Sustainable Future
-                </h3>
-                <p className="text-foreground/80 mb-8">
-                  Responds to current needs by empowering youth with knowledge,
-                  practical skills, and awareness. Our program is aligned with
-                  UN SDGs, focusing on sustainability, climate action, and
-                  responsible consumption.
-                </p>
-                <ul className="space-y-4">
-                  <li className="flex items-center gap-4">
-                    <Leaf className="w-6 h-6 text-accent" />
-                    <span>Immersive Learning Environment</span>
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <Target className="w-6 h-6 text-accent" />
-                    <span>STEM & Environmental Integration</span>
-                  </li>
-                </ul>
-              </div>
-              <Card className="bg-slate-800 text-white">
+            <div className="grid grid-cols-1 gap-16 items-center justify-items-center">
+              <Card className="bg-slate-800 text-white max-w-2xl">
                 <CardHeader>
                   <CardTitle className="text-2xl text-white">
                     Engaging Activities
