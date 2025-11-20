@@ -122,7 +122,7 @@ export default function ProgramPage() {
             />
           )}
           <div className="absolute inset-0 bg-black/60 -z-10"></div>
-          <div className="container mx-auto">
+          <div className="container mx-auto relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent">
                 The Eco Connect Program
