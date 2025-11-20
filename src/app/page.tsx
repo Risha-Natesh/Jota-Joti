@@ -22,6 +22,8 @@ export default function Home() {
   const challengeImage = PlaceHolderImages.find(
     (img) => img.id === 'challenge'
   );
+  const visionImage = PlaceHolderImages.find((img) => img.id === 'vision');
+
 
   return (
     <div className="relative flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
@@ -158,32 +160,42 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="vision" className="py-20">
-          <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold text-primary mb-4">
-              Our Vision & Mission
+        <section id="vision" className="py-20 relative text-white">
+           {visionImage && (
+            <Image
+              src={visionImage.imageUrl}
+              alt={visionImage.description}
+              fill
+              className="object-cover"
+              data-ai-hint={visionImage.imageHint}
+            />
+          )}
+          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="container mx-auto text-center relative z-10">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Our Vision &amp; Mission
             </h2>
-            <p className="text-lg text-foreground/80 max-w-2xl mx-auto mb-12">
+            <p className="text-lg text-white/90 max-w-2xl mx-auto mb-12">
               Connecting changemakers to make sustainability actionable and
               inclusive.
             </p>
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="text-left p-8 rounded-lg bg-secondary/30">
-                <h3 className="text-2xl font-bold text-primary mb-4">
+              <div className="text-left p-8 rounded-lg bg-white/10 backdrop-blur-sm">
+                <h3 className="text-2xl font-bold text-white mb-4">
                   Our Vision
                 </h3>
-                <p className="text-foreground/80">
+                <p className="text-white/80">
                   Think Global, Act Local approach Connecting individuals,
                   organizations, and youth. Building a network of
                   changemakers. Sustainable future through online and offline
                   engagements.
                 </p>
               </div>
-              <div className="text-left p-8 rounded-lg bg-secondary/30">
-                <h3 className="text-2xl font-bold text-primary mb-4">
+              <div className="text-left p-8 rounded-lg bg-white/10 backdrop-blur-sm">
+                <h3 className="text-2xl font-bold text-white mb-4">
                   Our Mission
                 </h3>
-                <p className="text-foreground/80">
+                <p className="text-white/80">
                   Make sustainability accessible and actionable for all. Bridge
                   knowledge gaps in sustainability. Mobilize volunteers and
                   resources effectively. Foster collaborative action for impact.
@@ -207,7 +219,7 @@ export default function Home() {
           <div className="container mx-auto relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold">
-                The Challenge & The Opportunity
+                The Challenge &amp; The Opportunity
               </h2>
               <p className="mt-4 text-lg text-white/90">
                 Addressing urgent environmental threats by uniting stakeholders
@@ -343,7 +355,7 @@ export default function Home() {
             </h2>
             <p className="text-lg max-w-4xl mx-auto mb-8 text-primary-foreground/90">
               Discover our groundbreaking initiative uniting Nobel Laureate Sir
-              CV Raman Trust & Outdoor Dynamix. Join us to empower students
+              CV Raman Trust &amp; Outdoor Dynamix. Join us to empower students
               through extraordinary learning experiences, complement academic
               education with hands-on activities, and inspire a lifelong love
               for nature. Partner with Prakruthi Shaale to nurture curious,
