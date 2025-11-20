@@ -221,22 +221,22 @@ export default function Home() {
                   <h3 className="font-bold text-xl bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text mb-3">
                     The Challenge
                   </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>- Urgent environmental threats</li>
-                    <li>- Disconnected sustainability efforts</li>
-                    <li>- Inefficient resource allocation</li>
-                    <li>- Limited community engagement</li>
+                  <ul className="space-y-2 text-gray-600 list-disc list-inside">
+                    <li>Urgent environmental threats</li>
+                    <li>Disconnected sustainability efforts</li>
+                    <li>Inefficient resource allocation</li>
+                    <li>Limited community engagement</li>
                   </ul>
                 </div>
                 <div>
                   <h3 className="font-bold text-xl bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text mb-3">
                     The Opportunity
                   </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>- Create a collaborative ecosystem</li>
-                    <li>- Leverage partnerships for impact</li>
-                    <li>- Mobilize resources efficiently</li>
-                    <li>- Empower community-led innovation</li>
+                  <ul className="space-y-2 text-gray-600 list-disc list-inside">
+                    <li>Create a collaborative ecosystem</li>
+                    <li>Leverage partnerships for impact</li>
+                    <li>Mobilize resources efficiently</li>
+                    <li>Empower community-led innovation</li>
                   </ul>
                 </div>
               </div>
