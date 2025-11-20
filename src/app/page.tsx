@@ -76,9 +76,11 @@ export default function Home() {
           <div className="container mx-auto h-full flex flex-col items-center justify-center text-center text-white relative z-10">
             <div className="flex flex-col gap-6">
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white drop-shadow-lg">
-                Empowering
-                <br />
-                <span className="bg-gradient-to-r from-green-400 to-yellow-300 bg-clip-text text-transparent">Through Nature</span>
+                <span className="bg-gradient-to-r from-green-400 to-yellow-300 bg-clip-text text-transparent">
+                  Empowering
+                  <br />
+                  Through Nature
+                </span>
               </h1>
               <p className="text-lg text-white/90 max-w-2xl mx-auto">
                 Prakruthi Shaale, a flagship initiative by Outdoor Dynamix,
@@ -210,7 +212,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/60"></div>
           <div className="container mx-auto relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold">
+              <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent">
                 The Challenge &amp; The Opportunity
               </h2>
               <p className="mt-4 text-lg text-white/90">
