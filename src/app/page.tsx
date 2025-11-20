@@ -193,34 +193,44 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="challenge" className="py-20 bg-secondary/30">
-          <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
-            <div className="flex flex-col gap-4">
-              <h2 className="text-4xl font-bold text-primary">
+        <section id="challenge" className="py-20 relative text-white">
+          {challengeImage && (
+            <Image
+              src={challengeImage.imageUrl}
+              alt={challengeImage.description}
+              fill
+              className="object-cover"
+              data-ai-hint={challengeImage.imageHint}
+            />
+          )}
+          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="container mx-auto relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-4xl font-bold">
                 The Challenge & The Opportunity
               </h2>
-              <p className="text-foreground/80">
+              <p className="mt-4 text-lg text-white/90">
                 Addressing urgent environmental threats by uniting stakeholders
                 and empowering youth to foster sustainable development and
                 social innovation.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-                <div>
-                  <h3 className="font-bold text-xl text-primary mb-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+                  <h3 className="font-bold text-xl mb-3">
                     The Challenge
                   </h3>
-                  <ul className="space-y-2 text-foreground/80 list-disc list-inside">
+                  <ul className="space-y-2 text-white/80 list-disc list-inside text-left">
                     <li>Urgent environmental threats</li>
                     <li>Disconnected sustainability efforts</li>
                     <li>Inefficient resource allocation</li>
                     <li>Limited community engagement</li>
                   </ul>
                 </div>
-                <div>
-                  <h3 className="font-bold text-xl text-primary mb-3">
+                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+                  <h3 className="font-bold text-xl mb-3">
                     The Opportunity
                   </h3>
-                  <ul className="space-y-2 text-foreground/80 list-disc list-inside">
+                  <ul className="space-y-2 text-white/80 list-disc list-inside text-left">
                     <li>Create a collaborative ecosystem</li>
                     <li>Leverage partnerships for impact</li>
                     <li>Mobilize resources efficiently</li>
@@ -228,17 +238,6 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-            </div>
-            <div className="h-96 relative rounded-lg overflow-hidden shadow-lg">
-              {challengeImage && (
-                <Image
-                  src={challengeImage.imageUrl}
-                  alt={challengeImage.description}
-                  fill
-                  className="object-cover"
-                  data-ai-hint={challengeImage.imageHint}
-                />
-              )}
             </div>
           </div>
         </section>
