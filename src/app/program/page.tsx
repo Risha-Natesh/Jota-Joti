@@ -15,8 +15,8 @@ import {
 
 export default function ProgramPage() {
   const approachImage = PlaceHolderImages.find((img) => img.id === 'approach');
-  const engagingActivitiesImage = PlaceHolderImages.find(
-    (img) => img.id === 'engaging-activities'
+  const ecoConnectImage = PlaceHolderImages.find(
+    (img) => img.id === 'eco-connect'
   );
 
   return (
@@ -124,6 +124,17 @@ export default function ProgramPage() {
             </div>
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
               <div className="flex flex-col gap-6">
+                <div className="h-96 relative rounded-lg overflow-hidden shadow-lg">
+                  {ecoConnectImage && (
+                    <Image
+                      src={ecoConnectImage.imageUrl}
+                      alt={ecoConnectImage.description}
+                      fill
+                      className="object-cover"
+                      data-ai-hint={ecoConnectImage.imageHint}
+                    />
+                  )}
+                </div>
                 <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent">
                   Empowering Youth for a Sustainable Future
                 </h3>

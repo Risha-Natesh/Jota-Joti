@@ -35,6 +35,12 @@
       "description": "Engaging activities with people collaborating.",
       "imageUrl": "/Images/random.jpg",
       "imageHint": "team collaboration"
+    },
+    {
+      "id": "eco-connect",
+      "description": "An image for the Eco Connect program.",
+      "imageUrl": "/Images/downfly.jpg",
+      "imageHint": "nature program"
     }
   ]
 }
