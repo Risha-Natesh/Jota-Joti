@@ -62,7 +62,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <section id="home" className="container mx-auto py-20 lg:py-32">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="flex flex-col gap-6">
               <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text tracking-tight">
                 Empowering
