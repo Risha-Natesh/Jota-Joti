@@ -66,10 +66,10 @@ export default function Home() {
             autoPlay
             loop
             muted
-            className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+            className="absolute top-0 left-0 w-full h-full object-cover z-0"
           />
-          <div className="absolute inset-0 bg-black/40 -z-10"></div>
-          <div className="container mx-auto h-full flex flex-col items-center justify-center text-center text-white">
+          <div className="absolute inset-0 bg-black/40 z-0"></div>
+          <div className="container mx-auto h-full flex flex-col items-center justify-center text-center text-white relative z-10">
             <div className="flex flex-col gap-6">
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white drop-shadow-lg">
                 Empowering
@@ -405,5 +405,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
