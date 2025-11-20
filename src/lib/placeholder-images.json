@@ -29,6 +29,12 @@
       "description": "A diagram illustrating the educational approach.",
       "imageUrl": "/Images/approach.png",
       "imageHint": "approach diagram"
+    },
+    {
+      "id": "engaging-activities",
+      "description": "Engaging activities with people collaborating.",
+      "imageUrl": "/Images/random.jpg",
+      "imageHint": "team collaboration"
     }
   ]
 }
