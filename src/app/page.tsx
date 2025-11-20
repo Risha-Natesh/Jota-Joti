@@ -24,7 +24,6 @@ export default function Home() {
   );
   const visionImage = PlaceHolderImages.find((img) => img.id === 'vision');
 
-
   return (
     <div className="relative flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
       <div className="absolute top-0 left-0 -z-10 opacity-10">
@@ -62,7 +61,10 @@ export default function Home() {
       </div>
       <Header />
       <main className="flex-1">
-        <section id="home" className="relative h-[calc(100vh-80px)] overflow-hidden">
+        <section
+          id="home"
+          className="relative h-[calc(100vh-80px)] overflow-hidden"
+        >
           <video
             src="/videos/hero-background.mp4"
             autoPlay
@@ -76,7 +78,7 @@ export default function Home() {
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white drop-shadow-lg">
                 Empowering
                 <br />
-                Through Nature
+                Through <span className="text-green-300">Nature</span>
               </h1>
               <p className="text-lg text-white/90 max-w-2xl mx-auto">
                 Prakruthi Shaale, a flagship initiative by Outdoor Dynamix,
@@ -161,7 +163,7 @@ export default function Home() {
         </section>
 
         <section id="vision" className="py-20 relative text-white">
-           {visionImage && (
+          {visionImage && (
             <Image
               src={visionImage.imageUrl}
               alt={visionImage.description}
@@ -228,9 +230,7 @@ export default function Home() {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                  <h3 className="font-bold text-xl mb-3">
-                    The Challenge
-                  </h3>
+                  <h3 className="font-bold text-xl mb-3">The Challenge</h3>
                   <ul className="space-y-2 text-white/80 list-disc list-inside text-left">
                     <li>Urgent environmental threats</li>
                     <li>Disconnected sustainability efforts</li>
@@ -397,8 +397,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="text-left">
-                  </div>
+                  <div className="text-left"></div>
                 </div>
               </div>
             </div>
