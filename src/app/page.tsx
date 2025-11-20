@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <div className="relative flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
-      <div className="absolute top-0 left-0 -z-10 opacity-10">
+      <div className="absolute top-0 left-0 opacity-10 z-0">
         <svg
           width="300"
           height="300"
@@ -45,7 +45,7 @@ export default function Home() {
           />
         </svg>
       </div>
-      <div className="absolute bottom-0 right-0 -z-10 opacity-10 overflow-hidden">
+      <div className="absolute bottom-0 right-0 opacity-10 overflow-hidden z-0">
         <svg
           width="400"
           height="400"
@@ -182,7 +182,7 @@ export default function Home() {
               inclusive.
             </p>
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="text-left p-8 rounded-lg">
+              <div className="text-left">
                 <h3 className="text-2xl font-bold text-white mb-4">
                   Our Vision
                 </h3>
@@ -193,7 +193,7 @@ export default function Home() {
                   engagements.
                 </p>
               </div>
-              <div className="text-left p-8 rounded-lg">
+              <div className="text-left">
                 <h3 className="text-2xl font-bold text-white mb-4">
                   Our Mission
                 </h3>
@@ -407,5 +407,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
