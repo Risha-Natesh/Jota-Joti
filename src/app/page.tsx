@@ -60,15 +60,23 @@ export default function Home() {
       </div>
       <Header />
       <main className="flex-1">
-        <section id="home" className="container mx-auto py-20 lg:py-32">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <section id="home" className="relative h-[calc(100vh-80px)] overflow-hidden">
+          <video
+            src="/videos/hero-background.mp4"
+            autoPlay
+            loop
+            muted
+            className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+          />
+          <div className="absolute inset-0 bg-black/40 -z-10"></div>
+          <div className="container mx-auto h-full flex flex-col items-center justify-center text-center text-white">
             <div className="flex flex-col gap-6">
-              <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text tracking-tight">
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white drop-shadow-lg">
                 Empowering
                 <br />
                 Through Nature
               </h1>
-              <p className="text-lg text-gray-600 max-w-lg">
+              <p className="text-lg text-white/90 max-w-2xl mx-auto">
                 Prakruthi Shaale, a flagship initiative by Outdoor Dynamix,
                 revolutionizes education by connecting students with nature
                 through innovative outdoor learning experiences. It fosters
@@ -76,24 +84,14 @@ export default function Home() {
                 holistic development.
               </p>
             </div>
-            <div className="h-96 lg:h-[500px] relative rounded-lg overflow-hidden shadow-2xl">
-              <video
-                src="/videos/hero-background.mp4"
-                autoPlay
-                loop
-                muted
-                className="absolute top-0 left-0 w-full h-full object-cover"
-              />
-               <div className="absolute inset-0 bg-black/30"></div>
+            <div className="absolute bottom-8 right-8">
+                <p className="text-sm text-white/80">
+                Powered By:{' '}
+                <a href="#" className="font-semibold text-white hover:underline">
+                    Outdoor Dynamix
+                </a>
+                </p>
             </div>
-          </div>
-          <div className="mt-16 pt-4 border-t border-border flex justify-end">
-            <p className="text-sm text-gray-500">
-              Powered By:{' '}
-              <a href="#" className="font-semibold text-primary hover:underline">
-                Outdoor Dynamix
-              </a>
-            </p>
           </div>
         </section>
 
@@ -407,3 +405,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
