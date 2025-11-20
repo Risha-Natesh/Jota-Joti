@@ -18,7 +18,6 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function Home() {
-  const heroSketch = PlaceHolderImages.find((img) => img.id === 'hero-sketch');
   const aboutImage = PlaceHolderImages.find((img) => img.id === 'about-us');
   const challengeImage = PlaceHolderImages.find(
     (img) => img.id === 'challenge'
@@ -77,16 +76,15 @@ export default function Home() {
                 holistic development.
               </p>
             </div>
-            <div className="h-96 lg:h-[500px] relative">
-              {heroSketch && (
-                <Image
-                  src={heroSketch.imageUrl}
-                  alt={heroSketch.description}
-                  fill
-                  className="object-contain"
-                  data-ai-hint={heroSketch.imageHint}
-                />
-              )}
+            <div className="h-96 lg:h-[500px] relative rounded-lg overflow-hidden shadow-2xl">
+              <video
+                src="/videos/hero-background.mp4"
+                autoPlay
+                loop
+                muted
+                className="absolute top-0 left-0 w-full h-full object-cover"
+              />
+               <div className="absolute inset-0 bg-black/30"></div>
             </div>
           </div>
           <div className="mt-16 pt-4 border-t border-border flex justify-end">
