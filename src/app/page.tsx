@@ -180,7 +180,7 @@ export default function Home() {
               inclusive.
             </p>
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="text-left p-8 rounded-lg bg-white/10 backdrop-blur-sm">
+              <div className="text-left p-8 rounded-lg">
                 <h3 className="text-2xl font-bold text-white mb-4">
                   Our Vision
                 </h3>
@@ -191,7 +191,7 @@ export default function Home() {
                   engagements.
                 </p>
               </div>
-              <div className="text-left p-8 rounded-lg bg-white/10 backdrop-blur-sm">
+              <div className="text-left p-8 rounded-lg">
                 <h3 className="text-2xl font-bold text-white mb-4">
                   Our Mission
                 </h3>
