@@ -129,7 +129,7 @@ export default function ProgramPage() {
 
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div>
-                <h3 className="text-3xl font-bold mb-4">
+                <h3 className="text-3xl font-bold mb-4 bg-forest-gradient bg-clip-text text-transparent">
                   Empowering Youth for a Sustainable Future
                 </h3>
                 <p className="text-foreground/80 mb-8">
