@@ -162,21 +162,21 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="vision" className="py-20 bg-primary/90 text-white">
+        <section id="vision" className="py-20 bg-white text-primary">
           <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl font-bold text-primary mb-4">
               Our Vision &amp; Mission
             </h2>
-            <p className="text-lg text-white/90 max-w-2xl mx-auto mb-12">
+            <p className="text-lg text-foreground/80 max-w-2xl mx-auto mb-12">
               Connecting changemakers to make sustainability actionable and
               inclusive.
             </p>
             <div className="grid md:grid-cols-2 gap-12 text-left">
               <div>
-                <h3 className="text-2xl font-bold text-white mb-4">
+                <h3 className="text-2xl font-bold text-primary mb-4">
                   Our Vision
                 </h3>
-                <p className="text-white/80">
+                <p className="text-foreground/80">
                   Think Global, Act Local approach Connecting individuals,
                   organizations, and youth. Building a network of
                   changemakers. Sustainable future through online and offline
@@ -184,10 +184,10 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-white mb-4">
+                <h3 className="text-2xl font-bold text-primary mb-4">
                   Our Mission
                 </h3>
-                <p className="text-white/80">
+                <p className="text-foreground/80">
                   Make sustainability accessible and actionable for all. Bridge
                   knowledge gaps in sustainability. Mobilize volunteers and
                   resources effectively. Foster collaborative action for impact.
