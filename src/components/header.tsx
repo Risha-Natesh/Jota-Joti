@@ -5,13 +5,19 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sun } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
+  const pathname = usePathname();
 
   const scrollTo = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (pathname !== '/') {
+      window.location.href = '/#' + id;
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
@@ -32,6 +38,9 @@ const Header = () => {
       <nav className="hidden md:flex items-center gap-2">
         <Button variant="ghost" onClick={() => scrollTo('home')}>Home</Button>
         <Button variant="ghost" onClick={() => scrollTo('about')}>About</Button>
+        <Link href="/program">
+            <Button variant="ghost">Programs</Button>
+        </Link>
         <Button onClick={() => scrollTo('contact')}>
           Contact
         </Button>
