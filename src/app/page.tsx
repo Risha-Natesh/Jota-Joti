@@ -76,7 +76,7 @@ export default function Home() {
           <div className="container mx-auto h-full flex flex-col items-center justify-center text-center text-white relative z-10">
             <div className="flex flex-col gap-6">
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white drop-shadow-lg">
-                <span className="bg-gradient-to-r from-green-400 to-yellow-300 bg-clip-text text-transparent">
+                <span className="bg-forest-gradient bg-clip-text text-transparent">
                   Empowering
                   <br />
                   Through Nature
