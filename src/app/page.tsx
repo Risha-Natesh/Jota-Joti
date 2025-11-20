@@ -74,7 +74,7 @@ export default function Home() {
                 revolutionizes education by connecting students with nature
                 through innovative outdoor learning experiences. It fosters
                 creativity, curiosity, and critical thinking, promoting
-                holistic development of young minds.
+                holistic development.
               </p>
             </div>
             <div className="h-96 lg:h-[500px] relative">
@@ -99,7 +99,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="py-20 bg-gray-50">
+        <section id="about" className="py-20 bg-secondary/30">
           <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div className="h-96 relative rounded-lg overflow-hidden shadow-lg">
               {aboutImage && (
@@ -180,7 +180,7 @@ export default function Home() {
               inclusive.
             </p>
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="text-left p-8 rounded-lg bg-gray-50">
+              <div className="text-left p-8 rounded-lg bg-secondary/30">
                 <h3 className="text-2xl font-bold text-primary mb-4">
                   Our Vision
                 </h3>
@@ -191,7 +191,7 @@ export default function Home() {
                   engagements.
                 </p>
               </div>
-              <div className="text-left p-8 rounded-lg bg-gray-50">
+              <div className="text-left p-8 rounded-lg bg-secondary/30">
                 <h3 className="text-2xl font-bold text-primary mb-4">
                   Our Mission
                 </h3>
@@ -205,7 +205,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="challenge" className="py-20 bg-gray-50">
+        <section id="challenge" className="py-20 bg-secondary/30">
           <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div className="flex flex-col gap-4">
               <h2 className="text-4xl font-bold text-primary">
@@ -267,8 +267,8 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Card>
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mb-4">
-                    <Users className="w-6 h-6 text-accent" />
+                  <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
+                    <Users className="w-8 h-8 text-accent" />
                   </div>
                   <CardTitle className="text-xl text-primary">
                     Collaborative Ecosystem
@@ -283,8 +283,8 @@ export default function Home() {
               </Card>
               <Card>
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mb-4">
-                    <LifeBuoy className="w-6 h-6 text-accent" />
+                  <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
+                    <LifeBuoy className="w-8 h-8 text-accent" />
                   </div>
                   <CardTitle className="text-xl text-primary">
                     Capacity Building
@@ -299,8 +299,8 @@ export default function Home() {
               </Card>
               <Card>
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mb-4">
-                    <Globe className="w-6 h-6 text-accent" />
+                  <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
+                    <Globe className="w-8 h-8 text-accent" />
                   </div>
                   <CardTitle className="text-xl text-primary">
                     Resource Mobilization
@@ -315,8 +315,8 @@ export default function Home() {
               </Card>
               <Card>
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mb-4">
-                    <HeartHandshake className="w-6 h-6 text-accent" />
+                  <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
+                    <HeartHandshake className="w-8 h-8 text-accent" />
                   </div>
                   <CardTitle className="text-xl text-primary">
                     Community Engagement
@@ -331,8 +331,8 @@ export default function Home() {
               </Card>
               <Card>
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mb-4">
-                    <Lightbulb className="w-6 h-6 text-accent" />
+                  <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
+                    <Lightbulb className="w-8 h-8 text-accent" />
                   </div>
                   <CardTitle className="text-xl text-primary">
                     Innovation Incubation

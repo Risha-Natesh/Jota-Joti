@@ -53,7 +53,7 @@ export default function ProgramPage() {
       </div>
       <Header />
       <main className="flex-1">
-        <section id="programs" className="py-20 bg-gray-50">
+        <section id="programs" className="py-20 bg-secondary/30">
           <div className="container mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-primary">
@@ -229,67 +229,67 @@ export default function ProgramPage() {
                 personal growth and social responsibility.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center">
-                    <Target className="w-8 h-8 text-accent" />
+                <div className="flex flex-col items-center gap-2 text-center">
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <Target className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-primary text-center">
+                  <h4 className="font-semibold text-primary">
                     STEM Skills Development
                   </h4>
                 </div>
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center">
-                    <Leaf className="w-8 h-8 text-accent" />
+                <div className="flex flex-col items-center gap-2 text-center">
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <Leaf className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-primary text-center">
+                  <h4 className="font-semibold text-primary">
                     Environmental Awareness
                   </h4>
                 </div>
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center">
-                    <Users2 className="w-8 h-8 text-accent" />
+                <div className="flex flex-col items-center gap-2 text-center">
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <Users2 className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-primary text-center">
+                  <h4 className="font-semibold text-primary">
                     Teamwork & Collaboration
                   </h4>
                 </div>
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center">
-                    <Radio className="w-8 h-8 text-accent" />
+                <div className="flex flex-col items-center gap-2 text-center">
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <Radio className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-primary text-center">
+                  <h4 className="font-semibold text-primary">
                     Effective Communication
                   </h4>
                 </div>
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center">
-                    <Lightbulb className="w-8 h-8 text-accent" />
+                <div className="flex flex-col items-center gap-2 text-center">
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <Lightbulb className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-primary text-center">
+                  <h4 className="font-semibold text-primary">
                     Problem-Solving & Critical Thinking
                   </h4>
                 </div>
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center">
-                    <HeartPulse className="w-8 h-8 text-accent" />
+                <div className="flex flex-col items-center gap-2 text-center">
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <HeartPulse className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-primary text-center">
+                  <h4 className="font-semibold text-primary">
                     Empathy & Compassion
                   </h4>
                 </div>
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center">
-                    <Mountain className="w-8 h-8 text-accent" />
+                <div className="flex flex-col items-center gap-2 text-center">
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <Mountain className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-primary text-center">
+                  <h4 className="font-semibold text-primary">
                     Leadership & Initiative
                   </h4>
                 </div>
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center">
-                    <Sprout className="w-8 h-8 text-accent" />
+                <div className="flex flex-col items-center gap-2 text-center">
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <Sprout className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-primary text-center">
+                  <h4 className="font-semibold text-primary">
                     Adaptability & Time Management
                   </h4>
                 </div>
