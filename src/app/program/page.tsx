@@ -144,91 +144,79 @@ export default function ProgramPage() {
                   </li>
                 </ul>
               </div>
-              <div className="relative py-12 text-white">
-                {engagingActivitiesImage && (
-                  <Image
-                    src={engagingActivitiesImage.imageUrl}
-                    alt={engagingActivitiesImage.description}
-                    fill
-                    className="object-cover rounded-lg"
-                    data-ai-hint={engagingActivitiesImage.imageHint}
-                  />
-                )}
-                <div className="absolute inset-0 bg-black/60 rounded-lg"></div>
-                <div className="relative z-10 px-8">
-                  <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-6 text-center">
-                    Engaging Activities
-                  </h3>
-                  <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-10 h-10 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
-                        01
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-white">
-                          HAM Radio Exploration
-                        </h4>
-                        <p className="text-sm text-white/80">
-                          Introduces communication, electronics, emergency usage,
-                          and connects a global community.
-                        </p>
-                      </div>
+              <div className="px-8 py-12 rounded-lg bg-secondary/30">
+                <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-6 text-center">
+                  Engaging Activities
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
+                      01
                     </div>
-                    <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-10 h-10 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
-                        02
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-white">
-                          Rope Work & Knots Fundamentals
-                        </h4>
-                        <p className="text-sm text-white/80">
-                          Teaches problem-solving, engineering thinking,
-                          improvisation with practical rope skills.
-                        </p>
-                      </div>
+                    <div>
+                      <h4 className="font-semibold text-primary">
+                        HAM Radio Exploration
+                      </h4>
+                      <p className="text-sm text-foreground/80">
+                        Introduces communication, electronics, emergency usage,
+                        and connects a global community.
+                      </p>
                     </div>
-                    <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-10 h-10 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
-                        03
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-white">
-                          Essential First Aid Training
-                        </h4>
-                        <p className="text-sm text-white/80">
-                          Provides vital life-saving knowledge while promoting
-                          empathy and social responsibility.
-                        </p>
-                      </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
+                      02
                     </div>
-                    <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-10 h-10 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
-                        04
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-white">
-                          Panchavati Nature Walk Experience
-                        </h4>
-                        <p className="text-sm text-white/80">
-                          Guided immersion in nature with flora/fauna observation
-                          and eco-friendly habit discussions.
-                        </p>
-                      </div>
+                    <div>
+                      <h4 className="font-semibold text-primary">
+                        Rope Work & Knots Fundamentals
+                      </h4>
+                      <p className="text-sm text-foreground/80">
+                        Teaches problem-solving, engineering thinking,
+                        improvisation with practical rope skills.
+                      </p>
                     </div>
-                    <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-10 h-10 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
-                        05
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-white">
-                          Ice Breaker Game for Teamwork
-                        </h4>
-                        <p className="text-sm text-white/80">
-                          Fosters teamwork, collaboration, and communication
-                          through engaging group challenges.
-                        </p>
-                      </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
+                      03
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary">
+                        Essential First Aid Training
+                      </h4>
+                      <p className="text-sm text-foreground/80">
+                        Provides vital life-saving knowledge while promoting
+                        empathy and social responsibility.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
+                      04
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary">
+                        Panchavati Nature Walk Experience
+                      </h4>
+                      <p className="text-sm text-foreground/80">
+                        Guided immersion in nature with flora/fauna observation
+                        and eco-friendly habit discussions.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
+                      05
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary">
+                        Ice Breaker Game for Teamwork
+                      </h4>
+                      <p className="text-sm text-foreground/80">
+                        Fosters teamwork, collaboration, and communication
+                        through engaging group challenges.
+                      </p>
                     </div>
                   </div>
                 </div>
