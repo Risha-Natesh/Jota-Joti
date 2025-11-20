@@ -67,8 +67,6 @@ export default function Home() {
               <h1 className="text-5xl md:text-6xl font-bold text-primary tracking-tight">
                 Empowering
                 <br />
-                <span className="text-accent">Young Minds</span>
-                <br />
                 Through Nature
               </h1>
               <p className="text-lg text-gray-600 max-w-lg">
