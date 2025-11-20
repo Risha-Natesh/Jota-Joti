@@ -17,7 +17,7 @@ export default function ProgramPage() {
   const approachImage = PlaceHolderImages.find((img) => img.id === 'approach');
 
   return (
-    <div className="relative flex flex-col min-h-screen bg-background text-gray-800 overflow-hidden">
+    <div className="relative flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
        <div className="absolute top-0 left-0 -z-10 opacity-10">
         <svg
           width="300"
@@ -59,7 +59,7 @@ export default function ProgramPage() {
               <h2 className="text-4xl font-bold text-primary">
                 Our Approach & Programs
               </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-4">
+              <p className="text-lg text-foreground/80 max-w-2xl mx-auto mt-4">
                 Empowering schools through hands-on sustainability education.
               </p>
             </div>
@@ -80,7 +80,7 @@ export default function ProgramPage() {
                   <h3 className="text-xl font-bold text-primary mb-2">
                     Outdoor Activities & Workshops
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-foreground/80">
                     Activities like nature walks, bird watching, and gardening
                     promote environmental awareness.
                   </p>
@@ -89,7 +89,7 @@ export default function ProgramPage() {
                   <h3 className="text-xl font-bold text-primary mb-2">
                     Experiential Learning Programs
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-foreground/80">
                     Hands-on activities enrich curriculum and support academic,
                     emotional, and social growth.
                   </p>
@@ -98,7 +98,7 @@ export default function ProgramPage() {
                   <h3 className="text-xl font-bold text-primary mb-2">
                     Volunteering, Team-building & Leadership Programs
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-foreground/80">
                     Collaborative challenges enhance communication and
                     leadership skills among students.
                   </p>
@@ -114,7 +114,7 @@ export default function ProgramPage() {
               <h2 className="text-4xl font-bold text-primary">
                 The Eco Connect Program
               </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-4">
+              <p className="text-lg text-foreground/80 max-w-2xl mx-auto mt-4">
                 A transformative youth initiative that cultivates innovators and
                 eco-conscious leaders for future challenges.
               </p>
@@ -124,13 +124,13 @@ export default function ProgramPage() {
                 <h3 className="text-2xl font-bold text-primary">
                   Empowering Youth for a Sustainable Future
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-foreground/80">
                   Responds to current needs by empowering youth with knowledge,
                   practical skills, and awareness. Our program is aligned with
                   UN SDGs, focusing on sustainability, climate action, and
                   responsible consumption.
                 </p>
-                <ul className="space-y-3 text-gray-600">
+                <ul className="space-y-3 text-foreground/80">
                   <li className="flex items-center gap-3">
                     <Leaf className="w-5 h-5 text-accent" />
                     <span>Immersive Learning Environment</span>
@@ -154,7 +154,7 @@ export default function ProgramPage() {
                       <h4 className="font-semibold text-primary">
                         HAM Radio Exploration
                       </h4>
-                      <p className="text-sm text-gray-600">
+                      <p className="text-sm text-foreground/80">
                         Introduces communication, electronics, emergency usage,
                         and connects a global community.
                       </p>
@@ -168,7 +168,7 @@ export default function ProgramPage() {
                       <h4 className="font-semibold text-primary">
                         Rope Work & Knots Fundamentals
                       </h4>
-                      <p className="text-sm text-gray-600">
+                      <p className="text-sm text-foreground/80">
                         Teaches problem-solving, engineering thinking,
                         improvisation with practical rope skills.
                       </p>
@@ -182,7 +182,7 @@ export default function ProgramPage() {
                       <h4 className="font-semibold text-primary">
                         Essential First Aid Training
                       </h4>
-                      <p className="text-sm text-gray-600">
+                      <p className="text-sm text-foreground/80">
                         Provides vital life-saving knowledge while promoting
                         empathy and social responsibility.
                       </p>
@@ -196,7 +196,7 @@ export default function ProgramPage() {
                       <h4 className="font-semibold text-primary">
                         Panchavati Nature Walk Experience
                       </h4>
-                      <p className="text-sm text-gray-600">
+                      <p className="text-sm text-foreground/80">
                         Guided immersion in nature with flora/fauna observation
                         and eco-friendly habit discussions.
                       </p>
@@ -210,7 +210,7 @@ export default function ProgramPage() {
                       <h4 className="font-semibold text-primary">
                         Ice Breaker Game for Teamwork
                       </h4>
-                      <p className="text-sm text-gray-600">
+                      <p className="text-sm text-foreground/80">
                         Fosters teamwork, collaboration, and communication
                         through engaging group challenges.
                       </p>
@@ -223,7 +223,7 @@ export default function ProgramPage() {
               <h3 className="text-2xl font-bold text-primary mb-6">
                 Core Outcomes & Life Skills Development
               </h3>
-              <p className="text-gray-600 max-w-4xl mx-auto mb-10">
+              <p className="text-foreground/80 max-w-4xl mx-auto mb-10">
                 Our programs empower students with essential STEM skills,
                 environmental awareness, and crucial life skills that promote
                 personal growth and social responsibility.

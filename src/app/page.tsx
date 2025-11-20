@@ -24,7 +24,7 @@ export default function Home() {
   );
 
   return (
-    <div className="relative flex flex-col min-h-screen bg-background text-gray-800 overflow-hidden">
+    <div className="relative flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
       <div className="absolute top-0 left-0 -z-10 opacity-10">
         <svg
           width="300"
@@ -115,7 +115,7 @@ export default function Home() {
                   <h3 className="text-xl font-bold text-primary">
                     Innovative Outdoor Learning Center
                   </h3>
-                  <p className="text-gray-600 mt-1">
+                  <p className="text-foreground/80 mt-1">
                     Dedicated to revolutionizing education by providing unique
                     outdoor learning experiences that inspire.
                   </p>
@@ -131,7 +131,7 @@ export default function Home() {
                   <h3 className="text-xl font-bold text-primary">
                     Nature Connection Benefits
                   </h3>
-                  <p className="text-gray-600 mt-1">
+                  <p className="text-foreground/80 mt-1">
                     Connects students with nature to foster creativity,
                     curiosity, and critical thinking skills in a natural
                     environment.
@@ -148,7 +148,7 @@ export default function Home() {
                   <h3 className="text-xl font-bold text-primary">
                     Promoting Holistic Development
                   </h3>
-                  <p className="text-gray-600 mt-1">
+                  <p className="text-foreground/80 mt-1">
                     Focuses on nurturing responsible and compassionate
                     individuals through immersive outdoor educational programs.
                   </p>
@@ -163,7 +163,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-primary mb-4">
               Our Vision & Mission
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-12">
+            <p className="text-lg text-foreground/80 max-w-2xl mx-auto mb-12">
               Connecting changemakers to make sustainability actionable and
               inclusive.
             </p>
@@ -172,7 +172,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-primary mb-4">
                   Our Vision
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-foreground/80">
                   Think Global, Act Local approach Connecting individuals,
                   organizations, and youth. Building a network of
                   changemakers. Sustainable future through online and offline
@@ -183,7 +183,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-primary mb-4">
                   Our Mission
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-foreground/80">
                   Make sustainability accessible and actionable for all. Bridge
                   knowledge gaps in sustainability. Mobilize volunteers and
                   resources effectively. Foster collaborative action for impact.
@@ -199,7 +199,7 @@ export default function Home() {
               <h2 className="text-4xl font-bold text-primary">
                 The Challenge & The Opportunity
               </h2>
-              <p className="text-gray-600">
+              <p className="text-foreground/80">
                 Addressing urgent environmental threats by uniting stakeholders
                 and empowering youth to foster sustainable development and
                 social innovation.
@@ -209,7 +209,7 @@ export default function Home() {
                   <h3 className="font-bold text-xl text-primary mb-3">
                     The Challenge
                   </h3>
-                  <ul className="space-y-2 text-gray-600 list-disc list-inside">
+                  <ul className="space-y-2 text-foreground/80 list-disc list-inside">
                     <li>Urgent environmental threats</li>
                     <li>Disconnected sustainability efforts</li>
                     <li>Inefficient resource allocation</li>
@@ -220,7 +220,7 @@ export default function Home() {
                   <h3 className="font-bold text-xl text-primary mb-3">
                     The Opportunity
                   </h3>
-                  <ul className="space-y-2 text-gray-600 list-disc list-inside">
+                  <ul className="space-y-2 text-foreground/80 list-disc list-inside">
                     <li>Create a collaborative ecosystem</li>
                     <li>Leverage partnerships for impact</li>
                     <li>Mobilize resources efficiently</li>
@@ -248,7 +248,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-primary mb-4">
               Our Solution: Prakruthi Shaale
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+            <p className="text-lg text-foreground/80 max-w-3xl mx-auto mb-12">
               A pioneering enterprise fostering sustainability and community
               impact through a multi-faceted approach.
             </p>
@@ -263,7 +263,7 @@ export default function Home() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600">
+                  <p className="text-foreground/80">
                     Connects individuals, organizations, and communities for
                     collective action.
                   </p>
@@ -279,7 +279,7 @@ export default function Home() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600">
+                  <p className="text-foreground/80">
                     Enhances skills and knowledge for effective partnerships and
                     development.
                   </p>
@@ -295,7 +295,7 @@ export default function Home() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600">
+                  <p className="text-foreground/80">
                     Facilitates access to expertise, funding, and critical
                     resources efficiently.
                   </p>
@@ -311,7 +311,7 @@ export default function Home() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600">
+                  <p className="text-foreground/80">
                     Empowers local communities to actively participate in
                     sustainable initiatives.
                   </p>
@@ -327,7 +327,7 @@ export default function Home() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600">
+                  <p className="text-foreground/80">
                     Fosters social entrepreneurship to drive innovative
                     sustainability solutions.
                   </p>
@@ -352,7 +352,7 @@ export default function Home() {
               sustainable tomorrow.
             </p>
             <div className="mt-12">
-              <div className="max-w-4xl mx-auto bg-background/90 text-gray-800 rounded-lg p-8 shadow-2xl">
+              <div className="max-w-4xl mx-auto bg-background/90 text-foreground rounded-lg p-8 shadow-2xl">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="text-left">
                     <h3 className="text-2xl font-bold text-primary mb-6">
