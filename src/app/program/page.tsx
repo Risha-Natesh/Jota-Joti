@@ -11,6 +11,8 @@ import {
   HeartPulse,
   Mountain,
   Users2,
+  BookOpenCheck,
+  Globe,
 } from 'lucide-react';
 import {
   Card,
@@ -27,7 +29,7 @@ export default function ProgramPage() {
 
   return (
     <div className="relative flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
-       <div className="absolute top-0 left-0 -z-10 opacity-10">
+      <div className="absolute top-0 left-0 -z-10 opacity-10">
         <svg
           width="300"
           height="300"
@@ -123,51 +125,112 @@ export default function ProgramPage() {
               <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent">
                 The Eco Connect Program
               </h2>
-              <p className="text-lg text-foreground/80 max-w-3xl mx-auto mt-4">
-                A transformative youth initiative that responds to current needs by empowering youth with knowledge, practical skills, and awareness, aligned with UN SDGs.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                 <Card>
-                  <CardHeader>
-                    <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
-                      HAM Radio Exploration
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-foreground/80">
-                      Introduces communication, electronics, and emergency usage, connecting a global community.
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
-                      Rope Work & Knots
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-foreground/80">
-                      Teaches problem-solving, engineering thinking, and improvisation with practical rope skills.
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
-                      First Aid Training
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-foreground/80">
-                     Provides vital life-saving knowledge while promoting empathy and social responsibility.
-                    </p>
-                  </CardContent>
-                </Card>
             </div>
 
-            <div className="text-center">
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+              <div>
+                <h3 className="text-3xl font-bold mb-4">
+                  Empowering Youth for a Sustainable Future
+                </h3>
+                <p className="text-foreground/80 mb-8">
+                  Responds to current needs by empowering youth with knowledge,
+                  practical skills, and awareness. Our program is aligned with
+                  UN SDGs, focusing on sustainability, climate action, and
+                  responsible consumption.
+                </p>
+                <ul className="space-y-4">
+                  <li className="flex items-center gap-4">
+                    <Leaf className="w-6 h-6 text-accent" />
+                    <span>Immersive Learning Environment</span>
+                  </li>
+                  <li className="flex items-center gap-4">
+                    <Target className="w-6 h-6 text-accent" />
+                    <span>STEM & Environmental Integration</span>
+                  </li>
+                </ul>
+              </div>
+              <Card className="bg-slate-800 text-white">
+                <CardHeader>
+                  <CardTitle className="text-2xl text-white">
+                    Engaging Activities
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-6">
+                    <li className="flex gap-4">
+                      <span className="text-2xl font-bold text-slate-400">
+                        01
+                      </span>
+                      <div>
+                        <h4 className="font-bold">HAM Radio Exploration</h4>
+                        <p className="text-slate-300 text-sm">
+                          Introduces communication, electronics, emergency
+                          usage, and connects a global community.
+                        </p>
+                      </div>
+                    </li>
+                    <li className="flex gap-4">
+                      <span className="text-2xl font-bold text-slate-400">
+                        02
+                      </span>
+                      <div>
+                        <h4 className="font-bold">
+                          Rope Work & Knots Fundamentals
+                        </h4>
+                        <p className="text-slate-300 text-sm">
+                          Teaches problem-solving, engineering thinking,
+                          improvisation with practical rope skills.
+                        </p>
+                      </div>
+                    </li>
+                    <li className="flex gap-4">
+                      <span className="text-2xl font-bold text-slate-400">
+                        03
+                      </span>
+                      <div>
+                        <h4 className="font-bold">
+                          Essential First Aid Training
+                        </h4>
+                        <p className="text-slate-300 text-sm">
+                          Provides vital life-saving knowledge while promoting
+                          empathy and social responsibility.
+                        </p>
+                      </div>
+                    </li>
+                    <li className="flex gap-4">
+                      <span className="text-2xl font-bold text-slate-400">
+                        04
+                      </span>
+                      <div>
+                        <h4 className="font-bold">
+                          Panchavati Nature Walk Experience
+                        </h4>
+                        <p className="text-slate-300 text-sm">
+                          Guided immersion in nature with flora/fauna
+                          observation and eco-friendly habit discussions.
+                        </p>
+                      </div>
+                    </li>
+                    <li className="flex gap-4">
+                      <span className="text-2xl font-bold text-slate-400">
+                        05
+                      </span>
+                      <div>
+                        <h4 className="font-bold">
+                          Ice Breaker Game for Teamwork
+                        </h4>
+                        <p className="text-slate-300 text-sm">
+                          Fosters teamwork, collaboration, and communication
+                          through engaging group challenges.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="text-center mt-20">
               <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-6">
                 Core Outcomes & Life Skills Development
               </h3>
