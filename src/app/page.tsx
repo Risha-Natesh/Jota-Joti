@@ -162,18 +162,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="vision" className="py-20 relative text-white">
-          {visionImage && (
-            <Image
-              src={visionImage.imageUrl}
-              alt={visionImage.description}
-              fill
-              className="object-cover"
-              data-ai-hint={visionImage.imageHint}
-            />
-          )}
-          <div className="absolute inset-0 bg-black/60"></div>
-          <div className="container mx-auto text-center relative z-10">
+        <section id="vision" className="py-20 bg-primary/90 text-white">
+          <div className="container mx-auto text-center">
             <h2 className="text-4xl font-bold text-white mb-4">
               Our Vision &amp; Mission
             </h2>
@@ -181,8 +171,8 @@ export default function Home() {
               Connecting changemakers to make sustainability actionable and
               inclusive.
             </p>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="text-left">
+            <div className="grid md:grid-cols-2 gap-12 text-left">
+              <div>
                 <h3 className="text-2xl font-bold text-white mb-4">
                   Our Vision
                 </h3>
@@ -193,7 +183,7 @@ export default function Home() {
                   engagements.
                 </p>
               </div>
-              <div className="text-left">
+              <div>
                 <h3 className="text-2xl font-bold text-white mb-4">
                   Our Mission
                 </h3>
