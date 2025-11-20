@@ -78,7 +78,7 @@ export default function Home() {
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white drop-shadow-lg">
                 Empowering
                 <br />
-                Through <span className="text-green-300">Nature</span>
+                Through <span className="bg-gradient-to-r from-green-400 to-green-200 bg-clip-text text-transparent">Nature</span>
               </h1>
               <p className="text-lg text-white/90 max-w-2xl mx-auto">
                 Prakruthi Shaale, a flagship initiative by Outdoor Dynamix,
@@ -116,7 +116,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-primary">
+                  <h3 className="text-xl font-bold bg-forest-gradient bg-clip-text text-transparent">
                     Innovative Outdoor Learning Center
                   </h3>
                   <p className="text-foreground/80 mt-1">
@@ -132,7 +132,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-primary">
+                  <h3 className="text-xl font-bold bg-forest-gradient bg-clip-text text-transparent">
                     Nature Connection Benefits
                   </h3>
                   <p className="text-foreground/80 mt-1">
@@ -149,7 +149,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-primary">
+                  <h3 className="text-xl font-bold bg-forest-gradient bg-clip-text text-transparent">
                     Promoting Holistic Development
                   </h3>
                   <p className="text-foreground/80 mt-1">
@@ -164,7 +164,7 @@ export default function Home() {
 
         <section id="vision" className="py-20 bg-white text-primary">
           <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold text-primary mb-4">
+            <h2 className="text-4xl font-bold text-primary mb-4 bg-forest-gradient bg-clip-text text-transparent">
               Our Vision &amp; Mission
             </h2>
             <p className="text-lg text-foreground/80 max-w-2xl mx-auto mb-12">
@@ -173,7 +173,7 @@ export default function Home() {
             </p>
             <div className="grid md:grid-cols-2 gap-12 text-left">
               <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">
+                <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
                   Our Vision
                 </h3>
                 <p className="text-foreground/80">
@@ -184,7 +184,7 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">
+                <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
                   Our Mission
                 </h3>
                 <p className="text-foreground/80">
@@ -220,7 +220,7 @@ export default function Home() {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                  <h3 className="font-bold text-xl mb-3">The Challenge</h3>
+                  <h3 className="font-bold text-xl mb-3 bg-forest-gradient bg-clip-text text-transparent">The Challenge</h3>
                   <ul className="space-y-2 text-white/80 list-disc list-inside text-left">
                     <li>Urgent environmental threats</li>
                     <li>Disconnected sustainability efforts</li>
@@ -229,7 +229,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                  <h3 className="font-bold text-xl mb-3">
+                  <h3 className="font-bold text-xl mb-3 bg-forest-gradient bg-clip-text text-transparent">
                     The Opportunity
                   </h3>
                   <ul className="space-y-2 text-white/80 list-disc list-inside text-left">
@@ -246,7 +246,7 @@ export default function Home() {
 
         <section id="solution" className="py-20">
           <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold text-primary mb-4">
+            <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
               Our Solution: Prakruthi Shaale
             </h2>
             <p className="text-lg text-foreground/80 max-w-3xl mx-auto mb-12">
@@ -259,7 +259,7 @@ export default function Home() {
                   <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
                     <Users className="w-8 h-8 text-accent" />
                   </div>
-                  <CardTitle className="text-xl text-primary">
+                  <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
                     Collaborative Ecosystem
                   </CardTitle>
                 </CardHeader>
@@ -275,7 +275,7 @@ export default function Home() {
                   <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
                     <LifeBuoy className="w-8 h-8 text-accent" />
                   </div>
-                  <CardTitle className="text-xl text-primary">
+                  <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
                     Capacity Building
                   </CardTitle>
                 </CardHeader>
@@ -291,7 +291,7 @@ export default function Home() {
                   <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
                     <Globe className="w-8 h-8 text-accent" />
                   </div>
-                  <CardTitle className="text-xl text-primary">
+                  <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
                     Resource Mobilization
                   </CardTitle>
                 </CardHeader>
@@ -307,7 +307,7 @@ export default function Home() {
                   <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
                     <HeartHandshake className="w-8 h-8 text-accent" />
                   </div>
-                  <CardTitle className="text-xl text-primary">
+                  <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
                     Community Engagement
                   </CardTitle>
                 </CardHeader>
@@ -323,7 +323,7 @@ export default function Home() {
                   <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
                     <Lightbulb className="w-8 h-8 text-accent" />
                   </div>
-                  <CardTitle className="text-xl text-primary">
+                  <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
                     Innovation Incubation
                   </CardTitle>
                 </CardHeader>
@@ -356,7 +356,7 @@ export default function Home() {
               <div className="max-w-4xl mx-auto bg-background/90 text-foreground rounded-lg p-8 shadow-2xl">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="text-left">
-                    <h3 className="text-2xl font-bold text-primary mb-6">
+                    <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-6">
                       Contact Us
                     </h3>
                     <div className="space-y-4">
