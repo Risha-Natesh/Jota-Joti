@@ -117,60 +117,50 @@ export default function ProgramPage() {
           </div>
         </section>
 
-        <section id="eco-connect" className="py-20 bg-background relative text-white">
-          {ecoConnectImage && (
-            <Image
-              src={ecoConnectImage.imageUrl}
-              alt={ecoConnectImage.description}
-              fill
-              className="object-cover -z-10"
-              data-ai-hint={ecoConnectImage.imageHint}
-            />
-          )}
-          <div className="absolute inset-0 bg-black/60 -z-10"></div>
-          <div className="container mx-auto relative z-10">
+        <section id="eco-connect" className="py-20 bg-background">
+          <div className="container mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent">
                 The Eco Connect Program
               </h2>
-              <p className="text-lg text-white/90 max-w-3xl mx-auto mt-4">
+              <p className="text-lg text-foreground/80 max-w-3xl mx-auto mt-4">
                 A transformative youth initiative that responds to current needs by empowering youth with knowledge, practical skills, and awareness, aligned with UN SDGs.
               </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                 <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-xl text-white">
+                    <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
                       HAM Radio Exploration
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-white/80">
+                    <p className="text-foreground/80">
                       Introduces communication, electronics, and emergency usage, connecting a global community.
                     </p>
                   </CardContent>
                 </Card>
-                <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <Card>
                   <CardHeader>
-                    <CardTitle className="text-xl text-white">
+                    <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
                       Rope Work & Knots
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-white/80">
+                    <p className="text-foreground/80">
                       Teaches problem-solving, engineering thinking, and improvisation with practical rope skills.
                     </p>
                   </CardContent>
                 </Card>
-                <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <Card>
                   <CardHeader>
-                    <CardTitle className="text-xl text-white">
+                    <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
                       First Aid Training
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-white/80">
+                    <p className="text-foreground/80">
                      Provides vital life-saving knowledge while promoting empathy and social responsibility.
                     </p>
                   </CardContent>
@@ -181,73 +171,73 @@ export default function ProgramPage() {
               <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-6">
                 Core Outcomes & Life Skills Development
               </h3>
-              <p className="text-white/90 max-w-4xl mx-auto mb-10">
+              <p className="text-foreground/80 max-w-4xl mx-auto mb-10">
                 Our programs empower students with essential STEM skills,
                 environmental awareness, and crucial life skills that promote
                 personal growth and social responsibility.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <Target className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <Target className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-white">
+                  <h4 className="font-semibold text-foreground">
                     STEM Skills Development
                   </h4>
                 </div>
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <Leaf className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <Leaf className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-white">
+                  <h4 className="font-semibold text-foreground">
                     Environmental Awareness
                   </h4>
                 </div>
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <Users2 className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <Users2 className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-white">
+                  <h4 className="font-semibold text-foreground">
                     Teamwork & Collaboration
                   </h4>
                 </div>
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <Radio className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <Radio className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-white">
+                  <h4 className="font-semibold text-foreground">
                     Effective Communication
                   </h4>
                 </div>
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <Lightbulb className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <Lightbulb className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-white">
+                  <h4 className="font-semibold text-foreground">
                     Problem-Solving & Critical Thinking
                   </h4>
                 </div>
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <HeartPulse className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <HeartPulse className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-white">
+                  <h4 className="font-semibold text-foreground">
                     Empathy & Compassion
                   </h4>
                 </div>
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <Mountain className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <Mountain className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-white">
+                  <h4 className="font-semibold text-foreground">
                     Leadership & Initiative
                   </h4>
                 </div>
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <Sprout className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <Sprout className="w-10 h-10 text-accent" />
                   </div>
-                  <h4 className="font-semibold text-white">
+                  <h4 className="font-semibold text-foreground">
                     Adaptability & Time Management
                   </h4>
                 </div>
