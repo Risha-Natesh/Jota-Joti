@@ -12,6 +12,12 @@ import {
   Mountain,
   Users2,
 } from 'lucide-react';
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 
 export default function ProgramPage() {
   const approachImage = PlaceHolderImages.find((img) => img.id === 'approach');
@@ -111,23 +117,13 @@ export default function ProgramPage() {
           </div>
         </section>
 
-        <section id="eco-connect" className="py-20 relative text-white">
-          {ecoConnectImage && (
-            <Image
-              src={ecoConnectImage.imageUrl}
-              alt={ecoConnectImage.description}
-              fill
-              className="object-cover -z-10"
-              data-ai-hint={ecoConnectImage.imageHint}
-            />
-          )}
-          <div className="absolute inset-0 bg-black/60 -z-10"></div>
-          <div className="container mx-auto relative z-10">
+        <section id="eco-connect" className="py-20 bg-background">
+          <div className="container mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent">
                 The Eco Connect Program
               </h2>
-              <p className="text-lg text-white/90 max-w-2xl mx-auto mt-4">
+              <p className="text-lg text-foreground/80 max-w-2xl mx-auto mt-4">
                 A transformative youth initiative that cultivates innovators and
                 eco-conscious leaders for future challenges.
               </p>
@@ -137,172 +133,176 @@ export default function ProgramPage() {
                 <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent">
                   Empowering Youth for a Sustainable Future
                 </h3>
-                <p className="text-white/90">
+                <p className="text-foreground/90">
                   Responds to current needs by empowering youth with knowledge,
                   practical skills, and awareness. Our program is aligned with
                   UN SDGs, focusing on sustainability, climate action, and
                   responsible consumption.
                 </p>
-                <ul className="space-y-3 text-white/90">
+                <ul className="space-y-3 text-foreground/90">
                   <li className="flex items-center gap-3">
-                    <Leaf className="w-5 h-5 text-green-300" />
+                    <Leaf className="w-5 h-5 text-primary" />
                     <span>Immersive Learning Environment</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <Target className="w-5 h-5 text-green-300" />
+                    <Target className="w-5 h-5 text-primary" />
                     <span>STEM & Environmental Integration</span>
                   </li>
                 </ul>
               </div>
-              <div className="px-8 py-12 rounded-lg bg-white/10 backdrop-blur-sm">
-                <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-6 text-center">
-                  Engaging Activities
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
-                      01
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
+                    Engaging Activities
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-8 h-8 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">
+                        01
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-primary">
+                          HAM Radio Exploration
+                        </h4>
+                        <p className="text-sm text-foreground/80">
+                          Introduces communication, electronics, emergency
+                          usage, and connects a global community.
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-primary-foreground">
-                        HAM Radio Exploration
-                      </h4>
-                      <p className="text-sm text-white/80">
-                        Introduces communication, electronics, emergency usage,
-                        and connects a global community.
-                      </p>
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-8 h-8 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">
+                        02
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-primary">
+                          Rope Work & Knots Fundamentals
+                        </h4>
+                        <p className="text-sm text-foreground/80">
+                          Teaches problem-solving, engineering thinking,
+                          improvisation with practical rope skills.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-8 h-8 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">
+                        03
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-primary">
+                          Essential First Aid Training
+                        </h4>
+                        <p className="text-sm text-foreground/80">
+                          Provides vital life-saving knowledge while promoting
+                          empathy and social responsibility.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-8 h-8 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">
+                        04
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-primary">
+                          Panchavati Nature Walk Experience
+                        </h4>
+                        <p className="text-sm text-foreground/80">
+                          Guided immersion in nature with flora/fauna
+                          observation and eco-friendly habit discussions.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-8 h-8 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">
+                        05
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-primary">
+                          Ice Breaker Game for Teamwork
+                        </h4>
+                        <p className="text-sm text-foreground/80">
+                          Fosters teamwork, collaboration, and communication
+                          through engaging group challenges.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
-                      02
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary-foreground">
-                        Rope Work & Knots Fundamentals
-                      </h4>
-                      <p className="text-sm text-white/80">
-                        Teaches problem-solving, engineering thinking,
-                        improvisation with practical rope skills.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
-                      03
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary-foreground">
-                        Essential First Aid Training
-                      </h4>
-                      <p className="text-sm text-white/80">
-                        Provides vital life-saving knowledge while promoting
-                        empathy and social responsibility.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
-                      04
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary-foreground">
-                        Panchavati Nature Walk Experience
-                      </h4>
-                      <p className="text-sm text-white/80">
-                        Guided immersion in nature with flora/fauna observation
-                        and eco-friendly habit discussions.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 bg-primary/80 text-primary-foreground rounded-full flex items-center justify-center font-bold text-lg">
-                      05
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary-foreground">
-                        Ice Breaker Game for Teamwork
-                      </h4>
-                      <p className="text-sm text-white/80">
-                        Fosters teamwork, collaboration, and communication
-                        through engaging group challenges.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
             </div>
             <div className="text-center">
               <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-6">
                 Core Outcomes & Life Skills Development
               </h3>
-              <p className="text-white/90 max-w-4xl mx-auto mb-10">
+              <p className="text-foreground/90 max-w-4xl mx-auto mb-10">
                 Our programs empower students with essential STEM skills,
                 environmental awareness, and crucial life skills that promote
                 personal growth and social responsibility.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <Target className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center">
+                    <Target className="w-10 h-10 text-primary" />
                   </div>
-                  <h4 className="font-semibold text-primary-foreground">
+                  <h4 className="font-semibold text-foreground">
                     STEM Skills Development
                   </h4>
                 </div>
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <Leaf className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center">
+                    <Leaf className="w-10 h-10 text-primary" />
                   </div>
-                  <h4 className="font-semibold text-primary-foreground">
+                  <h4 className="font-semibold text-foreground">
                     Environmental Awareness
                   </h4>
                 </div>
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <Users2 className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center">
+                    <Users2 className="w-10 h-10 text-primary" />
                   </div>
-                  <h4 className="font-semibold text-primary-foreground">
+                  <h4 className="font-semibold text-foreground">
                     Teamwork & Collaboration
                   </h4>
                 </div>
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <Radio className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center">
+                    <Radio className="w-10 h-10 text-primary" />
                   </div>
-                  <h4 className="font-semibold text-primary-foreground">
+                  <h4 className="font-semibold text-foreground">
                     Effective Communication
                   </h4>
                 </div>
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <Lightbulb className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center">
+                    <Lightbulb className="w-10 h-10 text-primary" />
                   </div>
-                  <h4 className="font-semibold text-primary-foreground">
+                  <h4 className="font-semibold text-foreground">
                     Problem-Solving & Critical Thinking
                   </h4>
                 </div>
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <HeartPulse className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center">
+                    <HeartPulse className="w-10 h-10 text-primary" />
                   </div>
-                  <h4 className="font-semibold text-primary-foreground">
+                  <h4 className="font-semibold text-foreground">
                     Empathy & Compassion
                   </h4>
                 </div>
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <Mountain className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center">
+                    <Mountain className="w-10 h-10 text-primary" />
                   </div>
-                  <h4 className="font-semibold text-primary-foreground">
+                  <h4 className="font-semibold text-foreground">
                     Leadership & Initiative
                   </h4>
                 </div>
                 <div className="flex flex-col items-center gap-2 text-center">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <Sprout className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center">
+                    <Sprout className="w-10 h-10 text-primary" />
                   </div>
-                  <h4 className="font-semibold text-primary-foreground">
+                  <h4 className="font-semibold text-foreground">
                     Adaptability & Time Management
                   </h4>
                 </div>
