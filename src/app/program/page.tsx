@@ -56,7 +56,7 @@ export default function ProgramPage() {
         <section id="programs" className="py-20 bg-secondary/30">
           <div className="container mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text">
+              <h2 className="text-4xl font-bold text-primary">
                 Our Approach & Programs
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-4">
@@ -77,7 +77,7 @@ export default function ProgramPage() {
               </div>
               <div className="flex flex-col gap-8">
                 <div>
-                  <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text mb-2">
+                  <h3 className="text-xl font-bold text-primary mb-2">
                     Outdoor Activities & Workshops
                   </h3>
                   <p className="text-gray-600">
@@ -86,7 +86,7 @@ export default function ProgramPage() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text mb-2">
+                  <h3 className="text-xl font-bold text-primary mb-2">
                     Experiential Learning Programs
                   </h3>
                   <p className="text-gray-600">
@@ -95,7 +95,7 @@ export default function ProgramPage() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text mb-2">
+                  <h3 className="text-xl font-bold text-primary mb-2">
                     Volunteering, Team-building & Leadership Programs
                   </h3>
                   <p className="text-gray-600">
@@ -111,7 +111,7 @@ export default function ProgramPage() {
         <section id="eco-connect" className="py-20">
           <div className="container mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text">
+              <h2 className="text-4xl font-bold text-primary">
                 The Eco Connect Program
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-4">
@@ -121,7 +121,7 @@ export default function ProgramPage() {
             </div>
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
               <div className="flex flex-col gap-6">
-                <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text">
+                <h3 className="text-2xl font-bold text-primary">
                   Empowering Youth for a Sustainable Future
                 </h3>
                 <p className="text-gray-600">
@@ -142,7 +142,7 @@ export default function ProgramPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text mb-6 text-center">
+                <h3 className="text-2xl font-bold text-primary mb-6 text-center">
                   Engaging Activities
                 </h3>
                 <div className="space-y-4">
@@ -220,7 +220,7 @@ export default function ProgramPage() {
               </div>
             </div>
             <div className="text-center">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text mb-6">
+              <h3 className="text-2xl font-bold text-primary mb-6">
                 Core Outcomes & Life Skills Development
               </h3>
               <p className="text-gray-600 max-w-4xl mx-auto mb-10">
