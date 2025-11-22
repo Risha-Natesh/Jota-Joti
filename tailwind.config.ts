@@ -25,6 +25,7 @@ export default {
         sans: ['var(--font-poppins)', 'sans-serif'],
       },
       colors: {
+        'brand-green': '#8DA750',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

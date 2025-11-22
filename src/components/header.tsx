@@ -42,12 +42,12 @@ const Header = () => {
     >
       <Link
         href="/"
-        className="flex items-center gap-3 font-bold text-xl text-primary"
+        className="flex items-center gap-3 font-bold text-xl"
       >
         <div className="w-10 h-10 bg-white text-black flex items-center justify-center rounded-md p-1">
           <Sun className="w-8 h-8" />
         </div>
-        <span className={'text-white'}>
+        <span className={'text-brand-green'}>
           PRAKRUTHI <span className="font-light">SHAALE</span>
         </span>
       </Link>
