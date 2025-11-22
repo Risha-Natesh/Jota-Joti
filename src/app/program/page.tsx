@@ -9,7 +9,6 @@ import {
   Puzzle,
   GitCommit,
   Leaf,
-  Building,
   HeartHandshake,
   ArrowRight,
 } from 'lucide-react';
@@ -36,7 +35,7 @@ export default function ProgramPage() {
       bg: 'bg-green-500/10',
     },
     {
-      icon: Building,
+      icon: Users,
       title: 'Corporate Partnership Program',
       description:
         'Partner with us to create impactful environmental and team-building experiences.',
