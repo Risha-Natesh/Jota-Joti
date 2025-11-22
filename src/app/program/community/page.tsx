@@ -13,14 +13,14 @@ export default function CommunityPage() {
         <div className="relative h-64 md:h-80">
           <Image
             src="https://picsum.photos/seed/community/1200/400"
-            alt="Community Stewards Initiative"
+            alt="Community Volunteer Program"
             fill
             className="object-cover"
             data-ai-hint="volunteers working together"
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
-              Community Stewards Initiative
+              Community Volunteer Program
             </h1>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function CommunityPage() {
                 Be the Change in Your Community
               </h2>
               <p className="text-lg text-foreground/80 mb-6 transition-transform duration-300 hover:scale-105">
-                Our Community Stewards program is for passionate individuals who want to dedicate their time and skills to making a difference. As a volunteer, you are the heart of our mission, driving change and fostering a healthier environment for all.
+                Our Community Volunteer program is for passionate individuals who want to dedicate their time and skills to making a difference. As a volunteer, you are the heart of our mission, driving change and fostering a healthier environment for all.
               </p>
               
               <div className="space-y-4 text-foreground/80">

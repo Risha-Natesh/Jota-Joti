@@ -28,7 +28,7 @@ export default function ProgramPage() {
   const initiatives = [
     {
       icon: Leaf,
-      title: 'Youth Vanguard Program',
+      title: 'Youth Environmental Program',
       description:
         'Engaging the next generation with hands-on nature and science programs.',
       href: '/program/youth',
@@ -37,7 +37,7 @@ export default function ProgramPage() {
     },
     {
       icon: Building,
-      title: 'Purpose-Driven Partnerships',
+      title: 'Corporate Partnership Program',
       description:
         'Partner with us to create impactful environmental and team-building experiences.',
       href: '/program/corporate',
@@ -46,7 +46,7 @@ export default function ProgramPage() {
     },
     {
       icon: HeartHandshake,
-      title: 'Community Stewards Initiative',
+      title: 'Community Volunteer Program',
       description:
         'Join our volunteer efforts to make a tangible difference in our community.',
       href: '/program/community',
