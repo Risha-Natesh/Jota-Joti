@@ -2,8 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Sun } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 
@@ -44,9 +44,7 @@ const Header = () => {
         href="/"
         className="flex items-center gap-3 font-bold text-xl"
       >
-        <div className="w-10 h-10 bg-white text-black flex items-center justify-center rounded-md p-1">
-          <Sun className="w-8 h-8" />
-        </div>
+        <Image src="/Images/Logo.jpg" alt="Prakruthi Shaale Logo" width={40} height={40} className="rounded-md" />
         <span className={'text-brand-green'}>
           PRAKRUTHI <span className="font-light">SHAALE</span>
         </span>
