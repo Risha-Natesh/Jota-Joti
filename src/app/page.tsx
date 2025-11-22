@@ -195,7 +195,7 @@ export default function Home() {
                   'p-8 rounded-lg shadow-md opacity-0',
                   visionInView && 'animate-fade-in'
                 )}
-                style={{ backgroundColor: '#8c916c' }}
+                style={{ backgroundColor: '#697254' }}
               >
                 <h3 className="text-2xl font-bold text-white mb-4">
                   Our Vision
@@ -213,7 +213,7 @@ export default function Home() {
                   'p-8 rounded-lg shadow-md opacity-0',
                   missionInView && 'animate-fade-in [animation-delay:300ms]'
                 )}
-                style={{ backgroundColor: '#8c916c' }}
+                style={{ backgroundColor: '#697254' }}
               >
                 <h3 className="text-2xl font-bold text-white mb-4">
                   Our Mission
