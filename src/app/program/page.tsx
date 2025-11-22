@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
 import Header from '@/components/header';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import {
   Antenna,
   Cross,
@@ -23,7 +22,32 @@ import Autoplay from 'embla-carousel-autoplay';
 import Link from 'next/link';
 
 export default function ProgramPage() {
-  const approachImage = PlaceHolderImages.find((img) => img.id === 'approach');
+  const initiatives = [
+    {
+      icon: Leaf,
+      title: 'Young Sprouts Program',
+      description: 'Engaging the next generation with hands-on nature and science programs.',
+      href: '/program/youth',
+      color: 'text-green-500',
+      bg: 'bg-green-500/10',
+    },
+    {
+      icon: Building,
+      title: 'Corporate Green Teams',
+      description: 'Partner with us to create impactful environmental and team-building experiences.',
+      href: '/program/corporate',
+      color: 'text-blue-500',
+      bg: 'bg-blue-500/10',
+    },
+    {
+      icon: HeartHandshake,
+      title: 'Community Champions',
+      description: 'Join our volunteer efforts to make a tangible difference in our community.',
+      href: '/program/community',
+      color: 'text-red-500',
+      bg: 'bg-red-500/10',
+    }
+  ];
 
   const ecoConnectActivities = [
     {
@@ -52,34 +76,6 @@ export default function ProgramPage() {
     },
   ];
 
-  const initiatives = [
-    {
-      icon: Leaf,
-      title: 'Young Sprouts Program',
-      description: 'Engaging the next generation with hands-on nature and science programs.',
-      href: '/program/youth',
-      color: 'text-green-500',
-      bg: 'bg-green-500/10',
-    },
-    {
-      icon: Building,
-      title: 'Corporate Green Teams',
-      description: 'Partner with us to create impactful environmental and team-building experiences.',
-      href: '/program/corporate',
-      color: 'text-blue-500',
-      bg: 'bg-blue-500/10',
-    },
-    {
-      icon: HeartHandshake,
-      title: 'Community Champions',
-      description: 'Join our volunteer efforts to make a tangible difference in our community.',
-      href: '/program/community',
-      color: 'text-red-500',
-      bg: 'bg-red-500/10',
-    }
-  ];
-
-
   return (
     <div className="relative flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
       <Header />
@@ -96,15 +92,13 @@ export default function ProgramPage() {
             </div>
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div className="h-96 relative rounded-lg overflow-hidden shadow-lg">
-                {approachImage && (
-                  <Image
-                    src={approachImage.imageUrl}
-                    alt={approachImage.description}
-                    fill
-                    className="object-cover"
-                    data-ai-hint={approachImage.imageHint}
-                  />
-                )}
+                <Image
+                  src="/Images/approach.png"
+                  alt="A diagram illustrating the educational approach."
+                  fill
+                  className="object-cover"
+                  data-ai-hint="approach diagram"
+                />
               </div>
               <div className="flex flex-col gap-8">
                 <div>
