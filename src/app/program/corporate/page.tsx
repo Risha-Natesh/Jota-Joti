@@ -12,7 +12,7 @@ export default function CorporatePage() {
       <main className="pt-20">
         <div className="relative h-64 md:h-80">
           <Image
-            src="https://picsum.photos/seed/corporate/1200/400"
+            src="/Images/co-op.jpg"
             alt="Corporate Partnership Program"
             fill
             className="object-cover"
