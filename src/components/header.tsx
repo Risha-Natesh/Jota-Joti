@@ -49,7 +49,7 @@ const Header = () => {
         <div className="w-8 h-8 bg-primary text-primary-foreground flex items-center justify-center rounded-sm">
           <Sun className="w-5 h-5" />
         </div>
-        <span className="text-white">
+        <span className="text-black">
           PRAKRUTHI <span className="font-light">SHAALE</span>
         </span>
       </Link>
@@ -57,28 +57,28 @@ const Header = () => {
         <Button
           variant="ghost"
           onClick={() => scrollTo('home')}
-          className="text-white hover:bg-white/10 hover:text-white"
+          className="text-black hover:bg-black/10 hover:text-black"
         >
           Home
         </Button>
         <Button
           variant="ghost"
           onClick={() => scrollTo('about')}
-          className="text-white hover:bg-white/10 hover:text-white"
+          className="text-black hover:bg-black/10 hover:text-black"
         >
           About
         </Button>
         <Link href="/program">
           <Button
             variant="ghost"
-            className="text-white hover:bg-white/10 hover:text-white"
+            className="text-black hover:bg-black/10 hover:text-black"
           >
             Programs
           </Button>
         </Link>
         <Button
           onClick={() => scrollTo('contact')}
-          className="bg-white/20 text-white border-white/30 border hover:bg-white/30"
+          className="bg-black/20 text-black border-black/30 border hover:bg-black/30"
         >
           Contact
         </Button>
