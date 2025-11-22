@@ -23,6 +23,47 @@ import { useInView } from 'react-intersection-observer';
 import { cn } from '@/lib/utils';
 import React from 'react';
 
+const InitiativeCard = ({ initiative }: { initiative: any }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+  const Icon = initiative.icon;
+
+  return (
+    <Link href={initiative.href} className="group block">
+      <div
+        ref={ref}
+        className={cn(
+          'relative h-full bg-card p-8 rounded-lg shadow-lg overflow-hidden transition-all duration-500 opacity-0',
+          inView ? 'opacity-100 translate-y-0' : 'translate-y-10',
+          'md:group-hover:transform md:group-hover:-translate-y-2 md:group-hover:ring-4 md:group-hover:ring-accent/50',
+          inView && 'ring-4 ring-accent/50 md:ring-0'
+        )}
+      >
+        <div
+          className={`absolute -top-4 -right-4 w-24 h-24 rounded-full ${initiative.bg} opacity-50 blur-xl`}
+        ></div>
+        <div className="relative z-10">
+          <div
+            className={`w-16 h-16 rounded-full flex items-center justify-center mb-6 ${initiative.bg}`}
+          >
+            <Icon className={`w-8 h-8 ${initiative.color}`} />
+          </div>
+          <h3 className="text-2xl font-bold text-foreground mb-3 transition-transform duration-300 group-hover:scale-105">
+            {initiative.title}
+          </h3>
+          <p className="text-foreground/70 mb-4">{initiative.description}</p>
+          <div className="flex items-center font-semibold text-accent group-hover:text-primary transition-colors">
+            Learn More
+            <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+          </div>
+        </div>
+      </div>
+    </Link>
+  );
+};
+
 export default function ProgramPage() {
   const initiatives = [
     {
@@ -103,9 +144,7 @@ export default function ProgramPage() {
                 approachInView ? 'opacity-100' : 'opacity-0'
               )}
             >
-              <h2 className="text-4xl font-bold">
-                Our Approach & Programs
-              </h2>
+              <h2 className="text-4xl font-bold">Our Approach & Programs</h2>
               <p className="text-lg text-foreground/80 max-w-2xl mx-auto mt-4">
                 Empowering schools through hands-on sustainability education.
               </p>
@@ -136,9 +175,7 @@ export default function ProgramPage() {
                       : 'opacity-0 translate-y-10'
                   )}
                 >
-                  <h3
-                    className="text-xl font-bold mb-2 transition-transform duration-300 hover:scale-105"
-                  >
+                  <h3 className="text-xl font-bold mb-2 transition-transform duration-300 hover:scale-105">
                     Outdoor Activities & Workshops
                   </h3>
                   <p className="text-foreground/80">
@@ -154,9 +191,7 @@ export default function ProgramPage() {
                       : 'opacity-0 translate-y-10'
                   )}
                 >
-                  <h3
-                    className="text-xl font-bold mb-2 transition-transform duration-300 hover:scale-105"
-                  >
+                  <h3 className="text-xl font-bold mb-2 transition-transform duration-300 hover:scale-105">
                     Experiential Learning Programs
                   </h3>
                   <p className="text-foreground/80">
@@ -172,9 +207,7 @@ export default function ProgramPage() {
                       : 'opacity-0 translate-y-10'
                   )}
                 >
-                  <h3
-                    className="text-xl font-bold mb-2 transition-transform duration-300 hover:scale-105"
-                  >
+                  <h3 className="text-xl font-bold mb-2 transition-transform duration-300 hover:scale-105">
                     Volunteering, Team-building & Leadership Programs
                   </h3>
                   <p className="text-foreground/80">
@@ -190,49 +223,18 @@ export default function ProgramPage() {
         <section id="initiatives" className="py-20 bg-background">
           <div className="container mx-auto">
             <div className="text-center mb-12">
-              <h2
-                className="text-4xl font-bold"
-              >
-                Explore Our Initiatives
-              </h2>
+              <h2 className="text-4xl font-bold">Explore Our Initiatives</h2>
               <p className="text-lg text-foreground/80 max-w-2xl mx-auto mt-4">
                 Discover how you can get involved and make a difference.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
-              {initiatives.map((initiative) => {
-                const Icon = initiative.icon;
-                return (
-                  <Link
-                    href={initiative.href}
-                    key={initiative.title}
-                    className="group block"
-                  >
-                    <div className="relative h-full bg-card p-8 rounded-lg shadow-lg overflow-hidden transition-all duration-300 group-hover:transform group-hover:-translate-y-2 group-hover:ring-4 group-hover:ring-accent/50">
-                      <div
-                        className={`absolute -top-4 -right-4 w-24 h-24 rounded-full ${initiative.bg} opacity-50 blur-xl`}
-                      ></div>
-                      <div className="relative z-10">
-                        <div
-                          className={`w-16 h-16 rounded-full flex items-center justify-center mb-6 ${initiative.bg}`}
-                        >
-                          <Icon className={`w-8 h-8 ${initiative.color}`} />
-                        </div>
-                        <h3 className="text-2xl font-bold text-foreground mb-3 transition-transform duration-300 group-hover:scale-105">
-                          {initiative.title}
-                        </h3>
-                        <p className="text-foreground/70 mb-4">
-                          {initiative.description}
-                        </p>
-                        <div className="flex items-center font-semibold text-accent group-hover:text-primary transition-colors">
-                          Learn More
-                          <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                );
-              })}
+              {initiatives.map((initiative) => (
+                <InitiativeCard
+                  key={initiative.title}
+                  initiative={initiative}
+                />
+              ))}
             </div>
           </div>
         </section>
