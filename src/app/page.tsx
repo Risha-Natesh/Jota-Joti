@@ -303,7 +303,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="py-20 bg-forest-gradient text-white">
+        <section id="contact" className="py-20 bg-[#546A50] text-white">
           <div className="container mx-auto text-center">
             <h2 className="text-4xl font-bold mb-4">
               Shape a Sustainable Tomorrow Together
