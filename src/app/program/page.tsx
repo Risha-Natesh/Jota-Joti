@@ -208,7 +208,7 @@ export default function ProgramPage() {
                     key={initiative.title}
                     className="group block"
                   >
-                    <div className="relative h-full bg-card p-8 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 group-hover:transform group-hover:-translate-y-2">
+                    <div className="relative h-full bg-card p-8 rounded-lg shadow-lg overflow-hidden transition-all duration-300 group-hover:transform group-hover:-translate-y-2 group-hover:ring-4 group-hover:ring-accent/50">
                       <div
                         className={`absolute -top-4 -right-4 w-24 h-24 rounded-full ${initiative.bg} opacity-50 blur-xl`}
                       ></div>
