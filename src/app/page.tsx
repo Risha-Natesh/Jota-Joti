@@ -180,10 +180,8 @@ export default function Home() {
               <div
                 ref={visionRef}
                 className={cn(
-                  'transition-all duration-1000 ease-out',
-                  visionInView
-                    ? 'opacity-100 translate-y-0'
-                    : 'opacity-0 translate-y-10'
+                  'opacity-0',
+                  visionInView && 'animate-fade-in'
                 )}
               >
                 <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
@@ -199,10 +197,8 @@ export default function Home() {
               <div
                 ref={missionRef}
                 className={cn(
-                  'transition-all duration-1000 ease-out delay-300',
-                  missionInView
-                    ? 'opacity-100 translate-y-0'
-                    : 'opacity-0 translate-y-10'
+                  'opacity-0',
+                   missionInView && 'animate-fade-in [animation-delay:300ms]'
                 )}
               >
                 <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
