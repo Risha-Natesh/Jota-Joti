@@ -42,7 +42,10 @@ export default function YouthPage() {
 
           <div className="grid md:grid-cols-3 gap-12">
             <div className="md:col-span-2">
-              <h2 className="text-3xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
+              <h2
+                className="text-3xl font-bold mb-4"
+                style={{ color: '#354024' }}
+              >
                 Fostering a Love for Nature & Science
               </h2>
               <p className="text-lg text-foreground/80 mb-6 transition-transform duration-300 hover:scale-105">
@@ -68,7 +71,10 @@ export default function YouthPage() {
             </div>
 
             <div className="bg-secondary/30 p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-bold text-accent mb-4">
+              <h3
+                className="text-xl font-bold mb-4"
+                style={{ color: '#354024' }}
+              >
                 Program Highlights
               </h3>
               <ul className="space-y-4">
@@ -77,7 +83,10 @@ export default function YouthPage() {
                     <Microscope className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <h4 className="font-semibold transition-transform duration-300 hover:scale-105">
+                    <h4
+                      className="font-semibold transition-transform duration-300 hover:scale-105"
+                      style={{ color: '#354024' }}
+                    >
                       Hands-On Science
                     </h4>
                     <p className="text-sm text-foreground/70">
@@ -90,7 +99,10 @@ export default function YouthPage() {
                     <User className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <h4 className="font-semibold transition-transform duration-300 hover:scale-105">
+                    <h4
+                      className="font-semibold transition-transform duration-300 hover:scale-105"
+                      style={{ color: '#354024' }}
+                    >
                       Age Groups
                     </h4>
                     <p className="text-sm text-foreground/70">
@@ -103,7 +115,10 @@ export default function YouthPage() {
                     <Calendar className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <h4 className="font-semibold transition-transform duration-300 hover:scale-105">
+                    <h4
+                      className="font-semibold transition-transform duration-300 hover:scale-105"
+                      style={{ color: '#354024' }}
+                    >
                       Upcoming Events
                     </h4>
                     <p className="text-sm text-foreground/70">
@@ -118,7 +133,7 @@ export default function YouthPage() {
           <div className="mt-16 text-center">
             <h2
               className="text-3xl font-bold mb-4"
-              style={{ color: '#D95E35' }}
+              style={{ color: '#354024' }}
             >
               ON-CAMPUS EXPERIENCE
             </h2>
@@ -134,7 +149,7 @@ export default function YouthPage() {
                   <Wind className="w-6 h-6 text-accent" />
                   <h3
                     className="text-xl font-bold"
-                    style={{ color: '#D95E35' }}
+                    style={{ color: '#354024' }}
                   >
                     SPECTRUM JUNIOR
                   </h3>
@@ -151,7 +166,7 @@ export default function YouthPage() {
                   <Telescope className="w-6 h-6 text-accent" />
                   <h3
                     className="text-xl font-bold"
-                    style={{ color: '#D95E35' }}
+                    style={{ color: '#354024' }}
                   >
                     SPECTRUM SENIOR
                   </h3>
@@ -167,7 +182,10 @@ export default function YouthPage() {
           </div>
 
           <div className="mt-16">
-            <h2 className="text-3xl font-bold text-center bg-forest-gradient bg-clip-text text-transparent mb-8">
+            <h2
+              className="text-3xl font-bold text-center mb-8"
+              style={{ color: '#354024' }}
+            >
               Past Events & Gallery
             </h2>
             <div className="text-center text-foreground/70">
