@@ -129,8 +129,13 @@ export default function YouthPage() {
               </ul>
             </div>
           </div>
+        </div>
 
-          <div className="mt-16 text-center">
+        <section
+          className="py-16"
+          style={{ backgroundColor: '#a7ad89' }}
+        >
+          <div className="container mx-auto text-center">
             <h2
               className="text-3xl font-bold mb-4"
               style={{ color: '#354024' }}
@@ -144,7 +149,7 @@ export default function YouthPage() {
               Sir CV Raman's residence.
             </p>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-secondary/20 p-6 rounded-lg shadow-md border border-border">
+              <div className="bg-background/50 p-6 rounded-lg shadow-md border border-border">
                 <div className="flex items-center justify-center gap-3 mb-4">
                   <Wind className="w-6 h-6 text-accent" />
                   <h3
@@ -161,7 +166,7 @@ export default function YouthPage() {
                   Mud | Mess | Marvels
                 </p>
               </div>
-              <div className="bg-secondary/20 p-6 rounded-lg shadow-md border border-border">
+              <div className="bg-background/50 p-6 rounded-lg shadow-md border border-border">
                 <div className="flex items-center justify-center gap-3 mb-4">
                   <Telescope className="w-6 h-6 text-accent" />
                   <h3
@@ -180,7 +185,9 @@ export default function YouthPage() {
               </div>
             </div>
           </div>
+        </section>
 
+        <div className="container mx-auto py-16">
           <div className="mt-16">
             <h2
               className="text-3xl font-bold text-center mb-8"
