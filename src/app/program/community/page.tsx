@@ -12,7 +12,7 @@ export default function CommunityPage() {
       <main className="pt-20">
         <div className="relative h-64 md:h-80">
           <Image
-            src="https://picsum.photos/seed/community/1200/400"
+            src="/Images/volunteer.jpg"
             alt="Community Volunteer Program"
             fill
             className="object-cover"
