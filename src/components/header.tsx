@@ -37,24 +37,24 @@ const Header = () => {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 transition-colors duration-300',
-        isScrolled ? 'bg-background/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
+        isScrolled ? 'bg-black/30 backdrop-blur-lg shadow-lg' : 'bg-transparent'
       )}
     >
       <Link href="/" className="flex items-center gap-3 font-bold text-xl text-primary">
         <div className="w-8 h-8 bg-primary text-primary-foreground flex items-center justify-center rounded-sm">
             <Sun className="w-5 h-5" />
         </div>
-        <span>
+        <span className="text-white">
           PRAKRUTHI <span className="font-light">SHAALE</span>
         </span>
       </Link>
       <nav className="hidden md:flex items-center gap-2">
-        <Button variant="ghost" onClick={() => scrollTo('home')}>Home</Button>
-        <Button variant="ghost" onClick={() => scrollTo('about')}>About</Button>
+        <Button variant="ghost" onClick={() => scrollTo('home')} className="text-white hover:bg-white/10 hover:text-white">Home</Button>
+        <Button variant="ghost" onClick={() => scrollTo('about')} className="text-white hover:bg-white/10 hover:text-white">About</Button>
         <Link href="/program">
-            <Button variant="ghost">Programs</Button>
+            <Button variant="ghost" className="text-white hover:bg-white/10 hover:text-white">Programs</Button>
         </Link>
-        <Button onClick={() => scrollTo('contact')}>
+        <Button onClick={() => scrollTo('contact')} className="bg-white/20 text-white border-white/30 border hover:bg-white/30">
           Contact
         </Button>
       </nav>
