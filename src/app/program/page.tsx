@@ -20,13 +20,17 @@ import {
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import Link from 'next/link';
+import { useInView } from 'react-intersection-observer';
+import { cn } from '@/lib/utils';
+import React from 'react';
 
 export default function ProgramPage() {
   const initiatives = [
     {
       icon: Leaf,
       title: 'Young Sprouts Program',
-      description: 'Engaging the next generation with hands-on nature and science programs.',
+      description:
+        'Engaging the next generation with hands-on nature and science programs.',
       href: '/program/youth',
       color: 'text-green-500',
       bg: 'bg-green-500/10',
@@ -34,7 +38,8 @@ export default function ProgramPage() {
     {
       icon: Building,
       title: 'Corporate Green Teams',
-      description: 'Partner with us to create impactful environmental and team-building experiences.',
+      description:
+        'Partner with us to create impactful environmental and team-building experiences.',
       href: '/program/corporate',
       color: 'text-blue-500',
       bg: 'bg-blue-500/10',
@@ -42,11 +47,12 @@ export default function ProgramPage() {
     {
       icon: HeartHandshake,
       title: 'Community Champions',
-      description: 'Join our volunteer efforts to make a tangible difference in our community.',
+      description:
+        'Join our volunteer efforts to make a tangible difference in our community.',
       href: '/program/community',
       color: 'text-red-500',
       bg: 'bg-red-500/10',
-    }
+    },
   ];
 
   const ecoConnectActivities = [
@@ -76,13 +82,24 @@ export default function ProgramPage() {
     },
   ];
 
+  const { ref: approachRef, inView: approachInView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
   return (
     <div className="relative flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
       <Header />
       <main className="flex-1 pt-16">
         <section id="programs" className="py-20 bg-secondary/30">
           <div className="container mx-auto">
-            <div className="text-center mb-12">
+            <div
+              ref={approachRef}
+              className={cn(
+                'text-center mb-12 transition-opacity duration-1000',
+                approachInView ? 'opacity-100' : 'opacity-0'
+              )}
+            >
               <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent">
                 Our Approach & Programs
               </h2>
@@ -91,7 +108,14 @@ export default function ProgramPage() {
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div className="h-96 relative rounded-lg overflow-hidden shadow-lg">
+              <div
+                className={cn(
+                  'h-96 relative rounded-lg overflow-hidden shadow-lg transition-all duration-1000 transform',
+                  approachInView
+                    ? 'opacity-100 translate-y-0'
+                    : 'opacity-0 translate-y-10'
+                )}
+              >
                 <Image
                   src="/Images/aproach.png"
                   alt="A diagram illustrating the educational approach."
@@ -101,7 +125,14 @@ export default function ProgramPage() {
                 />
               </div>
               <div className="flex flex-col gap-8">
-                <div>
+                <div
+                  className={cn(
+                    'transition-all duration-1000 transform',
+                    approachInView
+                      ? 'opacity-100 translate-y-0 delay-200'
+                      : 'opacity-0 translate-y-10'
+                  )}
+                >
                   <h3 className="text-xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-2">
                     Outdoor Activities & Workshops
                   </h3>
@@ -110,7 +141,14 @@ export default function ProgramPage() {
                     promote environmental awareness.
                   </p>
                 </div>
-                <div>
+                <div
+                  className={cn(
+                    'transition-all duration-1000 transform',
+                    approachInView
+                      ? 'opacity-100 translate-y-0 delay-400'
+                      : 'opacity-0 translate-y-10'
+                  )}
+                >
                   <h3 className="text-xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-2">
                     Experiential Learning Programs
                   </h3>
@@ -119,7 +157,14 @@ export default function ProgramPage() {
                     emotional, and social growth.
                   </p>
                 </div>
-                <div>
+                <div
+                  className={cn(
+                    'transition-all duration-1000 transform',
+                    approachInView
+                      ? 'opacity-100 translate-y-0 delay-600'
+                      : 'opacity-0 translate-y-10'
+                  )}
+                >
                   <h3 className="text-xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-2">
                     Volunteering, Team-building & Leadership Programs
                   </h3>
@@ -147,15 +192,27 @@ export default function ProgramPage() {
               {initiatives.map((initiative) => {
                 const Icon = initiative.icon;
                 return (
-                  <Link href={initiative.href} key={initiative.title} className="group block">
+                  <Link
+                    href={initiative.href}
+                    key={initiative.title}
+                    className="group block"
+                  >
                     <div className="relative h-full bg-card p-8 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 group-hover:transform group-hover:-translate-y-2">
-                      <div className={`absolute -top-4 -right-4 w-24 h-24 rounded-full ${initiative.bg} opacity-50 blur-xl`}></div>
+                      <div
+                        className={`absolute -top-4 -right-4 w-24 h-24 rounded-full ${initiative.bg} opacity-50 blur-xl`}
+                      ></div>
                       <div className="relative z-10">
-                        <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-6 ${initiative.bg}`}>
+                        <div
+                          className={`w-16 h-16 rounded-full flex items-center justify-center mb-6 ${initiative.bg}`}
+                        >
                           <Icon className={`w-8 h-8 ${initiative.color}`} />
                         </div>
-                        <h3 className="text-2xl font-bold text-foreground mb-3">{initiative.title}</h3>
-                        <p className="text-foreground/70 mb-4">{initiative.description}</p>
+                        <h3 className="text-2xl font-bold text-foreground mb-3">
+                          {initiative.title}
+                        </h3>
+                        <p className="text-foreground/70 mb-4">
+                          {initiative.description}
+                        </p>
                         <div className="flex items-center font-semibold text-accent group-hover:text-primary transition-colors">
                           Learn More
                           <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
