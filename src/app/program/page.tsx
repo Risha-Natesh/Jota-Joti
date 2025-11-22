@@ -28,7 +28,7 @@ export default function ProgramPage() {
   const initiatives = [
     {
       icon: Leaf,
-      title: 'Youth Environmental Program',
+      title: 'Kids Environmental Program',
       description:
         'Engaging the next generation with hands-on nature and science programs.',
       href: '/program/youth',
