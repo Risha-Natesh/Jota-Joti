@@ -27,6 +27,8 @@ import {
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
+import { cn } from '@/lib/utils';
 
 export default function Home() {
   const aboutImage = PlaceHolderImages.find((img) => img.id === 'about-us');
@@ -49,6 +51,16 @@ export default function Home() {
     { icon: Mountain, title: 'Leadership & Initiative' },
     { icon: Sprout, title: 'Adaptability & Time Management' },
   ];
+
+  const { ref: visionRef, inView: visionInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const { ref: missionRef, inView: missionInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   return (
     <div className="relative flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
@@ -165,7 +177,15 @@ export default function Home() {
               inclusive.
             </p>
             <div className="grid md:grid-cols-2 gap-12 text-center">
-              <div>
+              <div
+                ref={visionRef}
+                className={cn(
+                  'transition-all duration-1000 ease-out',
+                  visionInView
+                    ? 'opacity-100 translate-y-0'
+                    : 'opacity-0 translate-y-10'
+                )}
+              >
                 <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
                   Our Vision
                 </h3>
@@ -176,7 +196,15 @@ export default function Home() {
                   engagements.
                 </p>
               </div>
-              <div>
+              <div
+                ref={missionRef}
+                className={cn(
+                  'transition-all duration-1000 ease-out delay-300',
+                  missionInView
+                    ? 'opacity-100 translate-y-0'
+                    : 'opacity-0 translate-y-10'
+                )}
+              >
                 <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
                   Our Mission
                 </h3>
@@ -242,7 +270,7 @@ export default function Home() {
         <section id="solution" className="py-20">
           <div className="container mx-auto text-center">
             <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
-              Our Solutions & Outcomes
+              Our Solutions &amp; Outcomes
             </h2>
             <p className="text-lg text-foreground/80 max-w-3xl mx-auto mb-12">
               A pioneering enterprise fostering sustainability and community
@@ -266,7 +294,7 @@ export default function Home() {
                   return (
                     <CarouselItem
                       key={index}
-                      className="basis-1/4 md:basis-1/8 lg:basis-1/8"
+                      className="md:basis-1/8 lg:basis-1/8"
                     >
                       <div className="flex flex-col items-center gap-3 text-center group transform transition-transform duration-300 hover:scale-110 hover:-translate-y-2">
                         <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:rotate-12">
