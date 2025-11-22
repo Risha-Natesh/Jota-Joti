@@ -9,6 +9,10 @@ import {
   Footprints,
   Puzzle,
   GitCommit,
+  Leaf,
+  Building,
+  HeartHandshake,
+  ArrowRight,
 } from 'lucide-react';
 import {
   Carousel,
@@ -16,6 +20,7 @@ import {
   CarouselItem,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
+import Link from 'next/link';
 
 export default function ProgramPage() {
   const approachImage = PlaceHolderImages.find((img) => img.id === 'approach');
@@ -46,6 +51,34 @@ export default function ProgramPage() {
       title: 'Team Building',
     },
   ];
+
+  const initiatives = [
+    {
+      icon: Leaf,
+      title: 'Young Sprouts Program',
+      description: 'Engaging the next generation with hands-on nature and science programs.',
+      href: '/program/youth',
+      color: 'text-green-500',
+      bg: 'bg-green-500/10',
+    },
+    {
+      icon: Building,
+      title: 'Corporate Green Teams',
+      description: 'Partner with us to create impactful environmental and team-building experiences.',
+      href: '/program/corporate',
+      color: 'text-blue-500',
+      bg: 'bg-blue-500/10',
+    },
+    {
+      icon: HeartHandshake,
+      title: 'Community Champions',
+      description: 'Join our volunteer efforts to make a tangible difference in our community.',
+      href: '/program/community',
+      color: 'text-red-500',
+      bg: 'bg-red-500/10',
+    }
+  ];
+
 
   return (
     <div className="relative flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
@@ -106,7 +139,43 @@ export default function ProgramPage() {
           </div>
         </section>
 
-        <section id="eco-connect-activities" className="py-20 bg-background">
+        <section id="initiatives" className="py-20 bg-background">
+          <div className="container mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent">
+                Explore Our Initiatives
+              </h2>
+              <p className="text-lg text-foreground/80 max-w-2xl mx-auto mt-4">
+                Discover how you can get involved and make a difference.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {initiatives.map((initiative) => {
+                const Icon = initiative.icon;
+                return (
+                  <Link href={initiative.href} key={initiative.title} className="group block">
+                    <div className="relative h-full bg-card p-8 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 group-hover:transform group-hover:-translate-y-2">
+                      <div className={`absolute -top-4 -right-4 w-24 h-24 rounded-full ${initiative.bg} opacity-50 blur-xl`}></div>
+                      <div className="relative z-10">
+                        <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-6 ${initiative.bg}`}>
+                          <Icon className={`w-8 h-8 ${initiative.color}`} />
+                        </div>
+                        <h3 className="text-2xl font-bold text-foreground mb-3">{initiative.title}</h3>
+                        <p className="text-foreground/70 mb-4">{initiative.description}</p>
+                        <div className="flex items-center font-semibold text-accent group-hover:text-primary transition-colors">
+                          Learn More
+                          <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        <section id="eco-connect-activities" className="py-20 bg-secondary/30">
           <div className="container mx-auto text-center">
             <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
               Eco Connect Activities
