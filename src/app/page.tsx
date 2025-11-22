@@ -14,6 +14,11 @@ import {
   Phone,
   Mail,
   MapPin,
+  Users2,
+  Radio,
+  HeartPulse,
+  Mountain,
+  BrainCircuit,
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -24,14 +29,27 @@ export default function Home() {
   );
   const visionImage = PlaceHolderImages.find((img) => img.id === 'vision');
 
+  const solutionsAndOutcomes = [
+    { icon: Users, title: 'Collaborative Ecosystem' },
+    { icon: LifeBuoy, title: 'Capacity Building' },
+    { icon: Globe, title: 'Resource Mobilization' },
+    { icon: HeartHandshake, title: 'Community Engagement' },
+    { icon: Lightbulb, title: 'Innovation Incubation' },
+    { icon: Target, title: 'STEM Skills Development' },
+    { icon: Leaf, title: 'Environmental Awareness' },
+    { icon: Users2, title: 'Teamwork & Collaboration' },
+    { icon: Radio, title: 'Effective Communication' },
+    { icon: BrainCircuit, title: 'Problem-Solving & Critical Thinking' },
+    { icon: HeartPulse, title: 'Empathy & Compassion' },
+    { icon: Mountain, title: 'Leadership & Initiative' },
+    { icon: Sprout, title: 'Adaptability & Time Management' },
+  ];
+
   return (
     <div className="relative flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
-        <Header />
-        <main className="flex-1">
-        <section
-          id="home"
-          className="relative h-screen overflow-hidden"
-        >
+      <Header />
+      <main className="flex-1">
+        <section id="home" className="relative h-screen overflow-hidden">
           <video
             src="/videos/hero-background.mp4"
             autoPlay
@@ -51,10 +69,10 @@ export default function Home() {
               </h1>
               <p className="text-lg text-white/90 max-w-2xl mx-auto">
                 Prakruthi Shaale, a flagship initiative by Outdoor Dynamix,
-                revolutionizes education by connecting minds with nature
-                through innovative outdoor learning experiences. It fosters
-                creativity, curiosity, and critical thinking, promoting
-                holistic development.
+                revolutionizes education by connecting minds with nature through
+                innovative outdoor learning experiences. It fosters creativity,
+                curiosity, and critical thinking, promoting holistic
+                development.
               </p>
             </div>
           </div>
@@ -108,7 +126,8 @@ export default function Home() {
                     Connects everyone with nature to foster creativity,
                     curiosity, and critical thinking skills in a natural
                     environment.
-                  '</p>
+                    '
+                  </p>
                 </div>
               </div>
               <div className="flex gap-4">
@@ -189,7 +208,9 @@ export default function Home() {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                  <h3 className="font-bold text-xl mb-3 bg-forest-gradient bg-clip-text text-transparent">The Challenge</h3>
+                  <h3 className="font-bold text-xl mb-3 bg-forest-gradient bg-clip-text text-transparent">
+                    The Challenge
+                  </h3>
                   <ul className="space-y-2 text-white/80 list-disc list-inside text-left">
                     <li>Urgent environmental threats</li>
                     <li>Disconnected sustainability efforts</li>
@@ -216,93 +237,29 @@ export default function Home() {
         <section id="solution" className="py-20">
           <div className="container mx-auto text-center">
             <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
-              Our Solution: Prakruthi Shaale
+              Our Solutions & Outcomes
             </h2>
             <p className="text-lg text-foreground/80 max-w-3xl mx-auto mb-12">
               A pioneering enterprise fostering sustainability and community
               impact through a multi-faceted approach.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card>
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
-                    <Users className="w-8 h-8 text-accent" />
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+              {solutionsAndOutcomes.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center gap-3 text-center"
+                  >
+                    <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                      <Icon className="w-10 h-10 text-accent" />
+                    </div>
+                    <h4 className="font-semibold text-foreground text-sm">
+                      {item.title}
+                    </h4>
                   </div>
-                  <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
-                    Collaborative Ecosystem
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-foreground/80">
-                    Connects individuals, organizations, and communities for
-                    collective action.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
-                    <LifeBuoy className="w-8 h-8 text-accent" />
-                  </div>
-                  <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
-                    Capacity Building
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-foreground/80">
-                    Enhances skills and knowledge for effective partnerships and
-                    development.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
-                    <Globe className="w-8 h-8 text-accent" />
-                  </div>
-                  <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
-                    Resource Mobilization
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-foreground/80">
-                    Facilitates access to expertise, funding, and critical
-                    resources efficiently.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
-                    <HeartHandshake className="w-8 h-8 text-accent" />
-                  </div>
-                  <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
-                    Community Engagement
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-foreground/80">
-                    Empowers local communities to actively participate in
-                    sustainable initiatives.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4 mx-auto">
-                    <Lightbulb className="w-8 h-8 text-accent" />
-                  </div>
-                  <CardTitle className="text-xl bg-forest-gradient bg-clip-text text-transparent">
-                    Innovation Incubation
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-foreground/80">
-                    Fosters social entrepreneurship to drive innovative
-                    sustainability solutions.
-                  </p>
-                </CardContent>
-              </Card>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -314,12 +271,12 @@ export default function Home() {
             </h2>
             <p className="text-lg max-w-4xl mx-auto mb-8 text-primary-foreground/90">
               Discover our groundbreaking initiative uniting Nobel Laureate Sir
-              CV Raman Trust &amp; Outdoor Dynamix. Join us to empower
-              minds through extraordinary learning experiences, complement
-              academic education with hands-on activities, and inspire a
-              lifelong love for nature. Partner with Prakruthi Shaale to nurture
-              curious, compassionate, and responsible future leaders who will
-              shape a sustainable tomorrow.
+              CV Raman Trust &amp; Outdoor Dynamix. Join us to empower minds
+              through extraordinary learning experiences, complement academic
+              education with hands-on activities, and inspire a lifelong love
+              for nature. Partner with Prakruthi Shaale to nurture curious,
+              compassionate, and responsible future leaders who will shape a
+              sustainable tomorrow.
             </p>
             <div className="mt-12">
               <div className="max-w-4xl mx-auto bg-background/90 text-foreground rounded-lg p-8 shadow-2xl">
