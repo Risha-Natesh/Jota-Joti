@@ -103,7 +103,7 @@ export default function ProgramPage() {
                 approachInView ? 'opacity-100' : 'opacity-0'
               )}
             >
-              <h2 className="text-4xl font-bold" style={{ color: '#697254' }}>
+              <h2 className="text-4xl font-bold" style={{ color: '#a7ad89' }}>
                 Our Approach & Programs
               </h2>
               <p className="text-lg text-foreground/80 max-w-2xl mx-auto mt-4">
@@ -138,7 +138,7 @@ export default function ProgramPage() {
                 >
                   <h3
                     className="text-xl font-bold mb-2 transition-transform duration-300 hover:scale-105"
-                    style={{ color: '#697254' }}
+                    style={{ color: '#a7ad89' }}
                   >
                     Outdoor Activities & Workshops
                   </h3>
@@ -157,7 +157,7 @@ export default function ProgramPage() {
                 >
                   <h3
                     className="text-xl font-bold mb-2 transition-transform duration-300 hover:scale-105"
-                    style={{ color: '#697254' }}
+                    style={{ color: '#a7ad89' }}
                   >
                     Experiential Learning Programs
                   </h3>
@@ -176,7 +176,7 @@ export default function ProgramPage() {
                 >
                   <h3
                     className="text-xl font-bold mb-2 transition-transform duration-300 hover:scale-105"
-                    style={{ color: '#697254' }}
+                    style={{ color: '#a7ad89' }}
                   >
                     Volunteering, Team-building & Leadership Programs
                   </h3>
@@ -193,7 +193,10 @@ export default function ProgramPage() {
         <section id="initiatives" className="py-20 bg-background">
           <div className="container mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent">
+              <h2
+                className="text-4xl font-bold"
+                style={{ color: '#a7ad89' }}
+              >
                 Explore Our Initiatives
               </h2>
               <p className="text-lg text-foreground/80 max-w-2xl mx-auto mt-4">
@@ -244,10 +247,7 @@ export default function ProgramPage() {
           style={{ backgroundColor: '#a7ad89' }}
         >
           <div className="container mx-auto text-center">
-            <h2
-              className="text-4xl font-bold mb-4"
-              style={{ color: '#697254' }}
-            >
+            <h2 className="text-4xl font-bold mb-4" style={{ color: '#a7ad89' }}>
               Eco Connect Activities
             </h2>
             <p className="text-lg text-foreground/80 max-w-3xl mx-auto mb-12">
