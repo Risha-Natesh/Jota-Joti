@@ -52,12 +52,10 @@ export default function Home() {
   ];
 
   const { ref: visionRef, inView: visionInView } = useInView({
-    triggerOnce: true,
     threshold: 0.1,
   });
 
   const { ref: missionRef, inView: missionInView } = useInView({
-    triggerOnce: true,
     threshold: 0.1,
   });
 
