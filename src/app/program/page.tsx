@@ -133,7 +133,7 @@ export default function ProgramPage() {
                       : 'opacity-0 translate-y-10'
                   )}
                 >
-                  <h3 className="text-xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-2">
+                  <h3 className="text-xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-2 transition-transform duration-300 hover:scale-105">
                     Outdoor Activities & Workshops
                   </h3>
                   <p className="text-foreground/80">
@@ -149,7 +149,7 @@ export default function ProgramPage() {
                       : 'opacity-0 translate-y-10'
                   )}
                 >
-                  <h3 className="text-xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-2">
+                  <h3 className="text-xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-2 transition-transform duration-300 hover:scale-105">
                     Experiential Learning Programs
                   </h3>
                   <p className="text-foreground/80">
@@ -165,7 +165,7 @@ export default function ProgramPage() {
                       : 'opacity-0 translate-y-10'
                   )}
                 >
-                  <h3 className="text-xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-2">
+                  <h3 className="text-xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-2 transition-transform duration-300 hover:scale-105">
                     Volunteering, Team-building & Leadership Programs
                   </h3>
                   <p className="text-foreground/80">
@@ -207,7 +207,7 @@ export default function ProgramPage() {
                         >
                           <Icon className={`w-8 h-8 ${initiative.color}`} />
                         </div>
-                        <h3 className="text-2xl font-bold text-foreground mb-3">
+                        <h3 className="text-2xl font-bold text-foreground mb-3 transition-transform duration-300 group-hover:scale-105">
                           {initiative.title}
                         </h3>
                         <p className="text-foreground/70 mb-4">
@@ -259,7 +259,7 @@ export default function ProgramPage() {
                         <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:rotate-12 ring-2 ring-accent/20">
                           <Icon className="w-8 h-8 text-accent" />
                         </div>
-                        <h4 className="font-semibold text-foreground">
+                        <h4 className="font-semibold text-foreground transition-transform duration-300 group-hover:scale-105">
                           {activity.title}
                         </h4>
                       </div>

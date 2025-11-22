@@ -124,7 +124,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3
-                    className="text-xl font-bold"
+                    className="text-xl font-bold transition-transform duration-300 hover:scale-105"
                     style={{ color: '#889063' }}
                   >
                     Innovative Outdoor Learning Center
@@ -143,7 +143,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3
-                    className="text-xl font-bold"
+                    className="text-xl font-bold transition-transform duration-300 hover:scale-105"
                     style={{ color: '#889063' }}
                   >
                     Nature Connection Benefits
@@ -164,7 +164,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3
-                    className="text-xl font-bold"
+                    className="text-xl font-bold transition-transform duration-300 hover:scale-105"
                     style={{ color: '#889063' }}
                   >
                     Promoting Holistic Development
@@ -316,7 +316,7 @@ export default function Home() {
                         <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:rotate-12">
                           <Icon className="w-10 h-10 text-accent" />
                         </div>
-                        <h4 className="font-semibold text-foreground text-sm">
+                        <h4 className="font-semibold text-foreground text-sm transition-transform duration-300 group-hover:scale-105">
                           {item.title}
                         </h4>
                       </div>

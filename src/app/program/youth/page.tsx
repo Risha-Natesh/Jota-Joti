@@ -38,15 +38,15 @@ export default function YouthPage() {
               <h2 className="text-3xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
                 Fostering a Love for Nature & Science
               </h2>
-              <p className="text-lg text-foreground/80 mb-6">
+              <p className="text-lg text-foreground/80 mb-6 transition-transform duration-300 hover:scale-105">
                 Our Young Sprouts Program is designed to ignite curiosity and passion in young minds. Through a series of engaging, hands-on activities, we connect children with the natural world, teaching them valuable skills and fostering a lifelong love for learning and discovery.
               </p>
               
               <div className="space-y-4 text-foreground/80">
-                <p>
+                <p className="transition-transform duration-300 hover:scale-105">
                   Participants will explore local ecosystems, learn about native plants and animals, and engage in fun, educational experiments. Our goal is to make science and nature accessible, exciting, and memorable.
                 </p>
-                <p>
+                <p className="transition-transform duration-300 hover:scale-105">
                   Join us for a journey of exploration that promises to be as educational as it is fun!
                 </p>
               </div>
@@ -60,7 +60,7 @@ export default function YouthPage() {
                     <Microscope className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Hands-On Science</h4>
+                    <h4 className="font-semibold transition-transform duration-300 hover:scale-105">Hands-On Science</h4>
                     <p className="text-sm text-foreground/70">Interactive experiments and nature exploration.</p>
                   </div>
                 </li>
@@ -69,7 +69,7 @@ export default function YouthPage() {
                     <User className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Age Groups</h4>
+                    <h4 className="font-semibold transition-transform duration-300 hover:scale-105">Age Groups</h4>
                     <p className="text-sm text-foreground/70">Activities tailored for children aged 6-14.</p>
                   </div>
                 </li>
@@ -78,7 +78,7 @@ export default function YouthPage() {
                     <Calendar className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Upcoming Events</h4>
+                    <h4 className="font-semibold transition-transform duration-300 hover:scale-105">Upcoming Events</h4>
                     <p className="text-sm text-foreground/70">Weekend workshops and summer camps. Stay tuned for dates!</p>
                   </div>
                 </li>

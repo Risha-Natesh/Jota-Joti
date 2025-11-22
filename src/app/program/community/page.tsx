@@ -38,15 +38,15 @@ export default function CommunityPage() {
               <h2 className="text-3xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
                 Be the Change in Your Community
               </h2>
-              <p className="text-lg text-foreground/80 mb-6">
+              <p className="text-lg text-foreground/80 mb-6 transition-transform duration-300 hover:scale-105">
                 Our Community Champions program is for passionate individuals who want to dedicate their time and skills to making a difference. As a volunteer, you are the heart of our mission, driving change and fostering a healthier environment for all.
               </p>
               
               <div className="space-y-4 text-foreground/80">
-                <p>
+                <p className="transition-transform duration-300 hover:scale-105">
                   We offer a variety of volunteer roles, from assisting with kids' workshops to participating in large-scale community clean-ups and tree-planting events. No matter your skill level or availability, there's a place for you.
                 </p>
-                <p>
+                <p className="transition-transform duration-300 hover:scale-105">
                   Join our dedicated team and become a champion for our community and planet.
                 </p>
               </div>
@@ -60,7 +60,7 @@ export default function CommunityPage() {
                     <Hand className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Get Involved</h4>
+                    <h4 className="font-semibold transition-transform duration-300 hover:scale-105">Get Involved</h4>
                     <p className="text-sm text-foreground/70">Opportunities for all ages and skill levels.</p>
                   </div>
                 </li>
@@ -69,7 +69,7 @@ export default function CommunityPage() {
                     <Users className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Community Events</h4>
+                    <h4 className="font-semibold transition-transform duration-300 hover:scale-105">Community Events</h4>
                     <p className="text-sm text-foreground/70">Join us for clean-up drives, workshops, and more.</p>
                   </div>
                 </li>
@@ -78,7 +78,7 @@ export default function CommunityPage() {
                     <Calendar className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Upcoming Opportunities</h4>
+                    <h4 className="font-semibold transition-transform duration-300 hover:scale-105">Upcoming Opportunities</h4>
                     <p className="text-sm text-foreground/70">Check our calendar for the next volunteer event.</p>
                   </div>
                 </li>
