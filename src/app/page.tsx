@@ -31,7 +31,6 @@ import { useInView } from 'react-intersection-observer';
 import { cn } from '@/lib/utils';
 
 export default function Home() {
-  const aboutImage = PlaceHolderImages.find((img) => img.id === 'about-us');
   const challengeImage = PlaceHolderImages.find(
     (img) => img.id === 'challenge'
   );
@@ -98,15 +97,13 @@ export default function Home() {
         <section id="about" className="py-20 bg-secondary/30">
           <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div className="h-96 relative rounded-lg overflow-hidden shadow-lg">
-              {aboutImage && (
-                <Image
-                  src={aboutImage.imageUrl}
-                  alt={aboutImage.description}
-                  fill
-                  className="object-cover"
-                  data-ai-hint={aboutImage.imageHint}
-                />
-              )}
+              <Image
+                src="/Images/about-us.jpg"
+                alt="About us"
+                fill
+                className="object-cover"
+                data-ai-hint="kids learning outdoors"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <h2 className="absolute bottom-6 left-6 text-4xl font-bold text-white">
                 About Us
