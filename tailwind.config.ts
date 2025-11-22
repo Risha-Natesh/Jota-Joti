@@ -18,7 +18,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'forest-gradient': 'linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)))',
+        'forest-gradient': 'linear-gradient(to bottom, hsl(var(--primary) / 0.8), hsl(var(--accent) / 0.8))',
       },
       fontFamily: {
         sans: ['var(--font-poppins)', 'sans-serif'],

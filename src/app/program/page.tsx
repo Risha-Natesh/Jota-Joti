@@ -96,19 +96,21 @@ export default function ProgramPage() {
                 The Eco Connect Program
               </h2>
             </div>
-            <div className="relative grid grid-cols-1 gap-16 items-center justify-items-center">
-              {engagingActivitiesImage && (
-                <Image
-                  src={engagingActivitiesImage.imageUrl}
-                  alt={engagingActivitiesImage.description}
-                  fill
-                  className="object-cover -z-10"
-                  data-ai-hint={engagingActivitiesImage.imageHint}
-                />
-              )}
-              <div className="absolute inset-0 bg-black/60 -z-10"></div>
+            <div className="relative grid grid-cols-1 justify-items-center">
+              <div className="absolute inset-0">
+                {engagingActivitiesImage && (
+                  <Image
+                    src={engagingActivitiesImage.imageUrl}
+                    alt={engagingActivitiesImage.description}
+                    fill
+                    className="object-cover"
+                    data-ai-hint={engagingActivitiesImage.imageHint}
+                  />
+                )}
+                <div className="absolute inset-0 bg-black/60"></div>
+              </div>
               <div className="relative z-10 max-w-2xl w-full">
-                <Card className="bg-transparent border-slate-700">
+                <Card className="bg-transparent border-slate-700 text-white">
                   <CardHeader>
                     <CardTitle className="text-2xl text-white">
                       Engaging Activities
@@ -121,9 +123,7 @@ export default function ProgramPage() {
                           01
                         </span>
                         <div>
-                          <h4 className="font-bold text-white">
-                            HAM Radio Exploration
-                          </h4>
+                          <h4 className="font-bold">HAM Radio Exploration</h4>
                           <p className="text-white/70 text-sm">
                             Introduces communication, electronics, emergency
                             usage, and connects a global community.
@@ -135,7 +135,7 @@ export default function ProgramPage() {
                           02
                         </span>
                         <div>
-                          <h4 className="font-bold text-white">
+                          <h4 className="font-bold">
                             Rope Work & Knots Fundamentals
                           </h4>
                           <p className="text-white/70 text-sm">
@@ -149,7 +149,7 @@ export default function ProgramPage() {
                           03
                         </span>
                         <div>
-                          <h4 className="font-bold text-white">
+                          <h4 className="font-bold">
                             Essential First Aid Training
                           </h4>
                           <p className="text-white/70 text-sm">
@@ -163,7 +163,7 @@ export default function ProgramPage() {
                           04
                         </span>
                         <div>
-                          <h4 className="font-bold text-white">
+                          <h4 className="font-bold">
                             Panchavati Nature Walk Experience
                           </h4>
                           <p className="text-white/70 text-sm">
@@ -177,7 +177,7 @@ export default function ProgramPage() {
                           05
                         </span>
                         <div>
-                          <h4 className="font-bold text-white">
+                          <h4 className="font-bold">
                             Ice Breaker Game for Teamwork
                           </h4>
                           <p className="text-white/70 text-sm">
