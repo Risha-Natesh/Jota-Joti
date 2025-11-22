@@ -124,7 +124,9 @@ export default function YouthPage() {
             </h2>
             <p className="text-lg text-foreground/80 max-w-4xl mx-auto mb-10">
               Panchavati the residence of the first Asian Nobel Laureate for
-              Science, Sir CV Raman's residence.
+              Science,
+              <br />
+              Sir CV Raman's residence.
             </p>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div className="bg-secondary/20 p-6 rounded-lg shadow-md border border-border">
