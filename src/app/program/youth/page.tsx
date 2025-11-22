@@ -13,14 +13,14 @@ export default function YouthPage() {
         <div className="relative h-64 md:h-80">
           <Image
             src="https://picsum.photos/seed/youth/1200/400"
-            alt="Young Sprouts Program"
+            alt="Youth Vanguard Program"
             fill
             className="object-cover"
             data-ai-hint="kids exploring nature"
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
-              Young Sprouts Program
+              Youth Vanguard Program
             </h1>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function YouthPage() {
                 Fostering a Love for Nature & Science
               </h2>
               <p className="text-lg text-foreground/80 mb-6 transition-transform duration-300 hover:scale-105">
-                Our Young Sprouts Program is designed to ignite curiosity and passion in young minds. Through a series of engaging, hands-on activities, we connect children with the natural world, teaching them valuable skills and fostering a lifelong love for learning and discovery.
+                Our Youth Vanguard Program is designed to ignite curiosity and passion in young minds. Through a series of engaging, hands-on activities, we connect children with the natural world, teaching them valuable skills and fostering a lifelong love for learning and discovery.
               </p>
               
               <div className="space-y-4 text-foreground/80">

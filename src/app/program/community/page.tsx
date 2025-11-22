@@ -13,14 +13,14 @@ export default function CommunityPage() {
         <div className="relative h-64 md:h-80">
           <Image
             src="https://picsum.photos/seed/community/1200/400"
-            alt="Community Champions"
+            alt="Community Stewards Initiative"
             fill
             className="object-cover"
             data-ai-hint="volunteers working together"
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
-              Community Champions
+              Community Stewards Initiative
             </h1>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function CommunityPage() {
                 Be the Change in Your Community
               </h2>
               <p className="text-lg text-foreground/80 mb-6 transition-transform duration-300 hover:scale-105">
-                Our Community Champions program is for passionate individuals who want to dedicate their time and skills to making a difference. As a volunteer, you are the heart of our mission, driving change and fostering a healthier environment for all.
+                Our Community Stewards program is for passionate individuals who want to dedicate their time and skills to making a difference. As a volunteer, you are the heart of our mission, driving change and fostering a healthier environment for all.
               </p>
               
               <div className="space-y-4 text-foreground/80">
@@ -47,7 +47,7 @@ export default function CommunityPage() {
                   We offer a variety of volunteer roles, from assisting with kids' workshops to participating in large-scale community clean-ups and tree-planting events. No matter your skill level or availability, there's a place for you.
                 </p>
                 <p className="transition-transform duration-300 hover:scale-105">
-                  Join our dedicated team and become a champion for our community and planet.
+                  Join our dedicated team and become a steward for our community and planet.
                 </p>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function CommunityPage() {
           <div className="mt-16">
             <h2 className="text-3xl font-bold text-center bg-forest-gradient bg-clip-text text-transparent mb-8">Volunteer Stories</h2>
             <div className="text-center text-foreground/70">
-              <p>Read stories from our champions and see the impact they've made.</p>
+              <p>Read stories from our stewards and see the impact they've made.</p>
             </div>
           </div>
         </div>

@@ -13,14 +13,14 @@ export default function CorporatePage() {
         <div className="relative h-64 md:h-80">
           <Image
             src="https://picsum.photos/seed/corporate/1200/400"
-            alt="Corporate Green Teams"
+            alt="Purpose-Driven Partnerships"
             fill
             className="object-cover"
             data-ai-hint="corporate team outdoors"
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
-              Corporate Green Teams
+              Purpose-Driven Partnerships
             </h1>
           </div>
         </div>
@@ -36,10 +36,10 @@ export default function CorporatePage() {
           <div className="grid md:grid-cols-3 gap-12">
             <div className="md:col-span-2">
               <h2 className="text-3xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
-                Purpose-Driven Partnerships
+                Strategic Environmental Alliances
               </h2>
               <p className="text-lg text-foreground/80 mb-6 transition-transform duration-300 hover:scale-105">
-                Our Corporate Green Teams initiative offers unique opportunities for companies to engage in meaningful environmental action and team-building. Partner with us to create customized programs that align with your company's values and CSR goals.
+                Our Purpose-Driven Partnerships initiative offers unique opportunities for companies to engage in meaningful environmental action and team-building. Partner with us to create customized programs that align with your company's values and CSR goals.
               </p>
               
               <div className="space-y-4 text-foreground/80">
