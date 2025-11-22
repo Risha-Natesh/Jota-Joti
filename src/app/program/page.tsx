@@ -245,7 +245,10 @@ export default function ProgramPage() {
           style={{ backgroundColor: '#a7ad89' }}
         >
           <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
+            <h2
+              className="text-4xl font-bold mb-4"
+              style={{ color: '#697254' }}
+            >
               Eco Connect Activities
             </h2>
             <p className="text-lg text-foreground/80 max-w-3xl mx-auto mb-12">
