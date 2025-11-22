@@ -183,7 +183,7 @@ export default function Home() {
               <div
                 ref={visionRef}
                 className={cn(
-                  'opacity-0',
+                  'bg-secondary/30 p-8 rounded-lg shadow-md opacity-0',
                   visionInView && 'animate-fade-in'
                 )}
               >
@@ -200,7 +200,7 @@ export default function Home() {
               <div
                 ref={missionRef}
                 className={cn(
-                  'opacity-0',
+                  'bg-secondary/30 p-8 rounded-lg shadow-md opacity-0',
                    missionInView && 'animate-fade-in [animation-delay:300ms]'
                 )}
               >
