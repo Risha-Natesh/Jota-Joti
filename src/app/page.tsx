@@ -249,9 +249,9 @@ export default function Home() {
                 return (
                   <div
                     key={index}
-                    className="flex flex-col items-center gap-3 text-center"
+                    className="flex flex-col items-center gap-3 text-center group transform transition-transform duration-300 hover:scale-110 hover:-translate-y-2"
                   >
-                    <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center">
+                    <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:rotate-12">
                       <Icon className="w-10 h-10 text-accent" />
                     </div>
                     <h4 className="font-semibold text-foreground text-sm">
