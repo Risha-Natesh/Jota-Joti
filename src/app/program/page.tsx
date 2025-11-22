@@ -31,8 +31,8 @@ export default function ProgramPage() {
       description:
         'Engaging the next generation with hands-on nature and science programs.',
       href: '/program/youth',
-      color: 'text-green-500',
-      bg: 'bg-green-500/10',
+      color: 'text-green-800',
+      bg: 'bg-green-300/20',
     },
     {
       icon: Users,
@@ -40,8 +40,8 @@ export default function ProgramPage() {
       description:
         'Partner with us to create impactful environmental and team-building experiences.',
       href: '/program/corporate',
-      color: 'text-blue-500',
-      bg: 'bg-blue-500/10',
+      color: 'text-green-800',
+      bg: 'bg-green-300/20',
     },
     {
       icon: HeartHandshake,
@@ -49,8 +49,8 @@ export default function ProgramPage() {
       description:
         'Join our volunteer efforts to make a tangible difference in our community.',
       href: '/program/community',
-      color: 'text-red-500',
-      bg: 'bg-red-500/10',
+      color: 'text-green-800',
+      bg: 'bg-green-300/20',
     },
   ];
 
