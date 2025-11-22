@@ -32,41 +32,8 @@ export default function ProgramPage() {
 
   return (
     <div className="relative flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
-      <div className="absolute top-0 left-0 -z-10 opacity-10">
-        <svg
-          width="300"
-          height="300"
-          viewBox="0 0 500 500"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill="hsl(var(--primary))"
-            d="M399.5,420.5Q373,341,438,300Q503,259,451,192.5Q399,126,358.5,102.5Q318,79,250,71.5Q182,64,136.5,105Q91,146,67.5,202Q44,258,94,307.5Q144,357,197,378.5Q250,400,324.5,410Q399,420,399.5,420.5Z"
-            transform="translate(-50 -50)"
-          />
-          <path
-            fill="hsl(var(--accent))"
-            d="M110.3,5.1c32.4,0.3,65,13.8,88.4,36.9c23.4,23.1,37.6,56.3,37.6,90.3c0,29.9-10.4,59.1-31,81.1c-20.6,22-51.5,36.8-82.7,42.3c-31.2,5.5-62.8-0.3-90.1-16.1C35.2,223.8,12,197,3.9,165.7C-4.1,134.4-7,98.8,3.9,68.8c10.9-30,34.7-55.7,63.1-66.9C95.4,-8.3,110.3,5.1,110.3,5.1z"
-            transform="translate(150 50) scale(0.8)"
-          />
-        </svg>
-      </div>
-      <div className="absolute bottom-0 right-0 -z-10 opacity-10 overflow-hidden">
-        <svg
-          width="400"
-          height="400"
-          viewBox="0 0 200 200"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill="hsl(var(--accent))"
-            d="M48.8,-58.2C62.8,-49.1,73.4,-33.7,76.5,-16.4C79.6,0.8,75.2,19.8,65.3,35.2C55.4,50.6,40.1,62.4,23.5,68.2C6.9,74,-11,73.8,-27.2,68.2C-43.4,62.6,-57.9,51.6,-66.2,37.3C-74.4,23,-76.4,5.4,-72.5,-10.6C-68.6,-26.6,-58.8,-41,-46.3,-50.2C-33.8,-59.4,-18.6,-63.5,-3.5,-62C11.6,-60.5,23.1,-53.4,34.8,-47.5C46.5,-41.6,48.8,-58.2,48.8,-58.2Z"
-            transform="translate(150 140) scale(1.8)"
-          />
-        </svg>
-      </div>
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 pt-16">
         <section id="programs" className="py-20 bg-secondary/30">
           <div className="container mx-auto">
             <div className="text-center mb-12">
@@ -135,13 +102,13 @@ export default function ProgramPage() {
                   src={engagingActivitiesImage.imageUrl}
                   alt={engagingActivitiesImage.description}
                   fill
-                  className="object-cover"
+                  className="object-cover -z-10"
                   data-ai-hint={engagingActivitiesImage.imageHint}
                 />
               )}
-              <div className="absolute inset-0 bg-black/60"></div>
+              <div className="absolute inset-0 bg-black/60 -z-10"></div>
               <div className="relative z-10 max-w-2xl w-full">
-                <Card className="bg-transparent text-foreground border-slate-700">
+                <Card className="bg-transparent border-slate-700">
                   <CardHeader>
                     <CardTitle className="text-2xl text-white">
                       Engaging Activities
