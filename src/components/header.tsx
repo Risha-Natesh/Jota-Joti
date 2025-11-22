@@ -38,7 +38,7 @@ const Header = () => {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 transition-all duration-300',
         isScrolled
-          ? 'bg-forest-gradient/90 backdrop-blur-md shadow-lg'
+          ? 'bg-header-gradient backdrop-blur-md shadow-lg'
           : 'bg-transparent'
       )}
     >
@@ -46,10 +46,10 @@ const Header = () => {
         href="/"
         className="flex items-center gap-3 font-bold text-xl text-primary"
       >
-        <div className="w-8 h-8 bg-primary text-primary-foreground flex items-center justify-center rounded-sm">
-          <Sun className="w-5 h-5" />
+        <div className="w-10 h-10 bg-white text-black flex items-center justify-center rounded-md p-1">
+          <Sun className="w-8 h-8" />
         </div>
-        <span className="text-black">
+        <span className={cn('text-white', !isScrolled && 'text-black')}>
           PRAKRUTHI <span className="font-light">SHAALE</span>
         </span>
       </Link>
@@ -57,28 +57,42 @@ const Header = () => {
         <Button
           variant="ghost"
           onClick={() => scrollTo('home')}
-          className="text-black hover:bg-black/10 hover:text-black"
+          className={cn(
+            'hover:bg-white/20',
+            isScrolled ? 'text-white' : 'text-black'
+          )}
         >
           Home
         </Button>
         <Button
           variant="ghost"
           onClick={() => scrollTo('about')}
-          className="text-black hover:bg-black/10 hover:text-black"
+          className={cn(
+            'hover:bg-white/20',
+            isScrolled ? 'text-white' : 'text-black'
+          )}
         >
           About
         </Button>
         <Link href="/program">
           <Button
             variant="ghost"
-            className="text-black hover:bg-black/10 hover:text-black"
+            className={cn(
+              'hover:bg-white/20',
+              isScrolled ? 'text-white' : 'text-black'
+            )}
           >
             Programs
           </Button>
         </Link>
         <Button
           onClick={() => scrollTo('contact')}
-          className="bg-black/20 text-black border-black/30 border hover:bg-black/30"
+          className={cn(
+            'border border-white/50 hover:bg-white/20',
+            isScrolled
+              ? 'bg-white/10 text-white'
+              : 'bg-black/10 text-black border-black/30'
+          )}
         >
           Contact
         </Button>
