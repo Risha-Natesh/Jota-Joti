@@ -91,7 +91,7 @@ export default function ProgramPage() {
     <div className="relative flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
       <Header />
       <main className="flex-1 pt-16">
-        <section id="programs" className="py-20 bg-secondary/30">
+        <section id="programs" className="py-20 bg-[#697254]">
           <div className="container mx-auto">
             <div
               ref={approachRef}
