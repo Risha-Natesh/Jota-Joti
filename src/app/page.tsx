@@ -74,14 +74,30 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/40 z-0"></div>
           <div className="container mx-auto h-full flex flex-col items-center justify-center text-center text-white relative z-10">
             <div className="flex flex-col gap-6">
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white drop-shadow-lg animate-fade-in-up">
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white drop-shadow-lg">
                 <span className="bg-forest-gradient bg-clip-text text-transparent">
-                  Empowering
+                  <span
+                    className="inline-block animate-fade-in-up"
+                    style={{ animationDelay: '100ms' }}
+                  >
+                    Empowering
+                  </span>
                   <br />
-                  Through Nature
+                  <span
+                    className="inline-block animate-fade-in-up"
+                    style={{ animationDelay: '300ms' }}
+                  >
+                    Through
+                  </span>{' '}
+                  <span
+                    className="inline-block animate-fade-in-up"
+                    style={{ animationDelay: '500ms' }}
+                  >
+                    Nature
+                  </span>
                 </span>
               </h1>
-              <p className="text-lg text-white/90 max-w-2xl mx-auto animate-fade-in-up [animation-delay:200ms]">
+              <p className="text-lg text-white/90 max-w-2xl mx-auto animate-fade-in-up [animation-delay:700ms]">
                 Prakruthi Shaale, a flagship initiative by Outdoor Dynamix,
                 revolutionizes education by connecting minds with nature through
                 innovative outdoor learning experiences. It fosters creativity,
