@@ -55,21 +55,21 @@ const Header = () => {
         <Button
           variant="ghost"
           onClick={() => scrollTo('home')}
-          className={cn('text-white hover:bg-white/20')}
+          className={cn('text-brand-green hover:bg-white/20')}
         >
           Home
         </Button>
         <Button
           variant="ghost"
           onClick={() => scrollTo('about')}
-          className={cn('text-white hover:bg-white/20')}
+          className={cn('text-brand-green hover:bg-white/20')}
         >
           About
         </Button>
         <Link href="/program">
           <Button
             variant="ghost"
-            className={cn('text-white hover:bg-white/20')}
+            className={cn('text-brand-green hover:bg-white/20')}
           >
             Programs
           </Button>
@@ -77,7 +77,7 @@ const Header = () => {
         <Button
           onClick={() => scrollTo('contact')}
           className={cn(
-            'border border-white/50 bg-white/10 text-white hover:bg-white/20'
+            'border border-brand-green/50 bg-brand-green/10 text-brand-green hover:bg-brand-green/20'
           )}
         >
           Contact
