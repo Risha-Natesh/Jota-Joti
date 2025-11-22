@@ -37,9 +37,7 @@ const Header = () => {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 transition-all duration-300',
-        isScrolled
-          ? 'bg-header-gradient backdrop-blur-md shadow-lg'
-          : 'bg-transparent'
+        isScrolled ? 'bg-header-gradient backdrop-blur-md' : 'bg-transparent'
       )}
     >
       <Link
@@ -49,7 +47,7 @@ const Header = () => {
         <div className="w-10 h-10 bg-white text-black flex items-center justify-center rounded-md p-1">
           <Sun className="w-8 h-8" />
         </div>
-        <span className={cn('text-white', !isScrolled && 'text-black')}>
+        <span className={'text-white'}>
           PRAKRUTHI <span className="font-light">SHAALE</span>
         </span>
       </Link>
@@ -57,30 +55,21 @@ const Header = () => {
         <Button
           variant="ghost"
           onClick={() => scrollTo('home')}
-          className={cn(
-            'hover:bg-white/20',
-            isScrolled ? 'text-white' : 'text-black'
-          )}
+          className={cn('text-white hover:bg-white/20')}
         >
           Home
         </Button>
         <Button
           variant="ghost"
           onClick={() => scrollTo('about')}
-          className={cn(
-            'hover:bg-white/20',
-            isScrolled ? 'text-white' : 'text-black'
-          )}
+          className={cn('text-white hover:bg-white/20')}
         >
           About
         </Button>
         <Link href="/program">
           <Button
             variant="ghost"
-            className={cn(
-              'hover:bg-white/20',
-              isScrolled ? 'text-white' : 'text-black'
-            )}
+            className={cn('text-white hover:bg-white/20')}
           >
             Programs
           </Button>
@@ -88,10 +77,7 @@ const Header = () => {
         <Button
           onClick={() => scrollTo('contact')}
           className={cn(
-            'border border-white/50 hover:bg-white/20',
-            isScrolled
-              ? 'bg-white/10 text-white'
-              : 'bg-black/10 text-black border-black/30'
+            'border border-white/50 bg-white/10 text-white hover:bg-white/20'
           )}
         >
           Contact
