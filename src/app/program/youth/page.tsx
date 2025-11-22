@@ -19,7 +19,7 @@ export default function YouthPage() {
             data-ai-hint="kids exploring nature"
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight text-center">
               Kids Environmental Program
             </h1>
           </div>
