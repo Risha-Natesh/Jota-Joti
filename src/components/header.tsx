@@ -33,11 +33,14 @@ const Header = () => {
     }
   };
 
+  const navTextColor = isScrolled ? 'text-black' : 'text-white';
+  const navHoverColor = isScrolled ? 'hover:bg-black/10' : 'hover:bg-white/20';
+
   return (
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 transition-all duration-300',
-        isScrolled ? 'bg-header-gradient backdrop-blur-md' : 'bg-transparent'
+        isScrolled ? 'bg-white/80 backdrop-blur-md shadow-md' : 'bg-transparent'
       )}
     >
       <Link
@@ -45,7 +48,7 @@ const Header = () => {
         className="flex items-center gap-3 font-bold text-xl"
       >
         <Image src="/Images/Logo.jpg" alt="Prakruthi Shaale Logo" width={40} height={40} className="rounded-md" />
-        <span className={cn('text-white', isScrolled && 'text-white')}>
+        <span className={cn(navTextColor)}>
           PRAKRUTHI <span className="font-light">SHAALE</span>
         </span>
       </Link>
@@ -53,21 +56,21 @@ const Header = () => {
         <Button
           variant="ghost"
           onClick={() => scrollTo('home')}
-          className={cn('text-white hover:bg-white/20')}
+          className={cn(navTextColor, navHoverColor)}
         >
           Home
         </Button>
         <Button
           variant="ghost"
           onClick={() => scrollTo('about')}
-          className={cn('text-white hover:bg-white/20')}
+          className={cn(navTextColor, navHoverColor)}
         >
           About
         </Button>
         <Link href="/program">
           <Button
             variant="ghost"
-            className={cn('text-white hover:bg-white/20')}
+            className={cn(navTextColor, navHoverColor)}
           >
             Programs
           </Button>
@@ -75,7 +78,7 @@ const Header = () => {
         <Button
           onClick={() => scrollTo('contact')}
           className={cn(
-            'border border-white/50 bg-white/10 text-white hover:bg-white/20'
+            isScrolled ? 'border-black/50 bg-black/5 text-black hover:bg-black/10' : 'border-white/50 bg-white/10 text-white hover:bg-white/20'
           )}
         >
           Contact
