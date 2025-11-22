@@ -19,7 +19,7 @@ export default function CommunityPage() {
             data-ai-hint="volunteers working together"
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
+            <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight text-center">
               Community Volunteer Program
             </h1>
           </div>
