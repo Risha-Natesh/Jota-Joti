@@ -18,7 +18,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'forest-gradient': 'linear-gradient(to bottom, #2a5a49, #1a3a30)',
+        'forest-gradient': 'linear-gradient(to bottom, #519410, #519410)',
         'header-gradient': 'linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.4))',
       },
       fontFamily: {
