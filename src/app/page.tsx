@@ -74,17 +74,17 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/40 z-0"></div>
           <div className="container mx-auto h-full flex flex-col items-center justify-center text-center text-white relative z-10">
             <div className="flex flex-col gap-6">
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight" style={{ color: '#889063' }}>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
                 <span
                   className="inline-block animate-fade-in-up"
-                  style={{ animationDelay: '100ms' }}
+                  style={{ color: '#889063', animationDelay: '100ms' }}
                 >
                   Empowering
                 </span>
                 <br />
                 <span
                   className="inline-block animate-fade-in-up"
-                  style={{ animationDelay: '300ms' }}
+                  style={{ color: '#889063', animationDelay: '300ms' }}
                 >
                   Through Nature
                 </span>
@@ -123,7 +123,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold bg-forest-gradient bg-clip-text text-transparent">
+                  <h3
+                    className="text-xl font-bold"
+                    style={{ color: '#889063' }}
+                  >
                     Innovative Outdoor Learning Center
                   </h3>
                   <p className="text-foreground/80 mt-1">
@@ -139,7 +142,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold bg-forest-gradient bg-clip-text text-transparent">
+                  <h3
+                    className="text-xl font-bold"
+                    style={{ color: '#889063' }}
+                  >
                     Nature Connection Benefits
                   </h3>
                   <p className="text-foreground/80 mt-1">
@@ -157,7 +163,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold bg-forest-gradient bg-clip-text text-transparent">
+                  <h3
+                    className="text-xl font-bold"
+                    style={{ color: '#889063' }}
+                  >
                     Promoting Holistic Development
                   </h3>
                   <p className="text-foreground/80 mt-1">
@@ -172,7 +181,7 @@ export default function Home() {
 
         <section id="vision" className="py-20 bg-white">
           <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-4 bg-forest-gradient bg-clip-text text-transparent">
+            <h2 className="text-4xl font-bold mb-4" style={{ color: '#889063' }}>
               Our Vision &amp; Mission
             </h2>
             <p className="text-lg text-foreground/80 max-w-2xl mx-auto mb-12">
@@ -183,14 +192,15 @@ export default function Home() {
               <div
                 ref={visionRef}
                 className={cn(
-                  'bg-secondary/30 p-8 rounded-lg shadow-md opacity-0',
+                  'p-8 rounded-lg shadow-md opacity-0',
                   visionInView && 'animate-fade-in'
                 )}
+                style={{ backgroundColor: '#8c916c' }}
               >
-                <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
+                <h3 className="text-2xl font-bold text-white mb-4">
                   Our Vision
                 </h3>
-                <p className="text-foreground/80">
+                <p className="text-white/90">
                   Think Global, Act Local approach Connecting individuals,
                   organizations, and youth. Building a network of
                   changemakers. Sustainable future through online and offline
@@ -200,14 +210,15 @@ export default function Home() {
               <div
                 ref={missionRef}
                 className={cn(
-                  'bg-secondary/30 p-8 rounded-lg shadow-md opacity-0',
-                   missionInView && 'animate-fade-in [animation-delay:300ms]'
+                  'p-8 rounded-lg shadow-md opacity-0',
+                  missionInView && 'animate-fade-in [animation-delay:300ms]'
                 )}
+                style={{ backgroundColor: '#8c916c' }}
               >
-                <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
+                <h3 className="text-2xl font-bold text-white mb-4">
                   Our Mission
                 </h3>
-                <p className="text-foreground/80">
+                <p className="text-white/90">
                   Make sustainability accessible and actionable for all. Bridge
                   knowledge gaps in sustainability. Mobilize volunteers and
                   resources effectively. Foster collaborative action for impact.
@@ -230,7 +241,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/60"></div>
           <div className="container mx-auto relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent">
+              <h2 className="text-4xl font-bold" style={{ color: '#889063' }}>
                 The Challenge &amp; The Opportunity
               </h2>
               <p className="mt-4 text-lg text-white/90">
@@ -240,7 +251,10 @@ export default function Home() {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                  <h3 className="font-bold text-xl mb-3 bg-forest-gradient bg-clip-text text-transparent">
+                  <h3
+                    className="font-bold text-xl mb-3"
+                    style={{ color: '#889063' }}
+                  >
                     The Challenge
                   </h3>
                   <ul className="space-y-2 text-white/80 list-disc list-inside text-left">
@@ -251,7 +265,10 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                  <h3 className="font-bold text-xl mb-3 bg-forest-gradient bg-clip-text text-transparent">
+                  <h3
+                    className="font-bold text-xl mb-3"
+                    style={{ color: '#889063' }}
+                  >
                     The Opportunity
                   </h3>
                   <ul className="space-y-2 text-white/80 list-disc list-inside text-left">
@@ -268,7 +285,7 @@ export default function Home() {
 
         <section id="solution" className="py-20">
           <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
+            <h2 className="text-4xl font-bold mb-4" style={{ color: '#889063' }}>
               Our Solutions &amp; Outcomes
             </h2>
             <p className="text-lg text-foreground/80 max-w-3xl mx-auto mb-12">
@@ -329,7 +346,10 @@ export default function Home() {
               <div className="max-w-4xl mx-auto bg-background/90 text-foreground rounded-lg p-8 shadow-2xl">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div className="text-left">
-                    <h3 className="text-2xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-6">
+                    <h3
+                      className="text-2xl font-bold mb-6"
+                      style={{ color: '#889063' }}
+                    >
                       Contact Us
                     </h3>
                     <div className="space-y-4">
