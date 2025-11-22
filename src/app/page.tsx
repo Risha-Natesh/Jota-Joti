@@ -20,14 +20,19 @@ import {
   Mountain,
   BrainCircuit,
 } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
+import React from 'react';
 
 export default function Home() {
   const aboutImage = PlaceHolderImages.find((img) => img.id === 'about-us');
   const challengeImage = PlaceHolderImages.find(
     (img) => img.id === 'challenge'
   );
-  const visionImage = PlaceHolderImages.find((img) => img.id === 'vision');
 
   const solutionsAndOutcomes = [
     { icon: Users, title: 'Collaborative Ecosystem' },
@@ -243,24 +248,39 @@ export default function Home() {
               A pioneering enterprise fostering sustainability and community
               impact through a multi-faceted approach.
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
-              {solutionsAndOutcomes.map((item, index) => {
-                const Icon = item.icon;
-                return (
-                  <div
-                    key={index}
-                    className="flex flex-col items-center gap-3 text-center group transform transition-transform duration-300 hover:scale-110 hover:-translate-y-2"
-                  >
-                    <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:rotate-12">
-                      <Icon className="w-10 h-10 text-accent" />
-                    </div>
-                    <h4 className="font-semibold text-foreground text-sm">
-                      {item.title}
-                    </h4>
-                  </div>
-                );
-              })}
-            </div>
+            <Carousel
+              plugins={[
+                Autoplay({
+                  delay: 3000,
+                }),
+              ]}
+              opts={{
+                align: 'start',
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {solutionsAndOutcomes.map((item, index) => {
+                  const Icon = item.icon;
+                  return (
+                    <CarouselItem
+                      key={index}
+                      className="basis-1/4 md:basis-1/8 lg:basis-1/8"
+                    >
+                      <div className="flex flex-col items-center gap-3 text-center group transform transition-transform duration-300 hover:scale-110 hover:-translate-y-2">
+                        <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:rotate-12">
+                          <Icon className="w-10 h-10 text-accent" />
+                        </div>
+                        <h4 className="font-semibold text-foreground text-sm">
+                          {item.title}
+                        </h4>
+                      </div>
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+            </Carousel>
           </div>
         </section>
 
