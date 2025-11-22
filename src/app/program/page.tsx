@@ -91,7 +91,11 @@ export default function ProgramPage() {
     <div className="relative flex flex-col min-h-screen bg-background text-foreground overflow-hidden">
       <Header />
       <main className="flex-1 pt-16">
-        <section id="programs" className="py-20" style={{ backgroundColor: '#a7ad89' }}>
+        <section
+          id="programs"
+          className="py-20"
+          style={{ backgroundColor: '#a7ad89' }}
+        >
           <div className="container mx-auto">
             <div
               ref={approachRef}
@@ -133,7 +137,10 @@ export default function ProgramPage() {
                       : 'opacity-0 translate-y-10'
                   )}
                 >
-                  <h3 className="text-xl font-bold mb-2 transition-transform duration-300 hover:scale-105" style={{ color: '#697254' }}>
+                  <h3
+                    className="text-xl font-bold mb-2 transition-transform duration-300 hover:scale-105"
+                    style={{ color: '#697254' }}
+                  >
                     Outdoor Activities & Workshops
                   </h3>
                   <p className="text-foreground/80">
@@ -149,7 +156,10 @@ export default function ProgramPage() {
                       : 'opacity-0 translate-y-10'
                   )}
                 >
-                  <h3 className="text-xl font-bold mb-2 transition-transform duration-300 hover:scale-105" style={{ color: '#697254' }}>
+                  <h3
+                    className="text-xl font-bold mb-2 transition-transform duration-300 hover:scale-105"
+                    style={{ color: '#697254' }}
+                  >
                     Experiential Learning Programs
                   </h3>
                   <p className="text-foreground/80">
@@ -165,7 +175,10 @@ export default function ProgramPage() {
                       : 'opacity-0 translate-y-10'
                   )}
                 >
-                  <h3 className="text-xl font-bold mb-2 transition-transform duration-300 hover:scale-105" style={{ color: '#697254' }}>
+                  <h3
+                    className="text-xl font-bold mb-2 transition-transform duration-300 hover:scale-105"
+                    style={{ color: '#697254' }}
+                  >
                     Volunteering, Team-building & Leadership Programs
                   </h3>
                   <p className="text-foreground/80">
@@ -226,7 +239,11 @@ export default function ProgramPage() {
           </div>
         </section>
 
-        <section id="eco-connect-activities" className="py-20 bg-secondary/30">
+        <section
+          id="eco-connect-activities"
+          className="py-20"
+          style={{ backgroundColor: '#a7ad89' }}
+        >
           <div className="container mx-auto text-center">
             <h2 className="text-4xl font-bold bg-forest-gradient bg-clip-text text-transparent mb-4">
               Eco Connect Activities
