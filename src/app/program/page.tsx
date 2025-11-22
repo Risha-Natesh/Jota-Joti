@@ -93,7 +93,7 @@ export default function ProgramPage() {
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div className="h-96 relative rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/Images/approach.png"
+                  src="/Images/aproach.png"
                   alt="A diagram illustrating the educational approach."
                   fill
                   className="object-cover"
