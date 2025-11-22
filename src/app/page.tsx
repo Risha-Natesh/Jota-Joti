@@ -348,7 +348,7 @@ export default function Home() {
             <p className="text-lg max-w-4xl mx-auto mb-8 text-primary-foreground/90">
               Discover our groundbreaking initiative uniting Nobel Laureate Sir
               CV Raman Trust &amp; Outdoor Dynamix. Join us to empower
-              learners through extraordinary learning experiences, complement
+              minds through extraordinary learning experiences, complement
               academic education with hands-on activities, and inspire a
               lifelong love for nature. Partner with Prakruthi Shaale to nurture
               curious, compassionate, and responsible future leaders who will
