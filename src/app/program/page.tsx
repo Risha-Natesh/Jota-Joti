@@ -136,8 +136,8 @@ export default function ProgramPage() {
                       className="basis-1/2 md:basis-1/4 lg:basis-1/6"
                     >
                       <div className="flex flex-col items-center gap-3 text-center group transform transition-transform duration-300 hover:scale-110 hover:-translate-y-2">
-                        <div className="w-24 h-24 bg-accent/10 rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:rotate-12 ring-2 ring-accent/20">
-                          <Icon className="w-12 h-12 text-accent" />
+                        <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:rotate-12 ring-2 ring-accent/20">
+                          <Icon className="w-10 h-10 text-accent" />
                         </div>
                         <h4 className="font-semibold text-foreground">
                           {activity.title}
