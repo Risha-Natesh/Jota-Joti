@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header
       className={cn(
-        'sticky top-0 z-50 flex items-center justify-between p-4 transition-colors duration-300 bg-secondary backdrop-blur-sm shadow-sm'
+        'sticky top-0 z-50 flex items-center justify-between p-4 transition-colors duration-300 bg-background/80 backdrop-blur-md shadow-sm'
       )}
     >
       <Link href="/" className="flex items-center gap-3 font-bold text-xl text-primary">
