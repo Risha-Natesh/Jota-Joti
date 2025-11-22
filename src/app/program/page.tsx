@@ -10,6 +10,12 @@ import {
   Puzzle,
   GitCommit,
 } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 
 export default function ProgramPage() {
   const approachImage = PlaceHolderImages.find((img) => img.id === 'approach');
@@ -109,24 +115,39 @@ export default function ProgramPage() {
               Engaging, hands-on activities designed to build skills and foster
               teamwork.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-              {ecoConnectActivities.map((activity, index) => {
-                const Icon = activity.icon;
-                return (
-                  <div
-                    key={index}
-                    className="flex flex-col items-center gap-3 text-center group transform transition-transform duration-300 hover:scale-110 hover:-translate-y-2"
-                  >
-                    <div className="w-24 h-24 bg-accent/10 rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:rotate-12 ring-2 ring-accent/20">
-                      <Icon className="w-12 h-12 text-accent" />
-                    </div>
-                    <h4 className="font-semibold text-foreground">
-                      {activity.title}
-                    </h4>
-                  </div>
-                );
-              })}
-            </div>
+            <Carousel
+              plugins={[
+                Autoplay({
+                  delay: 2000,
+                }),
+              ]}
+              opts={{
+                align: 'start',
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {ecoConnectActivities.map((activity, index) => {
+                  const Icon = activity.icon;
+                  return (
+                    <CarouselItem
+                      key={index}
+                      className="basis-1/2 md:basis-1/4 lg:basis-1/6"
+                    >
+                      <div className="flex flex-col items-center gap-3 text-center group transform transition-transform duration-300 hover:scale-110 hover:-translate-y-2">
+                        <div className="w-24 h-24 bg-accent/10 rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:rotate-12 ring-2 ring-accent/20">
+                          <Icon className="w-12 h-12 text-accent" />
+                        </div>
+                        <h4 className="font-semibold text-foreground">
+                          {activity.title}
+                        </h4>
+                      </div>
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+            </Carousel>
           </div>
         </section>
       </main>
