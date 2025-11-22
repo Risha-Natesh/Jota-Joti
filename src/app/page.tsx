@@ -290,7 +290,7 @@ export default function Home() {
                   return (
                     <CarouselItem
                       key={index}
-                      className="md:basis-1/8 lg:basis-1/8"
+                      className="md:basis-1/4 lg:basis-1/7"
                     >
                       <div className="flex flex-col items-center gap-3 text-center group transform transition-transform duration-300 hover:scale-110 hover:-translate-y-2">
                         <div className="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center transform transition-transform duration-300 group-hover:rotate-12">
