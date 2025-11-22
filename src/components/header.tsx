@@ -33,7 +33,7 @@ const Header = () => {
     }
   };
 
-  const navTextColor = isScrolled ? 'text-black' : 'text-white';
+  const navTextColor = isScrolled ? 'text-[#03110d]' : 'text-white';
   const navHoverColor = isScrolled ? 'hover:bg-black/10' : 'hover:bg-white/20';
 
   return (
@@ -78,7 +78,8 @@ const Header = () => {
         <Button
           onClick={() => scrollTo('contact')}
           className={cn(
-            isScrolled ? 'border-black/50 bg-black/5 text-black hover:bg-black/10' : 'border-white/50 bg-white/10 text-white hover:bg-white/20'
+            'border',
+            isScrolled ? 'border-[#03110d]/50 bg-black/5 text-[#03110d] hover:bg-black/10' : 'border-white/50 bg-white/10 text-white hover:bg-white/20'
           )}
         >
           Contact
