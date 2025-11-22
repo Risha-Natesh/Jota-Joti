@@ -98,7 +98,7 @@ export default function Home() {
           <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div className="h-96 relative rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="/Images/about-us.jpg"
+                src="/Images/aboutus.jpg"
                 alt="About us"
                 fill
                 className="object-cover"
