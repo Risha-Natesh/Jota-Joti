@@ -84,7 +84,7 @@ export default function Home() {
               </h1>
               <p className="text-lg text-white/90 max-w-2xl mx-auto">
                 Prakruthi Shaale, a flagship initiative by Outdoor Dynamix,
-                revolutionizes education by connecting students with nature
+                revolutionizes education by connecting learners with nature
                 through innovative outdoor learning experiences. It fosters
                 creativity, curiosity, and critical thinking, promoting
                 holistic development.
@@ -138,7 +138,7 @@ export default function Home() {
                     Nature Connection Benefits
                   </h3>
                   <p className="text-foreground/80 mt-1">
-                    Connects students with nature to foster creativity,
+                    Connects learners with nature to foster creativity,
                     curiosity, and critical thinking skills in a natural
                     environment.
                   </p>
@@ -347,12 +347,12 @@ export default function Home() {
             </h2>
             <p className="text-lg max-w-4xl mx-auto mb-8 text-primary-foreground/90">
               Discover our groundbreaking initiative uniting Nobel Laureate Sir
-              CV Raman Trust &amp; Outdoor Dynamix. Join us to empower students
-              through extraordinary learning experiences, complement academic
-              education with hands-on activities, and inspire a lifelong love
-              for nature. Partner with Prakruthi Shaale to nurture curious,
-              compassionate, and responsible future leaders who will shape a
-              sustainable tomorrow.
+              CV Raman Trust &amp; Outdoor Dynamix. Join us to empower
+              learners through extraordinary learning experiences, complement
+              academic education with hands-on activities, and inspire a
+              lifelong love for nature. Partner with Prakruthi Shaale to nurture
+              curious, compassionate, and responsible future leaders who will
+              shape a sustainable tomorrow.
             </p>
             <div className="mt-12">
               <div className="max-w-4xl mx-auto bg-background/90 text-foreground rounded-lg p-8 shadow-2xl">

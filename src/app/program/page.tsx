@@ -114,7 +114,7 @@ export default function ProgramPage() {
                   </h3>
                   <p className="text-foreground/80">
                     Collaborative challenges enhance communication and
-                    leadership skills among students.
+                    leadership skills among participants.
                   </p>
                 </div>
               </div>
@@ -129,100 +129,99 @@ export default function ProgramPage() {
                 The Eco Connect Program
               </h2>
             </div>
-
-            <div className="grid grid-cols-1 gap-16 items-center justify-items-center">
-              <div className="relative max-w-2xl w-full rounded-lg overflow-hidden shadow-lg">
-                {engagingActivitiesImage && (
-                  <Image
-                    src={engagingActivitiesImage.imageUrl}
-                    alt={engagingActivitiesImage.description}
-                    fill
-                    className="object-cover"
-                    data-ai-hint={engagingActivitiesImage.imageHint}
-                  />
-                )}
-                <div className="absolute inset-0 bg-black/60"></div>
-                <div className="relative z-10">
-                  <Card className="bg-transparent text-white border-0">
-                    <CardHeader>
-                      <CardTitle className="text-2xl">
-                        Engaging Activities
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-6">
-                        <li className="flex gap-4">
-                          <span className="text-2xl font-bold text-white/80">
-                            01
-                          </span>
-                          <div>
-                            <h4 className="font-bold">HAM Radio Exploration</h4>
-                            <p className="text-white/70 text-sm">
-                              Introduces communication, electronics, emergency
-                              usage, and connects a global community.
-                            </p>
-                          </div>
-                        </li>
-                        <li className="flex gap-4">
-                          <span className="text-2xl font-bold text-white/80">
-                            02
-                          </span>
-                          <div>
-                            <h4 className="font-bold">
-                              Rope Work & Knots Fundamentals
-                            </h4>
-                            <p className="text-white/70 text-sm">
-                              Teaches problem-solving, engineering thinking,
-                              improvisation with practical rope skills.
-                            </p>
-                          </div>
-                        </li>
-                        <li className="flex gap-4">
-                          <span className="text-2xl font-bold text-white/80">
-                            03
-                          </span>
-                          <div>
-                            <h4 className="font-bold">
-                              Essential First Aid Training
-                            </h4>
-                            <p className="text-white/70 text-sm">
-                              Provides vital life-saving knowledge while promoting
-                              empathy and social responsibility.
-                            </p>
-                          </div>
-                        </li>
-                        <li className="flex gap-4">
-                          <span className="text-2xl font-bold text-white/80">
-                            04
-                          </span>
-                          <div>
-                            <h4 className="font-bold">
-                              Panchavati Nature Walk Experience
-                            </h4>
-                            <p className="text-white/70 text-sm">
-                              Guided immersion in nature with flora/fauna
-                              observation and eco-friendly habit discussions.
-                            </p>
-                          </div>
-                        </li>
-                        <li className="flex gap-4">
-                          <span className="text-2xl font-bold text-white/80">
-                            05
-                          </span>
-                          <div>
-                            <h4 className="font-bold">
-                              Ice Breaker Game for Teamwork
-                            </h4>
-                            <p className="text-white/70 text-sm">
-                              Fosters teamwork, collaboration, and communication
-                              through engaging group challenges.
-                            </p>
-                          </div>
-                        </li>
-                      </ul>
-                    </CardContent>
-                  </Card>
-                </div>
+            <div className="relative grid grid-cols-1 gap-16 items-center justify-items-center">
+              {engagingActivitiesImage && (
+                <Image
+                  src={engagingActivitiesImage.imageUrl}
+                  alt={engagingActivitiesImage.description}
+                  fill
+                  className="object-cover"
+                  data-ai-hint={engagingActivitiesImage.imageHint}
+                />
+              )}
+              <div className="absolute inset-0 bg-black/60"></div>
+              <div className="relative z-10 max-w-2xl w-full">
+                <Card className="bg-transparent text-foreground border-slate-700">
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-white">
+                      Engaging Activities
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-6">
+                      <li className="flex gap-4">
+                        <span className="text-2xl font-bold text-white/80">
+                          01
+                        </span>
+                        <div>
+                          <h4 className="font-bold text-white">
+                            HAM Radio Exploration
+                          </h4>
+                          <p className="text-white/70 text-sm">
+                            Introduces communication, electronics, emergency
+                            usage, and connects a global community.
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex gap-4">
+                        <span className="text-2xl font-bold text-white/80">
+                          02
+                        </span>
+                        <div>
+                          <h4 className="font-bold text-white">
+                            Rope Work & Knots Fundamentals
+                          </h4>
+                          <p className="text-white/70 text-sm">
+                            Teaches problem-solving, engineering thinking,
+                            improvisation with practical rope skills.
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex gap-4">
+                        <span className="text-2xl font-bold text-white/80">
+                          03
+                        </span>
+                        <div>
+                          <h4 className="font-bold text-white">
+                            Essential First Aid Training
+                          </h4>
+                          <p className="text-white/70 text-sm">
+                            Provides vital life-saving knowledge while promoting
+                            empathy and social responsibility.
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex gap-4">
+                        <span className="text-2xl font-bold text-white/80">
+                          04
+                        </span>
+                        <div>
+                          <h4 className="font-bold text-white">
+                            Panchavati Nature Walk Experience
+                          </h4>
+                          <p className="text-white/70 text-sm">
+                            Guided immersion in nature with flora/fauna
+                            observation and eco-friendly habit discussions.
+                          </p>
+                        </div>
+                      </li>
+                      <li className="flex gap-4">
+                        <span className="text-2xl font-bold text-white/80">
+                          05
+                        </span>
+                        <div>
+                          <h4 className="font-bold text-white">
+                            Ice Breaker Game for Teamwork
+                          </h4>
+                          <p className="text-white/70 text-sm">
+                            Fosters teamwork, collaboration, and communication
+                            through engaging group challenges.
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
               </div>
             </div>
 
@@ -231,7 +230,7 @@ export default function ProgramPage() {
                 Core Outcomes & Life Skills Development
               </h3>
               <p className="text-foreground/80 max-w-4xl mx-auto mb-10">
-                Our programs empower students with essential STEM skills,
+                Our programs empower participants with essential STEM skills,
                 environmental awareness, and crucial life skills that promote
                 personal growth and social responsibility.
               </p>
