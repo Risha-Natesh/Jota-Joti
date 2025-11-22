@@ -12,7 +12,7 @@ export default function YouthPage() {
       <main className="pt-20">
         <div className="relative h-64 md:h-80">
           <Image
-            src="https://picsum.photos/seed/youth/1200/400"
+            src="/Images/kids - Copy.jpg"
             alt="Kids Environmental Program"
             fill
             className="object-cover"
