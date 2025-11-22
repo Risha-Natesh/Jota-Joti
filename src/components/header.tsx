@@ -38,7 +38,7 @@ const Header = () => {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 transition-all duration-300',
         isScrolled
-          ? 'bg-forest-gradient/90 backdrop-blur-lg shadow-lg'
+          ? 'bg-forest-gradient/90 backdrop-blur-md shadow-lg'
           : 'bg-transparent'
       )}
     >
