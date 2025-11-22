@@ -201,10 +201,10 @@ export default function Home() {
                   Our Vision
                 </h3>
                 <p className="text-white/90">
-                  Think Global, Act Local approach Connecting individuals,
-                  organizations, and youth. Building a network of
-                  changemakers. Sustainable future through online and offline
-                  engagements.
+                  Think Global, Act Local approach. Achieving SDG Goals.
+                  Connecting individuals, organizations, and youth. Building a
+                  network of changemakers. Sustainable future through online and
+                  offline engagements.
                 </p>
               </div>
               <div
